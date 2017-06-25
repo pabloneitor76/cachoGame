@@ -64,13 +64,13 @@ public class inicio extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(620, 440));
         getContentPane().setLayout(null);
 
-        jButtonJugar.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Reproducir en círculo-50.png")); // NOI18N
+        jButtonJugar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Reproducir en círculo-50.png"))); // NOI18N
         jButtonJugar.setText("Jugar");
         jButtonJugar.setToolTipText("");
         jButtonJugar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonJugar.setPreferredSize(new java.awt.Dimension(85, 80));
-        jButtonJugar.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Reproducir en círculo-50 (1).png")); // NOI18N
-        jButtonJugar.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Reproducir en círculo Filled-50.png")); // NOI18N
+        jButtonJugar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jButtonJugar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Reproducir en círculo Filled-50.png"))); // NOI18N
         jButtonJugar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,11 +80,11 @@ public class inicio extends javax.swing.JFrame {
         getContentPane().add(jButtonJugar);
         jButtonJugar.setBounds(60, 280, 90, 80);
 
-        jButtonReglas.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Información-50.png")); // NOI18N
+        jButtonReglas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Información-50.png"))); // NOI18N
         jButtonReglas.setText("Reglas");
         jButtonReglas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonReglas.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Información-50 (1).png")); // NOI18N
-        jButtonReglas.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Información Filled-50.png")); // NOI18N
+        jButtonReglas.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jButtonReglas.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Información Filled-50.png"))); // NOI18N
         jButtonReglas.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonReglas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,11 +94,11 @@ public class inicio extends javax.swing.JFrame {
         getContentPane().add(jButtonReglas);
         jButtonReglas.setBounds(190, 280, 90, 80);
 
-        jButtonCreditos.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Para expertos-50.png")); // NOI18N
+        jButtonCreditos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Para expertos-50 (1).png"))); // NOI18N
         jButtonCreditos.setText("Creditos");
         jButtonCreditos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonCreditos.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Para expertos-50 (1).png")); // NOI18N
-        jButtonCreditos.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Para expertos Filled-50.png")); // NOI18N
+        jButtonCreditos.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jButtonCreditos.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Para expertos Filled-50.png"))); // NOI18N
         jButtonCreditos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonCreditos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,14 +108,14 @@ public class inicio extends javax.swing.JFrame {
         getContentPane().add(jButtonCreditos);
         jButtonCreditos.setBounds(320, 280, 90, 80);
 
-        jButtonSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Señal de salida-50.png")); // NOI18N
+        jButtonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Señal de salida-50.png"))); // NOI18N
         jButtonSalir.setText("Salir");
         jButtonSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonSalir.setMaximumSize(new java.awt.Dimension(85, 80));
         jButtonSalir.setMinimumSize(new java.awt.Dimension(85, 80));
         jButtonSalir.setPreferredSize(new java.awt.Dimension(85, 80));
-        jButtonSalir.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Señal de salida Filled-50.png")); // NOI18N
-        jButtonSalir.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Salida Filled-50.png")); // NOI18N
+        jButtonSalir.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Salida Filled-50.png"))); // NOI18N
+        jButtonSalir.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Señal de salida Filled-50.png"))); // NOI18N
         jButtonSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
