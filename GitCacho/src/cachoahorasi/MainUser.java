@@ -67,11 +67,11 @@ public class MainUser extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(610, 440));
         getContentPane().setLayout(null);
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Retroceso-50.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso-50.png"))); // NOI18N
         jButton1.setText("Volver");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
-        jButton1.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Retroceso Filled-50.png")); // NOI18N
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jButton1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso Filled-50.png"))); // NOI18N
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,11 +81,11 @@ public class MainUser extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(250, 320, 77, 70);
 
-        jButton2G.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Grupo de usuarios hombre hombre-50.png")); // NOI18N
+        jButton2G.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Grupo de usuarios hombre hombre-50.png"))); // NOI18N
         jButton2G.setText("1vs1");
         jButton2G.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2G.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
-        jButton2G.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Grupo de usuarios hombre hombre Filled-50.png")); // NOI18N
+        jButton2G.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jButton2G.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Grupo de usuarios hombre hombre Filled-50.png"))); // NOI18N
         jButton2G.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton2G.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,21 +95,21 @@ public class MainUser extends javax.swing.JFrame {
         getContentPane().add(jButton2G);
         jButton2G.setBounds(220, 80, 90, 80);
 
-        jButton3G.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Antecedentes conferencia seleccionada-50.png")); // NOI18N
+        jButton3G.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Antecedentes conferencia seleccionada-50.png"))); // NOI18N
         jButton3G.setText("3game");
         jButton3G.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3G.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
-        jButton3G.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Antecedentes conferencia seleccionada Filled-50.png")); // NOI18N
+        jButton3G.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jButton3G.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Antecedentes conferencia seleccionada Filled-50.png"))); // NOI18N
         jButton3G.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jButton3G);
         jButton3G.setBounds(70, 200, 90, 80);
 
-        jButtonIA.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-En PC-50.png")); // NOI18N
+        jButtonIA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-En PC-50.png"))); // NOI18N
         jButtonIA.setText("4game");
         jButtonIA.setToolTipText("");
         jButtonIA.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonIA.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
-        jButtonIA.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-En PC Filled-50.png")); // NOI18N
+        jButtonIA.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jButtonIA.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-En PC Filled-50.png"))); // NOI18N
         jButtonIA.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonIA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,17 +119,17 @@ public class MainUser extends javax.swing.JFrame {
         getContentPane().add(jButtonIA);
         jButtonIA.setBounds(70, 80, 90, 80);
 
-        jButtonTG.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Añadir grupo de usuarios Hombre Hombre-50.png")); // NOI18N
+        jButtonTG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Grupo de usuarios hombre hombre-50.png"))); // NOI18N
         jButtonTG.setText("free4All");
         jButtonTG.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonTG.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
-        jButtonTG.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Grupo de usuarios hombre hombre Filled-50.png")); // NOI18N
+        jButtonTG.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jButtonTG.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Grupo de usuarios hombre hombre Filled-50.png"))); // NOI18N
         jButtonTG.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jButtonTG);
         jButtonTG.setBounds(220, 200, 90, 80);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Pictures\\dados-blancos-en-la-tabla-verde-dispositivos-de-juego-copie-el-espacio-para-el-texto-juego-del-concepto-de-azar-80535926.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/dados-blancos-en-la-tabla-verde-dispositivos-de-juego-copie-el-espacio-para-el-texto-juego-del-concepto-de-azar-80535926.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 600, 400);
 
