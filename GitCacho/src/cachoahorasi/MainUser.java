@@ -6,6 +6,7 @@
 package cachoahorasi;
 
 //import dados2.juego1vs1;
+import java.applet.AudioClip;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 /**
@@ -73,6 +74,17 @@ public class MainUser extends javax.swing.JFrame {
         jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
         jButton1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso Filled-50.png"))); // NOI18N
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton1MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton1MousePressed(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -87,6 +99,17 @@ public class MainUser extends javax.swing.JFrame {
         jButton2G.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
         jButton2G.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Grupo de usuarios hombre hombre Filled-50.png"))); // NOI18N
         jButton2G.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton2G.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton2GMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton2GMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton2GMousePressed(evt);
+            }
+        });
         jButton2G.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2GActionPerformed(evt);
@@ -101,6 +124,17 @@ public class MainUser extends javax.swing.JFrame {
         jButton3G.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
         jButton3G.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Antecedentes conferencia seleccionada Filled-50.png"))); // NOI18N
         jButton3G.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton3G.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton3GMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton3GMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton3GMousePressed(evt);
+            }
+        });
         getContentPane().add(jButton3G);
         jButton3G.setBounds(70, 200, 90, 80);
 
@@ -111,6 +145,17 @@ public class MainUser extends javax.swing.JFrame {
         jButtonIA.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
         jButtonIA.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-En PC Filled-50.png"))); // NOI18N
         jButtonIA.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButtonIA.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButtonIAMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButtonIAMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButtonIAMousePressed(evt);
+            }
+        });
         jButtonIA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonIAActionPerformed(evt);
@@ -125,6 +170,17 @@ public class MainUser extends javax.swing.JFrame {
         jButtonTG.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
         jButtonTG.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Grupo de usuarios hombre hombre Filled-50.png"))); // NOI18N
         jButtonTG.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButtonTG.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButtonTGMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButtonTGMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButtonTGMousePressed(evt);
+            }
+        });
         getContentPane().add(jButtonTG);
         jButtonTG.setBounds(220, 200, 90, 80);
 
@@ -147,10 +203,100 @@ public class MainUser extends javax.swing.JFrame {
         volver.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    //boton IA
     private void jButtonIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIAActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonIAActionPerformed
+    //sonido boton IA
+    private void jButtonIAMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonIAMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButtonIAMouseEntered
+
+    private void jButtonIAMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonIAMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButtonIAMouseExited
+
+    private void jButtonIAMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonIAMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButtonIAMousePressed
+    //sonido boton 1vs1
+    private void jButton2GMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2GMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButton2GMouseEntered
+
+    private void jButton2GMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2GMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButton2GMouseExited
+
+    private void jButton2GMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2GMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButton2GMousePressed
+    //sonido boton juego3
+    private void jButton3GMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3GMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButton3GMouseEntered
+
+    private void jButton3GMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3GMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButton3GMouseExited
+
+    private void jButton3GMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3GMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButton3GMousePressed
+    //sonido boton juego4
+    private void jButtonTGMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonTGMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButtonTGMouseEntered
+
+    private void jButtonTGMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonTGMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButtonTGMouseExited
+
+    private void jButtonTGMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonTGMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButtonTGMousePressed
+    //sonido boton volver
+    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButton1MouseEntered
+
+    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButton1MouseExited
+
+    private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButton1MousePressed
 
     /**
      * @param args the command line arguments

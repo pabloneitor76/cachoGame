@@ -8,6 +8,7 @@ package cachoahorasi;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import java.applet.AudioClip;
 
 /**
  *
@@ -24,6 +25,8 @@ public class juega1vs1 extends javax.swing.JFrame {
     public juega1vs1() {
         initComponents();
         this.setLocationRelativeTo(null);
+        
+        
         
         /*
         ImageIcon fondo1 = new ImageIcon(getClass().getResource("Imagenes/cart.png"));
@@ -141,6 +144,11 @@ public class juega1vs1 extends javax.swing.JFrame {
         jBjugar1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jBjugar1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-1 en círculo  Filled-50.png"))); // NOI18N
         jBjugar1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBjugar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jBjugar1MouseClicked(evt);
+            }
+        });
         jBjugar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBjugar1ActionPerformed(evt);
@@ -248,9 +256,9 @@ public class juega1vs1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonEditarJvJ);
-        jButtonEditarJvJ.setBounds(260, 20, 73, 25);
+        jButtonEditarJvJ.setBounds(250, 20, 73, 25);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Pizarra-gris-verde-imatge-principal_zoom.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-blancos-en-fondo-verde-dispositi.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
@@ -350,6 +358,12 @@ public class juega1vs1 extends javax.swing.JFrame {
         editar.setVisible(true);
         jButtonEditarJvJ.setEnabled(false);
     }//GEN-LAST:event_jButtonEditarJvJActionPerformed
+
+    private void jBjugar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar1MouseClicked
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/boton_11.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar1MouseClicked
     
     /**
      * @param args the command line arguments
