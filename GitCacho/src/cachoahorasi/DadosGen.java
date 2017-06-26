@@ -535,21 +535,7 @@ public class DadosGen extends javax.swing.JFrame {
             }
             //grande
             int plus = 5;
-            if(jSegundoT.isSelected()){
-                if(esGrande(dado)){
-                    gr = 50;
-                }else{
-                    if(esEsca(dado)){
-                        es = 20;
-                    }
-                    if(esFull(dado)){
-                        full = 30;
-                    }
-                    if(esPok(dado)){
-                        pok = 40;
-                    }
-                }
-            }else{
+            if(jSegundoT.isEnabled()){
                 if(esGrande(dado)){
                     gr = 50 + plus;
                 }else{
@@ -561,6 +547,20 @@ public class DadosGen extends javax.swing.JFrame {
                     }
                     if(esPok(dado)){
                         pok = 40 + plus;
+                    }
+                }
+            }else{
+                if(esGrande(dado)){
+                    gr = 50;
+                }else{
+                    if(esEsca(dado)){
+                        es = 20;
+                    }
+                    if(esFull(dado)){
+                        full = 30;
+                    }
+                    if(esPok(dado)){
+                        pok = 40;
                     }
                 }
             }

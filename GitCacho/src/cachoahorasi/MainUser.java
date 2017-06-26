@@ -105,7 +105,7 @@ public class MainUser extends javax.swing.JFrame {
         jButton3G.setBounds(70, 200, 90, 80);
 
         jButtonIA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-En PC-50.png"))); // NOI18N
-        jButtonIA.setText("4game");
+        jButtonIA.setText("1vsPC");
         jButtonIA.setToolTipText("");
         jButtonIA.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonIA.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N

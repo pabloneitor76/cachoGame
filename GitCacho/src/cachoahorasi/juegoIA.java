@@ -5,25 +5,24 @@
  */
 package cachoahorasi;
 
-import java.awt.Image;
-import javax.swing.ImageIcon;
+import static cachoahorasi.juega1vs1.jBjugar1;
+import static cachoahorasi.juega1vs1.jBjugar2;
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author Pabloneitor
+ * @author DELL
  */
-public class juega1vs1 extends javax.swing.JFrame {
-
+public class juegoIA extends javax.swing.JFrame {
     static int turnP;//controla par o impar en turnojugador
     static int turnoS = 22;//controla el turno actual
     static int turno = 0;//turno actual inicio
     /**
-     * Creates new form juega1vs1
+     * Creates new form juegoIA
      */
-    public juega1vs1() {
+    public juegoIA() {
         initComponents();
-        this.setLocationRelativeTo(null);
+         this.setLocationRelativeTo(null);
         
         /*
         ImageIcon fondo1 = new ImageIcon(getClass().getResource("Imagenes/cart.png"));
@@ -31,8 +30,8 @@ public class juega1vs1 extends javax.swing.JFrame {
         jLabel4.setIcon(fondo2);
         this.repaint();
         */
-         jBjugar1.setEnabled(true);
-         jBjugar2.setEnabled(false);
+        jBjugar1.setEnabled(true);
+        jBjugar2.setEnabled(false);
         
          //........boton jugar 1
         jBjugar1.setOpaque(false);
@@ -51,6 +50,7 @@ public class juega1vs1 extends javax.swing.JFrame {
         jBexit.setContentAreaFilled(false);
         jBexit.setBorderPainted(false);
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -60,13 +60,26 @@ public class juega1vs1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPuntaje22 = new javax.swing.JLabel();
+        jPuntajePoker2 = new javax.swing.JLabel();
+        jPuntaje55 = new javax.swing.JLabel();
+        jPuntaje33 = new javax.swing.JLabel();
+        jPuntajeFull2 = new javax.swing.JLabel();
+        jPuntaje66 = new javax.swing.JLabel();
         jPuntaje1 = new javax.swing.JLabel();
+        jPuntajeG12 = new javax.swing.JLabel();
         jPuntajeEs = new javax.swing.JLabel();
+        jPuntajeG22 = new javax.swing.JLabel();
         jPuntaje4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jPuntaje2 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jPuntajePoker = new javax.swing.JLabel();
         jPuntaje5 = new javax.swing.JLabel();
+        jBjugar2 = new javax.swing.JButton();
+        jBexit = new javax.swing.JButton();
         jPuntaje3 = new javax.swing.JLabel();
+        jButtonEditarJvJ = new javax.swing.JButton();
         jPuntajeFull = new javax.swing.JLabel();
         jPuntaje6 = new javax.swing.JLabel();
         jPuntajeG1 = new javax.swing.JLabel();
@@ -76,36 +89,63 @@ public class juega1vs1 extends javax.swing.JFrame {
         jPuntaje11 = new javax.swing.JLabel();
         jPuntajeES2 = new javax.swing.JLabel();
         jPuntaje44 = new javax.swing.JLabel();
-        jPuntaje22 = new javax.swing.JLabel();
-        jPuntajePoker2 = new javax.swing.JLabel();
-        jPuntaje55 = new javax.swing.JLabel();
-        jPuntaje33 = new javax.swing.JLabel();
-        jPuntajeFull2 = new javax.swing.JLabel();
-        jPuntaje66 = new javax.swing.JLabel();
-        jPuntajeG12 = new javax.swing.JLabel();
-        jPuntajeG22 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jBjugar2 = new javax.swing.JButton();
-        jBexit = new javax.swing.JButton();
-        jButtonEditarJvJ = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(620, 440));
+        setPreferredSize(new java.awt.Dimension(610, 440));
         getContentPane().setLayout(null);
+        getContentPane().add(jPuntaje22);
+        jPuntaje22.setBounds(384, 214, 40, 15);
+
+        jPuntajePoker2.setText("0");
+        getContentPane().add(jPuntajePoker2);
+        jPuntajePoker2.setBounds(451, 252, 40, 15);
+
+        jPuntaje55.setText("0");
+        getContentPane().add(jPuntaje55);
+        jPuntaje55.setBounds(509, 214, 40, 15);
+
+        jPuntaje33.setText("0");
+        getContentPane().add(jPuntaje33);
+        jPuntaje33.setBounds(384, 252, 40, 17);
+
+        jPuntajeFull2.setText("0");
+        getContentPane().add(jPuntajeFull2);
+        jPuntajeFull2.setBounds(451, 214, 40, 17);
+
+        jPuntaje66.setText("0");
+        getContentPane().add(jPuntaje66);
+        jPuntaje66.setBounds(509, 252, 40, 17);
         getContentPane().add(jPuntaje1);
         jPuntaje1.setBounds(74, 180, 30, 14);
+
+        jPuntajeG12.setText("0");
+        getContentPane().add(jPuntajeG12);
+        jPuntajeG12.setBounds(432, 281, 40, 14);
 
         jPuntajeEs.setText("0");
         getContentPane().add(jPuntajeEs);
         jPuntajeEs.setBounds(110, 180, 38, 14);
 
+        jPuntajeG22.setText("0");
+        getContentPane().add(jPuntajeG22);
+        jPuntajeG22.setBounds(484, 281, 40, 14);
+
         jPuntaje4.setText("0");
         getContentPane().add(jPuntaje4);
         jPuntaje4.setBounds(150, 180, 40, 14);
+
+        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel1.setText("jugador_1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(70, 50, 156, 25);
         getContentPane().add(jPuntaje2);
         jPuntaje2.setBounds(72, 220, 30, 15);
+
+        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel2.setText("jugador_2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(380, 50, 135, 25);
 
         jPuntajePoker.setText("0");
         getContentPane().add(jPuntajePoker);
@@ -115,9 +155,46 @@ public class juega1vs1 extends javax.swing.JFrame {
         getContentPane().add(jPuntaje5);
         jPuntaje5.setBounds(150, 220, 40, 14);
 
+        jBjugar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Robot 2-50.png"))); // NOI18N
+        jBjugar2.setText("IA");
+        jBjugar2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jBjugar2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jBjugar2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Robot 2 Filled-50.png"))); // NOI18N
+        jBjugar2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBjugar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBjugar2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jBjugar2);
+        jBjugar2.setBounds(410, 90, 84, 70);
+
+        jBexit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso-50.png"))); // NOI18N
+        jBexit.setText("Salir");
+        jBexit.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jBexit.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jBexit.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso Filled-50.png"))); // NOI18N
+        jBexit.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBexit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBexitActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jBexit);
+        jBexit.setBounds(500, 320, 80, 70);
+
         jPuntaje3.setText("0");
         getContentPane().add(jPuntaje3);
         jPuntaje3.setBounds(72, 250, 30, 16);
+
+        jButtonEditarJvJ.setText("EditJvsJ");
+        jButtonEditarJvJ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonEditarJvJActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonEditarJvJ);
+        jButtonEditarJvJ.setBounds(260, 20, 73, 25);
 
         jPuntajeFull.setText("0");
         getContentPane().add(jPuntajeFull);
@@ -172,83 +249,6 @@ public class juega1vs1 extends javax.swing.JFrame {
         jPuntaje44.setText("0");
         getContentPane().add(jPuntaje44);
         jPuntaje44.setBounds(509, 181, 40, 15);
-        getContentPane().add(jPuntaje22);
-        jPuntaje22.setBounds(384, 214, 40, 15);
-
-        jPuntajePoker2.setText("0");
-        getContentPane().add(jPuntajePoker2);
-        jPuntajePoker2.setBounds(451, 252, 40, 15);
-
-        jPuntaje55.setText("0");
-        getContentPane().add(jPuntaje55);
-        jPuntaje55.setBounds(509, 214, 40, 15);
-
-        jPuntaje33.setText("0");
-        getContentPane().add(jPuntaje33);
-        jPuntaje33.setBounds(384, 252, 40, 17);
-
-        jPuntajeFull2.setText("0");
-        getContentPane().add(jPuntajeFull2);
-        jPuntajeFull2.setBounds(451, 214, 40, 17);
-
-        jPuntaje66.setText("0");
-        getContentPane().add(jPuntaje66);
-        jPuntaje66.setBounds(509, 252, 40, 17);
-
-        jPuntajeG12.setText("0");
-        getContentPane().add(jPuntajeG12);
-        jPuntajeG12.setBounds(432, 281, 40, 14);
-
-        jPuntajeG22.setText("0");
-        getContentPane().add(jPuntajeG22);
-        jPuntajeG22.setBounds(484, 281, 40, 14);
-
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        jLabel1.setText("jugador_1");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(70, 50, 156, 25);
-
-        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        jLabel2.setText("jugador_2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(380, 50, 135, 25);
-
-        jBjugar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-2 en círculo -50 (1).png"))); // NOI18N
-        jBjugar2.setText("Juega2");
-        jBjugar2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Tiempo-50.png"))); // NOI18N
-        jBjugar2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jBjugar2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-2 en círculo  Filled-50.png"))); // NOI18N
-        jBjugar2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jBjugar2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBjugar2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jBjugar2);
-        jBjugar2.setBounds(410, 90, 84, 70);
-
-        jBexit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso-50.png"))); // NOI18N
-        jBexit.setText("Salir");
-        jBexit.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jBexit.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
-        jBexit.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso Filled-50.png"))); // NOI18N
-        jBexit.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jBexit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBexitActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jBexit);
-        jBexit.setBounds(500, 320, 80, 70);
-
-        jButtonEditarJvJ.setText("EditJvsJ");
-        jButtonEditarJvJ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonEditarJvJActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonEditarJvJ);
-        jButtonEditarJvJ.setBounds(260, 20, 73, 25);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Pizarra-gris-verde-imatge-principal_zoom.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
@@ -259,15 +259,37 @@ public class juega1vs1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jBjugar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar2ActionPerformed
+
+        DadosGen juega1 = new DadosGen();
+        juega1.setVisible(true);
+        turno++;
+        System.out.println("turnoNro: " + turno);
+        jBjugar2.setEnabled(false);
+        jBjugar1.setEnabled(true);
+    }//GEN-LAST:event_jBjugar2ActionPerformed
+
+    private void jBexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBexitActionPerformed
+        MainUser game = new MainUser();
+        game.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jBexitActionPerformed
+
+    private void jButtonEditarJvJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditarJvJActionPerformed
+        EditJvsJ editar = new EditJvsJ();
+        editar.setVisible(true);
+        jButtonEditarJvJ.setEnabled(false);
+    }//GEN-LAST:event_jButtonEditarJvJActionPerformed
+
     private void jBjugar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar1ActionPerformed
-        
-            DadosGen juega1 = new DadosGen();
-            juega1.setVisible(true);
-            turno++;
-            System.out.println("turnoNro: " + turno);
-            jBjugar1.setEnabled(false);
-            jBjugar2.setEnabled(true);
-  
+
+        DadosGen juega1 = new DadosGen();
+        juega1.setVisible(true);
+        turno++;
+        System.out.println("turnoNro: " + turno);
+        jBjugar1.setEnabled(false);
+        jBjugar2.setEnabled(true);
+
     }//GEN-LAST:event_jBjugar1ActionPerformed
 
     private void jBresultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBresultadoActionPerformed
@@ -307,50 +329,27 @@ public class juega1vs1 extends javax.swing.JFrame {
 
             if(p1>p2){
                 JOptionPane.showMessageDialog(this,
-                    "Puntaje Jugador 1:" + p1 + 
+                    "Puntaje Jugador 1:" + p1 +
                     "\nPuntaje Jugador 2:" + p2+
                     "\n\nJugador 1 Gano");
             }else if(p2>p1){
                 JOptionPane.showMessageDialog(this,
-                    "Puntaje Jugador 1:" + p1 + 
+                    "Puntaje Jugador 1:" + p1 +
                     "\nPuntaje Jugador 2:" + p2+
                     "\n\nJugador 2 Gano");
             }else if(p1== p2){
                 JOptionPane.showMessageDialog(this,
-                    "Puntaje Jugador 1:" + p1 + 
+                    "Puntaje Jugador 1:" + p1 +
                     "\nPuntaje Jugador 2:" + p2+
                     "\n\nEmpate");
             }
         }else{
             JOptionPane.showMessageDialog(this,
-                    "Debe terminar los turnos");
+                "Debe terminar los turnos");
         }
-        
+
     }//GEN-LAST:event_jBresultadoActionPerformed
 
-    private void jBjugar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar2ActionPerformed
-         
-            DadosGen juega1 = new DadosGen();
-            juega1.setVisible(true);
-            turno++;
-            System.out.println("turnoNro: " + turno);
-            jBjugar2.setEnabled(false);
-            jBjugar1.setEnabled(true);
-
-    }//GEN-LAST:event_jBjugar2ActionPerformed
-    
-    private void jBexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBexitActionPerformed
-        MainUser game = new MainUser();
-        game.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jBexitActionPerformed
-
-    private void jButtonEditarJvJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditarJvJActionPerformed
-        EditJvsJ editar = new EditJvsJ();
-        editar.setVisible(true);
-        jButtonEditarJvJ.setEnabled(false);
-    }//GEN-LAST:event_jButtonEditarJvJActionPerformed
-    
     /**
      * @param args the command line arguments
      */
@@ -368,20 +367,20 @@ public class juega1vs1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(juega1vs1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(juegoIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(juega1vs1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(juegoIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(juega1vs1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(juegoIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(juega1vs1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(juegoIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new juega1vs1().setVisible(true);
+                new juegoIA().setVisible(true);
             }
         });
     }
