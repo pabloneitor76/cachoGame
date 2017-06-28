@@ -24,7 +24,7 @@ public class inicio extends javax.swing.JFrame {
         // setIconImage(new ImageIcon(getClass().getResource("../Imagenes/Póker-de-dados.jpg")).getImage());
        this.setLocationRelativeTo(null);
 
-       ImageIcon fondo1 = new ImageIcon(getClass().getResource("/Pictures/fondo.png"));
+       ImageIcon fondo1 = new ImageIcon(getClass().getResource("/Pictures/fondos-geometricos-L-j8PlAC.jpg"));
        ImageIcon fondo2 = new ImageIcon(fondo1.getImage().getScaledInstance(jLabel1.getWidth(),jLabel1.getHeight(), Image.SCALE_DEFAULT));
        jLabel1.setIcon(fondo2);
        this.repaint();
@@ -59,6 +59,8 @@ public class inicio extends javax.swing.JFrame {
         jButtonReglas = new javax.swing.JButton();
         jButtonCreditos = new javax.swing.JButton();
         jButtonSalir = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -173,8 +175,18 @@ public class inicio extends javax.swing.JFrame {
         getContentPane().add(jButtonSalir);
         jButtonSalir.setBounds(450, 280, 90, 80);
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/cooltext249515936388735.png"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(200, 80, 290, 110);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/DADopng-iloveimg-resized.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(40, 70, 170, 150);
+
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/fondos-geometricos-L-j8PlAC.jpg"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(800, 600));
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 600, 400);
@@ -324,5 +336,7 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JButton jButtonReglas;
     private javax.swing.JButton jButtonSalir;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

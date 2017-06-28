@@ -91,7 +91,6 @@ public class juega1vs1 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jBjugar2 = new javax.swing.JButton();
         jBexit = new javax.swing.JButton();
-        jButtonEditarJvJ = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -155,7 +154,7 @@ public class juega1vs1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jBjugar1);
-        jBjugar1.setBounds(90, 90, 84, 70);
+        jBjugar1.setBounds(90, 80, 84, 70);
 
         jBresultado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Leaderboard-50.png"))); // NOI18N
         jBresultado.setText("Resultado");
@@ -214,12 +213,12 @@ public class juega1vs1 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
         jLabel1.setText("jugador_1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(70, 50, 156, 25);
+        jLabel1.setBounds(70, 40, 156, 25);
 
         jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
         jLabel2.setText("jugador_2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(380, 50, 135, 25);
+        jLabel2.setBounds(380, 40, 135, 25);
 
         jBjugar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-2 en círculo -50 (1).png"))); // NOI18N
         jBjugar2.setText("Juega2");
@@ -233,7 +232,7 @@ public class juega1vs1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jBjugar2);
-        jBjugar2.setBounds(410, 90, 84, 70);
+        jBjugar2.setBounds(410, 80, 84, 70);
 
         jBexit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso-50.png"))); // NOI18N
         jBexit.setText("Salir");
@@ -249,20 +248,11 @@ public class juega1vs1 extends javax.swing.JFrame {
         getContentPane().add(jBexit);
         jBexit.setBounds(500, 320, 80, 70);
 
-        jButtonEditarJvJ.setText("EditJvsJ");
-        jButtonEditarJvJ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonEditarJvJActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonEditarJvJ);
-        jButtonEditarJvJ.setBounds(250, 20, 73, 25);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-blancos-en-fondo-verde-dispositi.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/imagesAPSXWOCO.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 0, 600, 400);
+        jLabel3.setBounds(0, 0, 20, 20);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -353,12 +343,6 @@ public class juega1vs1 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jBexitActionPerformed
 
-    private void jButtonEditarJvJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditarJvJActionPerformed
-        EditJvsJ editar = new EditJvsJ();
-        editar.setVisible(true);
-        jButtonEditarJvJ.setEnabled(false);
-    }//GEN-LAST:event_jButtonEditarJvJActionPerformed
-
     private void jBjugar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar1MouseClicked
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/boton_11.wav"));
@@ -405,7 +389,6 @@ public class juega1vs1 extends javax.swing.JFrame {
     public static javax.swing.JButton jBjugar1;
     public static javax.swing.JButton jBjugar2;
     private javax.swing.JButton jBresultado;
-    private javax.swing.JButton jButtonEditarJvJ;
     public static javax.swing.JLabel jLabel1;
     public static javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -17,6 +17,11 @@ public class EditJvsJ extends javax.swing.JFrame {
     public EditJvsJ() {
         initComponents();
         this.setLocationRelativeTo(null);
+        
+        //........boton jugar
+       jButtonGuardar.setOpaque(false);
+       jButtonGuardar.setContentAreaFilled(false);
+       jButtonGuardar.setBorderPainted(false);
     }
 
     /**
@@ -34,19 +39,34 @@ public class EditJvsJ extends javax.swing.JFrame {
         jButtonSalir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(290, 390));
+        getContentPane().setLayout(null);
 
         jTextField1.setText("Jugador_1");
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(43, 93, 120, 30);
 
         jTextField2.setText("Jugador_2");
+        getContentPane().add(jTextField2);
+        jTextField2.setBounds(43, 175, 120, 30);
 
+        jButtonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Guardar-50.png"))); // NOI18N
         jButtonGuardar.setText("Guardar");
+        jButtonGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGuardar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jButtonGuardar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Guardar Filled-50.png"))); // NOI18N
+        jButtonGuardar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonGuardarActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonGuardar);
+        jButtonGuardar.setBounds(50, 260, 80, 70);
 
         jButtonSalir.setText("Salir");
         jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -54,49 +74,31 @@ public class EditJvsJ extends javax.swing.JFrame {
                 jButtonSalirActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonSalir);
+        jButtonSalir.setBounds(190, 293, 55, 25);
 
-        jLabel1.setText("EditarNombreJ1:");
+        jLabel1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 2, 11)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("Nombre Jugador 1:");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(43, 60, 140, 14);
 
-        jLabel2.setText("EditarNombreJ2:");
+        jLabel2.setFont(new java.awt.Font("Gill Sans Ultra Bold", 2, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("Nombre Jugador 2:");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(43, 142, 140, 14);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButtonGuardar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonSalir))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 207, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField2)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE))))
-                .addGap(42, 42, 42))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 160, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonGuardar)
-                    .addComponent(jButtonSalir))
-                .addGap(32, 32, 32))
-        );
+        jLabel4.setFont(new java.awt.Font("Gill Sans Ultra Bold", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("Ingrese Nombre de Jugadores");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(10, 20, 260, 15);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo-de-los-rectángulos-del-vidrio-verde-76077534.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 280, 350);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -158,6 +160,8 @@ public class EditJvsJ extends javax.swing.JFrame {
     private javax.swing.JButton jButtonSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables

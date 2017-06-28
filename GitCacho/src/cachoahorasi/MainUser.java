@@ -195,6 +195,8 @@ public class MainUser extends javax.swing.JFrame {
     private void jButton2GActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2GActionPerformed
         juega1vs1 game11 = new juega1vs1();
         game11.setVisible(true);
+        EditJvsJ editar = new EditJvsJ();
+        editar.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2GActionPerformed
     //boton volver
