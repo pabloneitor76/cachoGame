@@ -269,29 +269,24 @@ public class DadosGen extends javax.swing.JFrame {
         
         //Dado_1
         if(jCheckDado1.isSelected()){
-            //jSegundoT.setEnabled(true);
+            
             dado[0] = objDado1.lanzarDado();
             jLabel1.setText(""+dado[0]);
             imagenesResult objImag1 = new imagenesResult();
             jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
             jVoltearD.setEnabled(true);
             SiDadoT2++;
-        }/*else{
-            JOptionPane.showMessageDialog(this,"Seleccione un dado o presione resultado");
-            jVoltearD.setEnabled(false);
-        }*/
+        }
         //Dado_2
         if(jCheckDado2.isSelected()){
-            //jSegundoT.setEnabled(true);
+            
             dado[1] = objDado1.lanzarDado();
             jLabel2.setText(""+dado[1]);
             imagenesResult objImag2 = new imagenesResult();
             jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
             jVoltearD.setEnabled(true);
             SiDadoT2++;
-        }/*else{
-            jSegundoT.setEnabled(false);
-        }*/
+        }
         //Dado_3
         if(jCheckDado3.isSelected()){
             dado[2] = objDado1.lanzarDado();
@@ -724,9 +719,9 @@ public class DadosGen extends javax.swing.JFrame {
             imagenes1 objImag1 = new imagenes1();
             jCheckDado1.setIcon(objImag1.gifDado1(dado[0]));
             
-        }else{
+        }/*else{
             
-        }
+        }*/
     }//GEN-LAST:event_jCheckDado1ActionPerformed
 
     private void jCheckDado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado2ActionPerformed

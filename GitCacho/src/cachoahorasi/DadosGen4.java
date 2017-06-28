@@ -9,20 +9,20 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author pabloneitor
+ * @author DELL
  */
-public class DadosGen3 extends javax.swing.JFrame {
+public class DadosGen4 extends javax.swing.JFrame {
     private int obj;
     Cubilete objDado1 = new Cubilete();
     int [] dado = objDado1.cubileteLanza();
     int SiDadoT2 = 0;
     int voltea2 = 0;
-    
     /**
-     * Creates new form DadosGen3
+     * Creates new form DadosGen4
      */
-    public DadosGen3() {
+    public DadosGen4() {
         initComponents();
+        //
         this.setLocationRelativeTo(null);
         jSegundoT.setEnabled(false);
         jVoltearD.setEnabled(false);
@@ -50,7 +50,8 @@ public class DadosGen3 extends javax.swing.JFrame {
        jTerminarT.setContentAreaFilled(false);
        jTerminarT.setBorderPainted(false);
         //
-        
+        //
+
     }
 
     /**
@@ -62,87 +63,37 @@ public class DadosGen3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jCheckDado1 = new javax.swing.JCheckBox();
-        jPrimerT = new javax.swing.JButton();
-        jCheckDado2 = new javax.swing.JCheckBox();
-        jSegundoT = new javax.swing.JButton();
-        jCheckDado3 = new javax.swing.JCheckBox();
-        jVoltearD = new javax.swing.JButton();
-        jCheckDado4 = new javax.swing.JCheckBox();
-        jTerminarT = new javax.swing.JButton();
-        jCheckDado5 = new javax.swing.JCheckBox();
-        jSalir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jSalir = new javax.swing.JButton();
+        jCheckDado5 = new javax.swing.JCheckBox();
+        jTerminarT = new javax.swing.JButton();
+        jCheckDado4 = new javax.swing.JCheckBox();
+        jVoltearD = new javax.swing.JButton();
+        jCheckDado3 = new javax.swing.JCheckBox();
+        jSegundoT = new javax.swing.JButton();
+        jCheckDado2 = new javax.swing.JCheckBox();
+        jPrimerT = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jCheckDado1 = new javax.swing.JCheckBox();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("0");
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("0");
 
-        jCheckDado1.setText("jCheckBox1");
-        jCheckDado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-01.gif"))); // NOI18N
-        jCheckDado1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckDado1ActionPerformed(evt);
-            }
-        });
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("0");
 
-        jPrimerT.setText("PrimerT");
-        jPrimerT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPrimerTActionPerformed(evt);
-            }
-        });
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("0");
 
-        jCheckDado2.setText("jCheckBox2");
-        jCheckDado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-02.gif"))); // NOI18N
-        jCheckDado2.addActionListener(new java.awt.event.ActionListener() {
+        jSalir.setText("Salir");
+        jSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckDado2ActionPerformed(evt);
-            }
-        });
-
-        jSegundoT.setText("SegundoT");
-        jSegundoT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jSegundoTActionPerformed(evt);
-            }
-        });
-
-        jCheckDado3.setText("jCheckBox3");
-        jCheckDado3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-03.gif"))); // NOI18N
-        jCheckDado3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckDado3ActionPerformed(evt);
-            }
-        });
-
-        jVoltearD.setText("VoltearD");
-        jVoltearD.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jVoltearDActionPerformed(evt);
-            }
-        });
-
-        jCheckDado4.setText("jCheckBox4");
-        jCheckDado4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-04.gif"))); // NOI18N
-        jCheckDado4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckDado4ActionPerformed(evt);
-            }
-        });
-
-        jTerminarT.setText("TerminarT");
-        jTerminarT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTerminarTActionPerformed(evt);
+                jSalirActionPerformed(evt);
             }
         });
 
@@ -154,21 +105,71 @@ public class DadosGen3 extends javax.swing.JFrame {
             }
         });
 
-        jSalir.setText("Salir");
-        jSalir.addActionListener(new java.awt.event.ActionListener() {
+        jTerminarT.setText("TerminarT");
+        jTerminarT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jSalirActionPerformed(evt);
+                jTerminarTActionPerformed(evt);
             }
         });
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("0");
+        jCheckDado4.setText("jCheckBox4");
+        jCheckDado4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-04.gif"))); // NOI18N
+        jCheckDado4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckDado4ActionPerformed(evt);
+            }
+        });
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("0");
+        jVoltearD.setText("VoltearD");
+        jVoltearD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jVoltearDActionPerformed(evt);
+            }
+        });
+
+        jCheckDado3.setText("jCheckBox3");
+        jCheckDado3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-03.gif"))); // NOI18N
+        jCheckDado3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckDado3ActionPerformed(evt);
+            }
+        });
+
+        jSegundoT.setText("SegundoT");
+        jSegundoT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jSegundoTActionPerformed(evt);
+            }
+        });
+
+        jCheckDado2.setText("jCheckBox2");
+        jCheckDado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-02.gif"))); // NOI18N
+        jCheckDado2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckDado2ActionPerformed(evt);
+            }
+        });
+
+        jPrimerT.setText("PrimerT");
+        jPrimerT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPrimerTActionPerformed(evt);
+            }
+        });
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("0");
+
+        jCheckDado1.setText("jCheckBox1");
+        jCheckDado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-01.gif"))); // NOI18N
+        jCheckDado1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckDado1ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -187,11 +188,11 @@ public class DadosGen3 extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jCheckDado1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(73, 73, 73)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckDado2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(42, 42, 42)
+                                    .addComponent(jCheckDado2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jCheckDado3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -252,276 +253,17 @@ public class DadosGen3 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jCheckDado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado1ActionPerformed
-        if(jCheckDado1.isSelected()){
-            imagenes1 objImag1 = new imagenes1();
-            jCheckDado1.setIcon(objImag1.gifDado1(dado[0]));
-        }
-    }//GEN-LAST:event_jCheckDado1ActionPerformed
-    //primer tiro
-    private void jPrimerTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPrimerTActionPerformed
-        //dado1
-        jLabel1.setText(""+dado[0]);
-        imagenesResult objImag1 = new imagenesResult();
-        jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
-        //dado2
-        jLabel2.setText(""+dado[1]);
-        imagenesResult objImag2 = new imagenesResult();
-        jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
-        //dado3
-        jLabel3.setText(""+dado[2]);
-        imagenesResult objImag3 = new imagenesResult();
-        jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
-        //dado4
-        jLabel4.setText(""+dado[3]);
-        imagenesResult objImag4 = new imagenesResult();
-        jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
-        //dado5
-        jLabel5.setText(""+dado[4]);
-        imagenesResult objImag5 = new imagenesResult();
-        jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
+    private void jSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSalirActionPerformed
+        dispose();
+    }//GEN-LAST:event_jSalirActionPerformed
 
-        JOptionPane.showMessageDialog(this,"Seleccione Dados Para Segundo Tiro");
-
-        jPrimerT.setEnabled(false);
-        jSegundoT.setEnabled(true);
-    }//GEN-LAST:event_jPrimerTActionPerformed
-
-    private void jCheckDado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado2ActionPerformed
-        if(jCheckDado2.isSelected()){
-            imagenes1 objImag1 = new imagenes1();
-            jCheckDado2.setIcon(objImag1.gifDado1(dado[1]));
-        }
-    }//GEN-LAST:event_jCheckDado2ActionPerformed
-    //segundo tiro
-    private void jSegundoTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSegundoTActionPerformed
-
-        //Dado_1
-        if(jCheckDado1.isSelected()){
-            dado[0] = objDado1.lanzarDado();
-            jLabel1.setText(""+dado[0]);
-            imagenesResult objImag1 = new imagenesResult();
-            jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
-            jVoltearD.setEnabled(true);
-            SiDadoT2++;
-        }
-        //Dado_2
-        if(jCheckDado2.isSelected()){
-            dado[1] = objDado1.lanzarDado();
-            jLabel2.setText(""+dado[1]);
-            imagenesResult objImag2 = new imagenesResult();
-            jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
-            jVoltearD.setEnabled(true);
-            SiDadoT2++;
-        }
-        //Dado_3
-        if(jCheckDado3.isSelected()){
-            dado[2] = objDado1.lanzarDado();
-            jLabel3.setText(""+dado[2]);
-            imagenesResult objImag3 = new imagenesResult();
-            jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
-            jVoltearD.setEnabled(true);
-            SiDadoT2++;
-        }
-        //Dado_4
-        if(jCheckDado4.isSelected()){
-            dado[3] = objDado1.lanzarDado();
-            jLabel4.setText(""+dado[3]);
-            imagenesResult objImag4 = new imagenesResult();
-            jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
-            jVoltearD.setEnabled(true);
-            SiDadoT2++;
-        }
-        //Dado_5
+    private void jCheckDado5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado5ActionPerformed
         if(jCheckDado5.isSelected()){
-            dado[4] = objDado1.lanzarDado();
-            jLabel5.setText(""+dado[4]);
-            imagenesResult objImag5 = new imagenesResult();
-            jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
-            jVoltearD.setEnabled(true);
-            SiDadoT2++;
-        }
-        //
-        if(SiDadoT2 != 0){
-            jVoltearD.setEnabled(true);
-            jSegundoT.setEnabled(false);
-            JOptionPane.showMessageDialog(this,"Seleccione Dados A Voltear");
-        }else{
-            JOptionPane.showMessageDialog(this,"Seleccione un dado o presione resultado");
-            //jVoltearD.setEnabled(false);
-        }
-        //
-        jCheckDado1.setSelected(false);
-        jCheckDado2.setSelected(false);
-        jCheckDado3.setSelected(false);
-        jCheckDado4.setSelected(false);
-        jCheckDado5.setSelected(false);
-
-        //JOptionPane.showMessageDialog(this,"Seleccione Dados A Voltear");
-
-        //jSegundoT.setEnabled(false);
-        //jVoltearD.setEnabled(true);
-        jTerminarT.setEnabled(false);
-    }//GEN-LAST:event_jSegundoTActionPerformed
-
-    private void jCheckDado3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado3ActionPerformed
-        if(jCheckDado3.isSelected()){
             imagenes1 objImag1 = new imagenes1();
-            jCheckDado3.setIcon(objImag1.gifDado1(dado[2]));
+            jCheckDado5.setIcon(objImag1.gifDado1(dado[4]));
         }
-    }//GEN-LAST:event_jCheckDado3ActionPerformed
-    //voltear dado
-    private void jVoltearDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jVoltearDActionPerformed
-
-        //Dado_1
-        if(jCheckDado1.isSelected()){
-            /*dado[0] = objDado1.voltearDado(dado[0]);
-            jLabel1.setText(""+dado[0]);
-            imagenesResult objImag1 = new imagenesResult();
-            jCheckDado1.setIcon(objImag1.Imaen(dado[0]));*/
-            voltea2++;
-
-        }
-        //Dado_2
-        if(jCheckDado2.isSelected()){
-            /*dado[1] = objDado1.voltearDado(dado[1]);
-            jLabel2.setText(""+dado[1]);
-            imagenesResult objImag2 = new imagenesResult();
-            jCheckDado2.setIcon(objImag2.Imaen(dado[1]));*/
-            voltea2++;
-
-        }
-        //Dado_3
-        if(jCheckDado3.isSelected()){
-            /*dado[2] = objDado1.voltearDado(dado[2]);
-            jLabel3.setText(""+dado[2]);
-            imagenesResult objImag3 = new imagenesResult();
-            jCheckDado3.setIcon(objImag3.Imaen(dado[2]));*/
-            voltea2++;
-
-        }
-        //Dado_4
-        if(jCheckDado4.isSelected()){
-            /*dado[3] = objDado1.voltearDado(dado[3]);
-            jLabel4.setText(""+dado[3]);
-            imagenesResult objImag4 = new imagenesResult();
-            jCheckDado4.setIcon(objImag4.Imaen(dado[3]));*/
-            voltea2++;
-
-        }
-        //Dado_5
-        if(jCheckDado5.isSelected()){
-            /*dado[4] = objDado1.voltearDado(dado[4]);
-            jLabel5.setText(""+dado[4]);
-            imagenesResult objImag5 = new imagenesResult();
-            jCheckDado5.setIcon(objImag5.Imaen(dado[4]));*/
-            voltea2++;
-        }
-        //
-        if(voltea2 == 1 || voltea2 == 2){
-            //
-            jVoltearD.setEnabled(false);
-            //jSegundoT.setEnabled(false);
-            JOptionPane.showMessageDialog(this,"Presione terminar");
-            //Dado_1
-            if(jCheckDado1.isSelected()){
-                dado[0] = objDado1.voltearDado(dado[0]);
-                jLabel1.setText(""+dado[0]);
-                imagenesResult objImag1 = new imagenesResult();
-                jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
-                //voltea2++;
-                
-            }
-            //Dado_2
-            if(jCheckDado2.isSelected()){
-                dado[1] = objDado1.voltearDado(dado[1]);
-                jLabel2.setText(""+dado[1]);
-                imagenesResult objImag2 = new imagenesResult();
-                jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
-                //voltea2++;
-                
-            }
-            //Dado_3
-            if(jCheckDado3.isSelected()){
-                dado[2] = objDado1.voltearDado(dado[2]);
-                jLabel3.setText(""+dado[2]);
-                imagenesResult objImag3 = new imagenesResult();
-                jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
-                //voltea2++;
-            }
-            //Dado_4
-            if(jCheckDado4.isSelected()){
-                dado[3] = objDado1.voltearDado(dado[3]);
-                jLabel4.setText(""+dado[3]);
-                imagenesResult objImag4 = new imagenesResult();
-                jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
-                //voltea2++;
-                
-            }
-            //Dado_5
-            if(jCheckDado5.isSelected()){
-                dado[4] = objDado1.voltearDado(dado[4]);
-                jLabel5.setText(""+dado[4]);
-                imagenesResult objImag5 = new imagenesResult();
-                jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
-                //voltea2++;
-            }
-            jTerminarT.setEnabled(true);
-        }else{
-            JOptionPane.showMessageDialog(this,"Seleccione solo uno o dos dados a voltear");
-            //jVoltearD.setEnabled(false);
-             //Dado_1
-            if(jCheckDado1.isSelected()){
-                imagenesResult objImag1 = new imagenesResult();
-                jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
-                
-            }
-            //Dado_2
-            if(jCheckDado2.isSelected()){
-                
-                imagenesResult objImag2 = new imagenesResult();
-                jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
-                
-            }
-            //Dado_3
-            if(jCheckDado3.isSelected()){
-                
-                imagenesResult objImag3 = new imagenesResult();
-                jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
-            }
-            //Dado_4
-            if(jCheckDado4.isSelected()){
-                
-                imagenesResult objImag4 = new imagenesResult();
-                jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
-                
-            }
-            //Dado_5
-            if(jCheckDado5.isSelected()){
-                
-                imagenesResult objImag5 = new imagenesResult();
-                jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
-            }
-            //
-            jCheckDado1.setSelected(false);
-            jCheckDado2.setSelected(false);
-            jCheckDado3.setSelected(false);
-            jCheckDado4.setSelected(false);
-            jCheckDado5.setSelected(false);
-            voltea2 = 0;
-        }
-        //
-
-        //jVoltearD.setEnabled(false);
-
-    }//GEN-LAST:event_jVoltearDActionPerformed
-
-    private void jCheckDado4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado4ActionPerformed
-        if(jCheckDado4.isSelected()){
-            imagenes1 objImag1 = new imagenes1();
-            jCheckDado4.setIcon(objImag1.gifDado1(dado[3]));
-        }
-    }//GEN-LAST:event_jCheckDado4ActionPerformed
+    }//GEN-LAST:event_jCheckDado5ActionPerformed
+    //
     //metodo de ordenamiento
     private void ordenarDados(int[] dado){
         for(int i = 0; i < dado.length - 1; i++){
@@ -651,6 +393,7 @@ public class DadosGen3 extends javax.swing.JFrame {
     }
     //
     //Terminar Turno
+    //
     private void jTerminarTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTerminarTActionPerformed
         int b = 0;
         int t = 0;
@@ -735,19 +478,277 @@ public class DadosGen3 extends javax.swing.JFrame {
         puntajeT3.jLabel9.setText(Integer.toString(full));
         puntajeT3.jLabel8.setText(Integer.toString(pok));
         dispose();
-
     }//GEN-LAST:event_jTerminarTActionPerformed
 
-    private void jCheckDado5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado5ActionPerformed
-        if(jCheckDado5.isSelected()){
+    private void jCheckDado4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado4ActionPerformed
+        if(jCheckDado4.isSelected()){
             imagenes1 objImag1 = new imagenes1();
-            jCheckDado5.setIcon(objImag1.gifDado1(dado[4]));
+            jCheckDado4.setIcon(objImag1.gifDado1(dado[3]));
         }
-    }//GEN-LAST:event_jCheckDado5ActionPerformed
+    }//GEN-LAST:event_jCheckDado4ActionPerformed
 
-    private void jSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSalirActionPerformed
-        dispose();
-    }//GEN-LAST:event_jSalirActionPerformed
+    private void jVoltearDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jVoltearDActionPerformed
+
+        //Dado_1
+        if(jCheckDado1.isSelected()){
+            /*dado[0] = objDado1.voltearDado(dado[0]);
+            jLabel1.setText(""+dado[0]);
+            imagenesResult objImag1 = new imagenesResult();
+            jCheckDado1.setIcon(objImag1.Imaen(dado[0]));*/
+            voltea2++;
+
+        }
+        //Dado_2
+        if(jCheckDado2.isSelected()){
+            /*dado[1] = objDado1.voltearDado(dado[1]);
+            jLabel2.setText(""+dado[1]);
+            imagenesResult objImag2 = new imagenesResult();
+            jCheckDado2.setIcon(objImag2.Imaen(dado[1]));*/
+            voltea2++;
+
+        }
+        //Dado_3
+        if(jCheckDado3.isSelected()){
+            /*dado[2] = objDado1.voltearDado(dado[2]);
+            jLabel3.setText(""+dado[2]);
+            imagenesResult objImag3 = new imagenesResult();
+            jCheckDado3.setIcon(objImag3.Imaen(dado[2]));*/
+            voltea2++;
+
+        }
+        //Dado_4
+        if(jCheckDado4.isSelected()){
+            /*dado[3] = objDado1.voltearDado(dado[3]);
+            jLabel4.setText(""+dado[3]);
+            imagenesResult objImag4 = new imagenesResult();
+            jCheckDado4.setIcon(objImag4.Imaen(dado[3]));*/
+            voltea2++;
+
+        }
+        //Dado_5
+        if(jCheckDado5.isSelected()){
+            /*dado[4] = objDado1.voltearDado(dado[4]);
+            jLabel5.setText(""+dado[4]);
+            imagenesResult objImag5 = new imagenesResult();
+            jCheckDado5.setIcon(objImag5.Imaen(dado[4]));*/
+            voltea2++;
+        }
+        //
+        if(voltea2 == 1 || voltea2 == 2){
+            //
+            jVoltearD.setEnabled(false);
+            //jSegundoT.setEnabled(false);
+            JOptionPane.showMessageDialog(this,"Presione terminar");
+            //Dado_1
+            if(jCheckDado1.isSelected()){
+                dado[0] = objDado1.voltearDado(dado[0]);
+                jLabel1.setText(""+dado[0]);
+                imagenesResult objImag1 = new imagenesResult();
+                jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
+                //voltea2++;
+
+            }
+            //Dado_2
+            if(jCheckDado2.isSelected()){
+                dado[1] = objDado1.voltearDado(dado[1]);
+                jLabel2.setText(""+dado[1]);
+                imagenesResult objImag2 = new imagenesResult();
+                jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
+                //voltea2++;
+
+            }
+            //Dado_3
+            if(jCheckDado3.isSelected()){
+                dado[2] = objDado1.voltearDado(dado[2]);
+                jLabel3.setText(""+dado[2]);
+                imagenesResult objImag3 = new imagenesResult();
+                jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
+                //voltea2++;
+            }
+            //Dado_4
+            if(jCheckDado4.isSelected()){
+                dado[3] = objDado1.voltearDado(dado[3]);
+                jLabel4.setText(""+dado[3]);
+                imagenesResult objImag4 = new imagenesResult();
+                jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
+                //voltea2++;
+
+            }
+            //Dado_5
+            if(jCheckDado5.isSelected()){
+                dado[4] = objDado1.voltearDado(dado[4]);
+                jLabel5.setText(""+dado[4]);
+                imagenesResult objImag5 = new imagenesResult();
+                jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
+                //voltea2++;
+            }
+            jTerminarT.setEnabled(true);
+        }else{
+            JOptionPane.showMessageDialog(this,"Seleccione solo uno o dos dados a voltear");
+            //jVoltearD.setEnabled(false);
+            //Dado_1
+            if(jCheckDado1.isSelected()){
+                imagenesResult objImag1 = new imagenesResult();
+                jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
+
+            }
+            //Dado_2
+            if(jCheckDado2.isSelected()){
+
+                imagenesResult objImag2 = new imagenesResult();
+                jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
+
+            }
+            //Dado_3
+            if(jCheckDado3.isSelected()){
+
+                imagenesResult objImag3 = new imagenesResult();
+                jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
+            }
+            //Dado_4
+            if(jCheckDado4.isSelected()){
+
+                imagenesResult objImag4 = new imagenesResult();
+                jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
+
+            }
+            //Dado_5
+            if(jCheckDado5.isSelected()){
+
+                imagenesResult objImag5 = new imagenesResult();
+                jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
+            }
+            //
+            jCheckDado1.setSelected(false);
+            jCheckDado2.setSelected(false);
+            jCheckDado3.setSelected(false);
+            jCheckDado4.setSelected(false);
+            jCheckDado5.setSelected(false);
+            voltea2 = 0;
+        }
+        //
+
+        //jVoltearD.setEnabled(false);
+    }//GEN-LAST:event_jVoltearDActionPerformed
+
+    private void jCheckDado3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado3ActionPerformed
+        if(jCheckDado3.isSelected()){
+            imagenes1 objImag1 = new imagenes1();
+            jCheckDado3.setIcon(objImag1.gifDado1(dado[2]));
+        }
+    }//GEN-LAST:event_jCheckDado3ActionPerformed
+
+    private void jSegundoTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSegundoTActionPerformed
+
+        //Dado_1
+        if(jCheckDado1.isSelected()){
+            dado[0] = objDado1.lanzarDado();
+            jLabel1.setText(""+dado[0]);
+            imagenesResult objImag1 = new imagenesResult();
+            jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
+            jVoltearD.setEnabled(true);
+            SiDadoT2++;
+        }
+        //Dado_2
+        if(jCheckDado2.isSelected()){
+            dado[1] = objDado1.lanzarDado();
+            jLabel2.setText(""+dado[1]);
+            imagenesResult objImag2 = new imagenesResult();
+            jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
+            jVoltearD.setEnabled(true);
+            SiDadoT2++;
+        }
+        //Dado_3
+        if(jCheckDado3.isSelected()){
+            dado[2] = objDado1.lanzarDado();
+            jLabel3.setText(""+dado[2]);
+            imagenesResult objImag3 = new imagenesResult();
+            jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
+            jVoltearD.setEnabled(true);
+            SiDadoT2++;
+        }
+        //Dado_4
+        if(jCheckDado4.isSelected()){
+            dado[3] = objDado1.lanzarDado();
+            jLabel4.setText(""+dado[3]);
+            imagenesResult objImag4 = new imagenesResult();
+            jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
+            jVoltearD.setEnabled(true);
+            SiDadoT2++;
+        }
+        //Dado_5
+        if(jCheckDado5.isSelected()){
+            dado[4] = objDado1.lanzarDado();
+            jLabel5.setText(""+dado[4]);
+            imagenesResult objImag5 = new imagenesResult();
+            jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
+            jVoltearD.setEnabled(true);
+            SiDadoT2++;
+        }
+        //
+        if(SiDadoT2 != 0){
+            jVoltearD.setEnabled(true);
+            jSegundoT.setEnabled(false);
+            JOptionPane.showMessageDialog(this,"Seleccione Dados A Voltear");
+        }else{
+            JOptionPane.showMessageDialog(this,"Seleccione un dado o presione resultado");
+            //jVoltearD.setEnabled(false);
+        }
+        //
+        jCheckDado1.setSelected(false);
+        jCheckDado2.setSelected(false);
+        jCheckDado3.setSelected(false);
+        jCheckDado4.setSelected(false);
+        jCheckDado5.setSelected(false);
+
+        //JOptionPane.showMessageDialog(this,"Seleccione Dados A Voltear");
+
+        //jSegundoT.setEnabled(false);
+        //jVoltearD.setEnabled(true);
+        jTerminarT.setEnabled(false);
+    }//GEN-LAST:event_jSegundoTActionPerformed
+
+    private void jCheckDado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado2ActionPerformed
+        if(jCheckDado2.isSelected()){
+            imagenes1 objImag1 = new imagenes1();
+            jCheckDado2.setIcon(objImag1.gifDado1(dado[1]));
+        }
+    }//GEN-LAST:event_jCheckDado2ActionPerformed
+
+    private void jPrimerTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPrimerTActionPerformed
+        //dado1
+        jLabel1.setText(""+dado[0]);
+        imagenesResult objImag1 = new imagenesResult();
+        jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
+        //dado2
+        jLabel2.setText(""+dado[1]);
+        imagenesResult objImag2 = new imagenesResult();
+        jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
+        //dado3
+        jLabel3.setText(""+dado[2]);
+        imagenesResult objImag3 = new imagenesResult();
+        jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
+        //dado4
+        jLabel4.setText(""+dado[3]);
+        imagenesResult objImag4 = new imagenesResult();
+        jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
+        //dado5
+        jLabel5.setText(""+dado[4]);
+        imagenesResult objImag5 = new imagenesResult();
+        jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
+
+        JOptionPane.showMessageDialog(this,"Seleccione Dados Para Segundo Tiro");
+
+        jPrimerT.setEnabled(false);
+        jSegundoT.setEnabled(true);
+    }//GEN-LAST:event_jPrimerTActionPerformed
+
+    private void jCheckDado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado1ActionPerformed
+        if(jCheckDado1.isSelected()){
+            imagenes1 objImag1 = new imagenes1();
+            jCheckDado1.setIcon(objImag1.gifDado1(dado[0]));
+        }
+    }//GEN-LAST:event_jCheckDado1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -766,20 +767,20 @@ public class DadosGen3 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DadosGen3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosGen4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DadosGen3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosGen4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DadosGen3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosGen4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DadosGen3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosGen4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DadosGen3().setVisible(true);
+                new DadosGen4().setVisible(true);
             }
         });
     }

@@ -60,100 +60,132 @@ public class juegoIA extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPuntaje22 = new javax.swing.JLabel();
-        jPuntajePoker2 = new javax.swing.JLabel();
-        jPuntaje55 = new javax.swing.JLabel();
-        jPuntaje33 = new javax.swing.JLabel();
-        jPuntajeFull2 = new javax.swing.JLabel();
-        jPuntaje66 = new javax.swing.JLabel();
-        jPuntaje1 = new javax.swing.JLabel();
-        jPuntajeG12 = new javax.swing.JLabel();
+        jPuntaje2 = new javax.swing.JLabel();
+        jPuntaje9 = new javax.swing.JLabel();
+        jPuntaje5 = new javax.swing.JLabel();
+        jPuntaje3 = new javax.swing.JLabel();
+        jPuntaje8 = new javax.swing.JLabel();
+        jPuntaje6 = new javax.swing.JLabel();
+        jPuntaBal = new javax.swing.JLabel();
+        jPuntaje10 = new javax.swing.JLabel();
         jPuntajeEs = new javax.swing.JLabel();
         jPuntajeG22 = new javax.swing.JLabel();
-        jPuntaje4 = new javax.swing.JLabel();
+        jPuntajeCua = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jPuntaje2 = new javax.swing.JLabel();
+        jPuntajeTon = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPuntajePoker = new javax.swing.JLabel();
-        jPuntaje5 = new javax.swing.JLabel();
+        jPuntajeQui = new javax.swing.JLabel();
         jBjugar2 = new javax.swing.JButton();
         jBexit = new javax.swing.JButton();
-        jPuntaje3 = new javax.swing.JLabel();
-        jButtonEditarJvJ = new javax.swing.JButton();
+        jPuntajeTre = new javax.swing.JLabel();
         jPuntajeFull = new javax.swing.JLabel();
-        jPuntaje6 = new javax.swing.JLabel();
+        jPuntajeSen = new javax.swing.JLabel();
         jPuntajeG1 = new javax.swing.JLabel();
         jPuntajeG2 = new javax.swing.JLabel();
         jBjugar1 = new javax.swing.JButton();
         jBresultado = new javax.swing.JButton();
-        jPuntaje11 = new javax.swing.JLabel();
-        jPuntajeES2 = new javax.swing.JLabel();
-        jPuntaje44 = new javax.swing.JLabel();
+        jPuntaje1 = new javax.swing.JLabel();
+        jPuntaje7 = new javax.swing.JLabel();
+        jPuntaje4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(610, 440));
         getContentPane().setLayout(null);
-        getContentPane().add(jPuntaje22);
-        jPuntaje22.setBounds(384, 214, 40, 15);
 
-        jPuntajePoker2.setText("0");
-        getContentPane().add(jPuntajePoker2);
-        jPuntajePoker2.setBounds(451, 252, 40, 15);
+        jPuntaje2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje2.setForeground(new java.awt.Color(204, 0, 0));
+        getContentPane().add(jPuntaje2);
+        jPuntaje2.setBounds(420, 220, 40, 15);
 
-        jPuntaje55.setText("0");
-        getContentPane().add(jPuntaje55);
-        jPuntaje55.setBounds(509, 214, 40, 15);
+        jPuntaje9.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje9.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntaje9.setText("0");
+        getContentPane().add(jPuntaje9);
+        jPuntaje9.setBounds(451, 252, 40, 15);
 
-        jPuntaje33.setText("0");
-        getContentPane().add(jPuntaje33);
-        jPuntaje33.setBounds(384, 252, 40, 17);
+        jPuntaje5.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje5.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntaje5.setText("0");
+        getContentPane().add(jPuntaje5);
+        jPuntaje5.setBounds(480, 220, 40, 15);
 
-        jPuntajeFull2.setText("0");
-        getContentPane().add(jPuntajeFull2);
-        jPuntajeFull2.setBounds(451, 214, 40, 17);
+        jPuntaje3.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje3.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntaje3.setText("0");
+        getContentPane().add(jPuntaje3);
+        jPuntaje3.setBounds(420, 250, 40, 17);
 
-        jPuntaje66.setText("0");
-        getContentPane().add(jPuntaje66);
-        jPuntaje66.setBounds(509, 252, 40, 17);
-        getContentPane().add(jPuntaje1);
-        jPuntaje1.setBounds(74, 180, 30, 14);
+        jPuntaje8.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje8.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntaje8.setText("0");
+        getContentPane().add(jPuntaje8);
+        jPuntaje8.setBounds(450, 220, 40, 17);
 
-        jPuntajeG12.setText("0");
-        getContentPane().add(jPuntajeG12);
-        jPuntajeG12.setBounds(432, 281, 40, 14);
+        jPuntaje6.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje6.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntaje6.setText("0");
+        getContentPane().add(jPuntaje6);
+        jPuntaje6.setBounds(480, 250, 40, 17);
 
+        jPuntaBal.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaBal.setForeground(new java.awt.Color(204, 0, 0));
+        getContentPane().add(jPuntaBal);
+        jPuntaBal.setBounds(90, 180, 30, 14);
+
+        jPuntaje10.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje10.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntaje10.setText("0");
+        getContentPane().add(jPuntaje10);
+        jPuntaje10.setBounds(432, 281, 40, 14);
+
+        jPuntajeEs.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeEs.setForeground(new java.awt.Color(204, 0, 0));
         jPuntajeEs.setText("0");
         getContentPane().add(jPuntajeEs);
-        jPuntajeEs.setBounds(110, 180, 38, 14);
+        jPuntajeEs.setBounds(120, 180, 38, 14);
 
+        jPuntajeG22.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeG22.setForeground(new java.awt.Color(204, 0, 0));
         jPuntajeG22.setText("0");
         getContentPane().add(jPuntajeG22);
-        jPuntajeG22.setBounds(484, 281, 40, 14);
+        jPuntajeG22.setBounds(460, 280, 40, 14);
 
-        jPuntaje4.setText("0");
-        getContentPane().add(jPuntaje4);
-        jPuntaje4.setBounds(150, 180, 40, 14);
+        jPuntajeCua.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeCua.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntajeCua.setText("0");
+        getContentPane().add(jPuntajeCua);
+        jPuntajeCua.setBounds(150, 180, 40, 14);
 
         jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
         jLabel1.setText("jugador_1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(70, 50, 156, 25);
-        getContentPane().add(jPuntaje2);
-        jPuntaje2.setBounds(72, 220, 30, 15);
+
+        jPuntajeTon.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeTon.setForeground(new java.awt.Color(204, 0, 0));
+        getContentPane().add(jPuntajeTon);
+        jPuntajeTon.setBounds(90, 220, 30, 15);
 
         jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
         jLabel2.setText("jugador_2");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(380, 50, 135, 25);
 
+        jPuntajePoker.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajePoker.setForeground(new java.awt.Color(204, 0, 0));
         jPuntajePoker.setText("0");
         getContentPane().add(jPuntajePoker);
-        jPuntajePoker.setBounds(110, 250, 38, 15);
+        jPuntajePoker.setBounds(120, 250, 38, 15);
 
-        jPuntaje5.setText("0");
-        getContentPane().add(jPuntaje5);
-        jPuntaje5.setBounds(150, 220, 40, 14);
+        jPuntajeQui.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeQui.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntajeQui.setText("0");
+        getContentPane().add(jPuntajeQui);
+        jPuntajeQui.setBounds(150, 220, 40, 14);
 
         jBjugar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Robot 2-50.png"))); // NOI18N
         jBjugar2.setText("IA");
@@ -183,34 +215,35 @@ public class juegoIA extends javax.swing.JFrame {
         getContentPane().add(jBexit);
         jBexit.setBounds(500, 320, 80, 70);
 
-        jPuntaje3.setText("0");
-        getContentPane().add(jPuntaje3);
-        jPuntaje3.setBounds(72, 250, 30, 16);
+        jPuntajeTre.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeTre.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntajeTre.setText("0");
+        getContentPane().add(jPuntajeTre);
+        jPuntajeTre.setBounds(90, 250, 30, 16);
 
-        jButtonEditarJvJ.setText("EditJvsJ");
-        jButtonEditarJvJ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonEditarJvJActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonEditarJvJ);
-        jButtonEditarJvJ.setBounds(260, 20, 73, 25);
-
+        jPuntajeFull.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeFull.setForeground(new java.awt.Color(204, 0, 0));
         jPuntajeFull.setText("0");
         getContentPane().add(jPuntajeFull);
-        jPuntajeFull.setBounds(110, 220, 38, 16);
+        jPuntajeFull.setBounds(120, 220, 38, 16);
 
-        jPuntaje6.setText("0");
-        getContentPane().add(jPuntaje6);
-        jPuntaje6.setBounds(150, 250, 40, 16);
+        jPuntajeSen.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeSen.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntajeSen.setText("0");
+        getContentPane().add(jPuntajeSen);
+        jPuntajeSen.setBounds(150, 250, 40, 16);
 
+        jPuntajeG1.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeG1.setForeground(new java.awt.Color(204, 0, 0));
         jPuntajeG1.setText("0");
         getContentPane().add(jPuntajeG1);
-        jPuntajeG1.setBounds(80, 290, 40, 14);
+        jPuntajeG1.setBounds(100, 280, 40, 14);
 
+        jPuntajeG2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeG2.setForeground(new java.awt.Color(204, 0, 0));
         jPuntajeG2.setText("0");
         getContentPane().add(jPuntajeG2);
-        jPuntajeG2.setBounds(130, 290, 40, 14);
+        jPuntajeG2.setBounds(140, 280, 40, 14);
 
         jBjugar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-1 en círculo -50.png"))); // NOI18N
         jBjugar1.setText("Juega1");
@@ -239,18 +272,40 @@ public class juegoIA extends javax.swing.JFrame {
         });
         getContentPane().add(jBresultado);
         jBresultado.setBounds(30, 319, 100, 70);
-        getContentPane().add(jPuntaje11);
-        jPuntaje11.setBounds(384, 181, 40, 15);
 
-        jPuntajeES2.setText("0");
-        getContentPane().add(jPuntajeES2);
-        jPuntajeES2.setBounds(451, 182, 40, 14);
+        jPuntaje1.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje1.setForeground(new java.awt.Color(204, 0, 0));
+        getContentPane().add(jPuntaje1);
+        jPuntaje1.setBounds(420, 180, 40, 15);
 
-        jPuntaje44.setText("0");
-        getContentPane().add(jPuntaje44);
-        jPuntaje44.setBounds(509, 181, 40, 15);
+        jPuntaje7.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje7.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntaje7.setText("0");
+        getContentPane().add(jPuntaje7);
+        jPuntaje7.setBounds(450, 180, 40, 14);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Pizarra-gris-verde-imatge-principal_zoom.jpg"))); // NOI18N
+        jPuntaje4.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje4.setForeground(new java.awt.Color(204, 0, 0));
+        jPuntaje4.setText("0");
+        getContentPane().add(jPuntaje4);
+        jPuntaje4.setBounds(480, 180, 40, 15);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dice-26772_960_720-iloveimg-resized.png"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(240, 70, 120, 240);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/papel-arrugado_2947545as.jpg"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(410, 170, 100, 130);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/papel-arrugado_2947545as.jpg"))); // NOI18N
+        jLabel5.setText("jLabel4");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(80, 170, 100, 130);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondoretro.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
@@ -275,12 +330,6 @@ public class juegoIA extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jBexitActionPerformed
 
-    private void jButtonEditarJvJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditarJvJActionPerformed
-        EditJvsJ editar = new EditJvsJ();
-        editar.setVisible(true);
-        jButtonEditarJvJ.setEnabled(false);
-    }//GEN-LAST:event_jButtonEditarJvJActionPerformed
-
     private void jBjugar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar1ActionPerformed
 
         DadosGen juega1 = new DadosGen();
@@ -297,29 +346,29 @@ public class juegoIA extends javax.swing.JFrame {
             int p1 = 0;
             int p2 = 0;
 
-            int num1 = Integer.parseInt( jPuntaje1.getText());
-            int num2 = Integer.parseInt( jPuntaje2.getText());
-            int num3 = Integer.parseInt( jPuntaje3.getText());
-            int num4 = Integer.parseInt( jPuntaje4.getText());
-            int num5 = Integer.parseInt( jPuntaje5.getText());
-            int num6 = Integer.parseInt( jPuntaje6.getText());
+            int num1 = Integer.parseInt( jPuntaBal.getText());
+            int num2 = Integer.parseInt( jPuntajeTon.getText());
+            int num3 = Integer.parseInt( jPuntajeTre.getText());
+            int num4 = Integer.parseInt( jPuntajeCua.getText());
+            int num5 = Integer.parseInt( jPuntajeQui.getText());
+            int num6 = Integer.parseInt( jPuntajeSen.getText());
             int numG1 = Integer.parseInt( jPuntajeG1.getText());
             int numG2 = Integer.parseInt( jPuntajeG2.getText());
             int numEs = Integer.parseInt( jPuntajeEs.getText());
             int numFull = Integer.parseInt( jPuntajeFull.getText());
             int numPok = Integer.parseInt( jPuntajePoker.getText());
 
-            int num11 = Integer.parseInt( jPuntaje11.getText());
-            int num22 = Integer.parseInt( jPuntaje22.getText());
-            int num33 = Integer.parseInt( jPuntaje33.getText());
-            int num44 = Integer.parseInt( jPuntaje44.getText());
-            int num55 = Integer.parseInt( jPuntaje55.getText());
-            int num66 = Integer.parseInt( jPuntaje66.getText());
-            int numG12 = Integer.parseInt( jPuntajeG12.getText());
+            int num11 = Integer.parseInt( jPuntaje1.getText());
+            int num22 = Integer.parseInt( jPuntaje2.getText());
+            int num33 = Integer.parseInt( jPuntaje3.getText());
+            int num44 = Integer.parseInt( jPuntaje4.getText());
+            int num55 = Integer.parseInt( jPuntaje5.getText());
+            int num66 = Integer.parseInt( jPuntaje6.getText());
+            int numG12 = Integer.parseInt( jPuntaje10.getText());
             int numG22 = Integer.parseInt( jPuntajeG22.getText());
-            int numEs2 = Integer.parseInt( jPuntajeES2.getText());
-            int numFull2 = Integer.parseInt( jPuntajeFull2.getText());
-            int numPok2 = Integer.parseInt( jPuntajePoker2.getText());
+            int numEs2 = Integer.parseInt( jPuntaje7.getText());
+            int numFull2 = Integer.parseInt( jPuntaje8.getText());
+            int numPok2 = Integer.parseInt( jPuntaje9.getText());
 
             p1 = num1 + num2 + num3 + num4 + num5 + num6 + numG1 +numG2 + numEs + numFull + numPok;
             p2 = num11 + num22 + num33 + num44 + num55 + num66 + numG12 + numG22 + numEs2 + numFull2 + numPok2;
@@ -390,31 +439,33 @@ public class juegoIA extends javax.swing.JFrame {
     public static javax.swing.JButton jBjugar1;
     public static javax.swing.JButton jBjugar2;
     private javax.swing.JButton jBresultado;
-    private javax.swing.JButton jButtonEditarJvJ;
     public static javax.swing.JLabel jLabel1;
     public static javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    public static javax.swing.JLabel jPuntaBal;
     public static javax.swing.JLabel jPuntaje1;
-    public static javax.swing.JLabel jPuntaje11;
+    public static javax.swing.JLabel jPuntaje10;
     public static javax.swing.JLabel jPuntaje2;
-    public static javax.swing.JLabel jPuntaje22;
     public static javax.swing.JLabel jPuntaje3;
-    public static javax.swing.JLabel jPuntaje33;
     public static javax.swing.JLabel jPuntaje4;
-    public static javax.swing.JLabel jPuntaje44;
     public static javax.swing.JLabel jPuntaje5;
-    public static javax.swing.JLabel jPuntaje55;
     public static javax.swing.JLabel jPuntaje6;
-    public static javax.swing.JLabel jPuntaje66;
-    public static javax.swing.JLabel jPuntajeES2;
+    public static javax.swing.JLabel jPuntaje7;
+    public static javax.swing.JLabel jPuntaje8;
+    public static javax.swing.JLabel jPuntaje9;
+    public static javax.swing.JLabel jPuntajeCua;
     public static javax.swing.JLabel jPuntajeEs;
     public static javax.swing.JLabel jPuntajeFull;
-    public static javax.swing.JLabel jPuntajeFull2;
     public static javax.swing.JLabel jPuntajeG1;
-    public static javax.swing.JLabel jPuntajeG12;
     public static javax.swing.JLabel jPuntajeG2;
     public static javax.swing.JLabel jPuntajeG22;
     public static javax.swing.JLabel jPuntajePoker;
-    public static javax.swing.JLabel jPuntajePoker2;
+    public static javax.swing.JLabel jPuntajeQui;
+    public static javax.swing.JLabel jPuntajeSen;
+    public static javax.swing.JLabel jPuntajeTon;
+    public static javax.swing.JLabel jPuntajeTre;
     // End of variables declaration//GEN-END:variables
 }
