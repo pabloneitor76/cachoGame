@@ -5,24 +5,22 @@
  */
 package cachoahorasi;
 
-import static cachoahorasi.juega1vs1.jBjugar1;
-import static cachoahorasi.juega1vs1.jBjugar2;
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author Pabloneitor
+ * @author DELL
  */
-public class JuegoD3 extends javax.swing.JFrame {
+public class JuegoD4 extends javax.swing.JFrame {
     static int turnP;//controla par o impar en turnojugador
     static int turnoS = 3;//controla el turno actual
     static int turno = 0;//turno actual inicio
     /**
-     * Creates new form JuegoD3
+     * Creates new form JuegoD4
      */
-    public JuegoD3() {
+    public JuegoD4() {
         initComponents();
-        this.setLocationRelativeTo(null);
+         this.setLocationRelativeTo(null);
         //
         /*ImageIcon fondo1 = new ImageIcon(getClass().getResource("/Pictures/fondo.png"));
        ImageIcon fondo2 = new ImageIcon(fondo1.getImage().getScaledInstance(jLabel1.getWidth(),jLabel1.getHeight(), Image.SCALE_DEFAULT));
@@ -32,6 +30,7 @@ public class JuegoD3 extends javax.swing.JFrame {
         jBjugar1.setEnabled(true);
         jBjugar2.setEnabled(false);
         jBjugar3.setEnabled(false);
+        jBjugar4.setEnabled(false);
         //
         //........boton jugar 1
         jBjugar1.setOpaque(false);
@@ -45,6 +44,10 @@ public class JuegoD3 extends javax.swing.JFrame {
         jBjugar3.setOpaque(false);
         jBjugar3.setContentAreaFilled(false);
         jBjugar3.setBorderPainted(false);
+        //........boton jugar 4
+        jBjugar4.setOpaque(false);
+        jBjugar4.setContentAreaFilled(false);
+        jBjugar4.setBorderPainted(false);
         //........boton resultado
         jBresultado.setOpaque(false);
         jBresultado.setContentAreaFilled(false);
@@ -53,7 +56,6 @@ public class JuegoD3 extends javax.swing.JFrame {
         jBexit.setOpaque(false);
         jBexit.setContentAreaFilled(false);
         jBexit.setBorderPainted(false);
-                
     }
 
     /**
@@ -65,7 +67,6 @@ public class JuegoD3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -110,12 +111,24 @@ public class JuegoD3 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jBjugar4 = new javax.swing.JButton();
+        jPuntajeES4 = new javax.swing.JLabel();
+        jPuntaje4444 = new javax.swing.JLabel();
+        jPuntaje1111 = new javax.swing.JLabel();
+        jPuntajeFull4 = new javax.swing.JLabel();
+        jPuntaje5555 = new javax.swing.JLabel();
+        jPuntaje2222 = new javax.swing.JLabel();
+        jPuntaje3333 = new javax.swing.JLabel();
+        jPuntajePoker4 = new javax.swing.JLabel();
+        jPuntaje6666 = new javax.swing.JLabel();
+        jPuntajeG14 = new javax.swing.JLabel();
+        jPuntajeG24 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(660, 430));
+        setPreferredSize(new java.awt.Dimension(610, 430));
         getContentPane().setLayout(null);
 
         jLabel1.setText("Jugador_1");
@@ -124,11 +137,11 @@ public class JuegoD3 extends javax.swing.JFrame {
 
         jLabel2.setText("Jugador_2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(270, 30, 80, 30);
+        jLabel2.setBounds(190, 30, 80, 30);
 
         jLabel3.setText("Jugador_3");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(490, 30, 80, 30);
+        jLabel3.setBounds(330, 30, 80, 30);
 
         jPuntaje1.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje1.setForeground(new java.awt.Color(255, 0, 0));
@@ -173,7 +186,7 @@ public class JuegoD3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jBjugar2);
-        jBjugar2.setBounds(270, 70, 84, 70);
+        jBjugar2.setBounds(190, 70, 84, 70);
 
         jBjugar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-3 en círculo -50 (1).png"))); // NOI18N
         jBjugar3.setText("Juega3");
@@ -187,7 +200,7 @@ public class JuegoD3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jBjugar3);
-        jBjugar3.setBounds(490, 70, 84, 70);
+        jBjugar3.setBounds(320, 70, 84, 70);
 
         jBresultado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Leaderboard-50.png"))); // NOI18N
         jBresultado.setText("Resultado");
@@ -201,7 +214,7 @@ public class JuegoD3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jBresultado);
-        jBresultado.setBounds(40, 300, 100, 70);
+        jBresultado.setBounds(40, 310, 100, 70);
 
         jBexit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso-50.png"))); // NOI18N
         jBexit.setText("Salir");
@@ -215,7 +228,7 @@ public class JuegoD3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jBexit);
-        jBexit.setBounds(510, 300, 100, 70);
+        jBexit.setBounds(480, 310, 100, 70);
 
         jPuntaje2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje2.setForeground(new java.awt.Color(255, 0, 0));
@@ -267,130 +280,130 @@ public class JuegoD3 extends javax.swing.JFrame {
         jPuntaje11.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje11.setForeground(new java.awt.Color(255, 0, 0));
         getContentPane().add(jPuntaje11);
-        jPuntaje11.setBounds(270, 170, 40, 15);
+        jPuntaje11.setBounds(190, 170, 40, 15);
 
         jPuntajeES2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeES2.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajeES2.setText("0");
         getContentPane().add(jPuntajeES2);
-        jPuntajeES2.setBounds(296, 169, 40, 15);
+        jPuntajeES2.setBounds(220, 170, 40, 15);
 
         jPuntaje44.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje44.setForeground(new java.awt.Color(255, 0, 0));
         jPuntaje44.setText("0");
         getContentPane().add(jPuntaje44);
-        jPuntaje44.setBounds(330, 170, 40, 15);
+        jPuntaje44.setBounds(250, 170, 40, 15);
 
         jPuntaje22.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje22.setForeground(new java.awt.Color(255, 0, 0));
         getContentPane().add(jPuntaje22);
-        jPuntaje22.setBounds(270, 200, 40, 15);
+        jPuntaje22.setBounds(190, 200, 40, 15);
 
         jPuntajeFull2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeFull2.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajeFull2.setText("0");
         getContentPane().add(jPuntajeFull2);
-        jPuntajeFull2.setBounds(300, 200, 40, 15);
+        jPuntajeFull2.setBounds(220, 200, 40, 15);
 
         jPuntaje55.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje55.setForeground(new java.awt.Color(255, 0, 0));
         jPuntaje55.setText("0");
         getContentPane().add(jPuntaje55);
-        jPuntaje55.setBounds(330, 200, 40, 15);
+        jPuntaje55.setBounds(250, 200, 40, 15);
 
         jPuntaje33.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje33.setForeground(new java.awt.Color(255, 0, 0));
         jPuntaje33.setText("0");
         getContentPane().add(jPuntaje33);
-        jPuntaje33.setBounds(270, 230, 40, 15);
+        jPuntaje33.setBounds(190, 230, 40, 15);
 
         jPuntajePoker2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajePoker2.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajePoker2.setText("0");
         getContentPane().add(jPuntajePoker2);
-        jPuntajePoker2.setBounds(300, 230, 40, 15);
+        jPuntajePoker2.setBounds(220, 230, 40, 15);
 
         jPuntaje66.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje66.setForeground(new java.awt.Color(255, 0, 0));
         jPuntaje66.setText("0");
         getContentPane().add(jPuntaje66);
-        jPuntaje66.setBounds(330, 230, 40, 15);
+        jPuntaje66.setBounds(250, 230, 40, 15);
 
         jPuntajeG12.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG12.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajeG12.setText("0");
         getContentPane().add(jPuntajeG12);
-        jPuntajeG12.setBounds(280, 260, 40, 15);
+        jPuntajeG12.setBounds(200, 260, 40, 15);
 
         jPuntajeG22.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG22.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajeG22.setText("0");
         getContentPane().add(jPuntajeG22);
-        jPuntajeG22.setBounds(323, 256, 40, 15);
+        jPuntajeG22.setBounds(240, 260, 40, 15);
 
         jPuntajeES3.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeES3.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajeES3.setText("0");
         getContentPane().add(jPuntajeES3);
-        jPuntajeES3.setBounds(520, 160, 40, 15);
+        jPuntajeES3.setBounds(360, 160, 40, 15);
 
         jPuntaje444.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje444.setForeground(new java.awt.Color(255, 0, 0));
         jPuntaje444.setText("0");
         getContentPane().add(jPuntaje444);
-        jPuntaje444.setBounds(550, 160, 40, 15);
+        jPuntaje444.setBounds(390, 160, 40, 15);
 
         jPuntaje111.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje111.setForeground(new java.awt.Color(255, 0, 0));
         getContentPane().add(jPuntaje111);
-        jPuntaje111.setBounds(490, 160, 40, 15);
+        jPuntaje111.setBounds(330, 160, 40, 15);
 
         jPuntajeFull3.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeFull3.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajeFull3.setText("0");
         getContentPane().add(jPuntajeFull3);
-        jPuntajeFull3.setBounds(520, 200, 40, 15);
+        jPuntajeFull3.setBounds(360, 190, 40, 15);
 
         jPuntaje555.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje555.setForeground(new java.awt.Color(255, 0, 0));
         jPuntaje555.setText("0");
         getContentPane().add(jPuntaje555);
-        jPuntaje555.setBounds(550, 200, 40, 15);
+        jPuntaje555.setBounds(390, 190, 40, 15);
 
         jPuntaje222.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje222.setForeground(new java.awt.Color(255, 0, 0));
         getContentPane().add(jPuntaje222);
-        jPuntaje222.setBounds(490, 200, 40, 15);
+        jPuntaje222.setBounds(330, 200, 40, 15);
 
         jPuntaje333.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje333.setForeground(new java.awt.Color(255, 0, 0));
         jPuntaje333.setText("0");
         getContentPane().add(jPuntaje333);
-        jPuntaje333.setBounds(490, 230, 40, 15);
+        jPuntaje333.setBounds(330, 230, 40, 15);
 
         jPuntajePoker3.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajePoker3.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajePoker3.setText("0");
         getContentPane().add(jPuntajePoker3);
-        jPuntajePoker3.setBounds(520, 230, 40, 14);
+        jPuntajePoker3.setBounds(360, 230, 40, 14);
 
         jPuntaje666.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje666.setForeground(new java.awt.Color(255, 0, 0));
         jPuntaje666.setText("0");
         getContentPane().add(jPuntaje666);
-        jPuntaje666.setBounds(550, 230, 40, 14);
+        jPuntaje666.setBounds(390, 230, 40, 14);
 
         jPuntajeG13.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG13.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajeG13.setText("0");
         getContentPane().add(jPuntajeG13);
-        jPuntajeG13.setBounds(500, 260, 40, 15);
+        jPuntajeG13.setBounds(340, 260, 40, 15);
 
         jPuntajeG23.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG23.setForeground(new java.awt.Color(255, 0, 0));
         jPuntajeG23.setText("0");
         getContentPane().add(jPuntajeG23);
-        jPuntajeG23.setBounds(545, 256, 40, 15);
+        jPuntajeG23.setBounds(380, 260, 40, 15);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/papel-arrugado_2947545as.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
@@ -400,16 +413,103 @@ public class JuegoD3 extends javax.swing.JFrame {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/papel-arrugado_2947545as.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(260, 150, 100, 130);
+        jLabel6.setBounds(180, 150, 100, 130);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/papel-arrugado_2947545as.jpg"))); // NOI18N
         jLabel7.setText("jLabel7");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(480, 150, 100, 130);
+        jLabel7.setBounds(320, 150, 100, 130);
+
+        jLabel8.setText("Jugador_4");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(470, 30, 80, 30);
+
+        jBjugar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-4 en círculo -50.png"))); // NOI18N
+        jBjugar4.setText("Juega4");
+        jBjugar4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Tiempo-50.png"))); // NOI18N
+        jBjugar4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jBjugar4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-4 en círculo  Filled-50.png"))); // NOI18N
+        jBjugar4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBjugar4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBjugar4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jBjugar4);
+        jBjugar4.setBounds(470, 70, 84, 70);
+
+        jPuntajeES4.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeES4.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeES4.setText("0");
+        getContentPane().add(jPuntajeES4);
+        jPuntajeES4.setBounds(500, 160, 40, 15);
+
+        jPuntaje4444.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje4444.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje4444.setText("0");
+        getContentPane().add(jPuntaje4444);
+        jPuntaje4444.setBounds(530, 160, 40, 15);
+
+        jPuntaje1111.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje1111.setForeground(new java.awt.Color(255, 0, 0));
+        getContentPane().add(jPuntaje1111);
+        jPuntaje1111.setBounds(470, 160, 40, 15);
+
+        jPuntajeFull4.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeFull4.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeFull4.setText("0");
+        getContentPane().add(jPuntajeFull4);
+        jPuntajeFull4.setBounds(500, 200, 40, 15);
+
+        jPuntaje5555.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje5555.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje5555.setText("0");
+        getContentPane().add(jPuntaje5555);
+        jPuntaje5555.setBounds(530, 200, 40, 15);
+
+        jPuntaje2222.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje2222.setForeground(new java.awt.Color(255, 0, 0));
+        getContentPane().add(jPuntaje2222);
+        jPuntaje2222.setBounds(470, 200, 40, 15);
+
+        jPuntaje3333.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje3333.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje3333.setText("0");
+        getContentPane().add(jPuntaje3333);
+        jPuntaje3333.setBounds(470, 230, 40, 15);
+
+        jPuntajePoker4.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajePoker4.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajePoker4.setText("0");
+        getContentPane().add(jPuntajePoker4);
+        jPuntajePoker4.setBounds(500, 230, 40, 14);
+
+        jPuntaje6666.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje6666.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje6666.setText("0");
+        getContentPane().add(jPuntaje6666);
+        jPuntaje6666.setBounds(530, 230, 40, 14);
+
+        jPuntajeG14.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeG14.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeG14.setText("0");
+        getContentPane().add(jPuntajeG14);
+        jPuntajeG14.setBounds(480, 260, 40, 15);
+
+        jPuntajeG24.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeG24.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeG24.setText("0");
+        getContentPane().add(jPuntajeG24);
+        jPuntajeG24.setBounds(510, 260, 40, 15);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/papel-arrugado_2947545as.jpg"))); // NOI18N
+        jLabel9.setText("jLabel7");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(460, 150, 100, 130);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/para3.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 650, 390);
+        jLabel4.setBounds(0, 0, 600, 400);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -425,17 +525,6 @@ public class JuegoD3 extends javax.swing.JFrame {
         jBjugar1.setEnabled(false);
     }//GEN-LAST:event_jBjugar1ActionPerformed
 
-    private void jBjugar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar3ActionPerformed
-        DadosGen3 juega1 = new DadosGen3();
-        juega1.setVisible(true);
-        turno++;
-        System.out.println("turnoNro: " + turno);
-        //jBjugar2.setEnabled(false);
-        //jBjugar1.setEnabled(true);
-        jBjugar1.setEnabled(true);
-        jBjugar3.setEnabled(false);
-    }//GEN-LAST:event_jBjugar3ActionPerformed
-
     private void jBjugar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar2ActionPerformed
         DadosGen3 juega1 = new DadosGen3();
         juega1.setVisible(true);
@@ -447,11 +536,22 @@ public class JuegoD3 extends javax.swing.JFrame {
         jBjugar2.setEnabled(false);
     }//GEN-LAST:event_jBjugar2ActionPerformed
 
+    private void jBjugar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar3ActionPerformed
+        DadosGen3 juega1 = new DadosGen3();
+        juega1.setVisible(true);
+        turno++;
+        System.out.println("turnoNro: " + turno);
+        //jBjugar2.setEnabled(false);
+        //jBjugar1.setEnabled(true);
+        jBjugar4.setEnabled(true);
+        jBjugar3.setEnabled(false);
+    }//GEN-LAST:event_jBjugar3ActionPerformed
+    
     private void jBresultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBresultadoActionPerformed
         int p1 = 0;
         int p2 = 0;
         int p3 = 0;
-        
+
         int num1 = Integer.parseInt( jPuntaje1.getText());
         int num2 = Integer.parseInt( jPuntaje2.getText());
         int num3 = Integer.parseInt( jPuntaje3.getText());
@@ -463,7 +563,7 @@ public class JuegoD3 extends javax.swing.JFrame {
         int numEs = Integer.parseInt( jPuntajeEs.getText());
         int numFull = Integer.parseInt( jPuntajePoker.getText());
         int numPok = Integer.parseInt( jPuntajeFull.getText());
-        
+
         int num11 = Integer.parseInt( jPuntaje11.getText());
         int num22 = Integer.parseInt( jPuntaje22.getText());
         int num33 = Integer.parseInt( jPuntaje33.getText());
@@ -475,7 +575,7 @@ public class JuegoD3 extends javax.swing.JFrame {
         int numEs2 = Integer.parseInt( jPuntajeES2.getText());
         int numFull2 = Integer.parseInt( jPuntajePoker2.getText());
         int numPok2 = Integer.parseInt( jPuntajeFull2.getText());
-        
+
         int num111 = Integer.parseInt( jPuntaje111.getText());
         int num222 = Integer.parseInt( jPuntaje222.getText());
         int num333 = Integer.parseInt( jPuntaje333.getText());
@@ -487,36 +587,36 @@ public class JuegoD3 extends javax.swing.JFrame {
         int numEs3 = Integer.parseInt( jPuntajeES3.getText());
         int numFull3 = Integer.parseInt( jPuntajePoker3.getText());
         int numPok3 = Integer.parseInt( jPuntajePoker3.getText());
-        
+
         p1 = num1 + num2 + num3 + num4 + num5 + num6 + numG1 +numG2 + numEs + numFull + numPok;
         p2 = num11 + num22 + num33 + num44 + num55 + num66 + numG12 + numG22 + numEs2 + numFull2 + numPok2;
         p3 = num111 + num222 + num333 + num444 + num555 + num666 + numG13 + numG23 + numEs3 + numFull3 + numPok3;
-        
+
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
-        
+
         if(p1>p2 && p1>p3){
             JOptionPane.showMessageDialog(this,
-                "Puntaje Jugador 1:" + p1 + 
+                "Puntaje Jugador 1:" + p1 +
                 "\nPuntaje Jugador 2:" + p2+
                 "\nPuntaje Jugador 3:" + p3+
                 "\n\nJugador 1 Gano");
         }else if(p2>p1 && p2>p3){
             JOptionPane.showMessageDialog(this,
-                "Puntaje Jugador 1:" + p1 + 
+                "Puntaje Jugador 1:" + p1 +
                 "\nPuntaje Jugador 2:" + p2+
                 "\nPuntaje Jugador 3:" + p3+
                 "\n\nJugador 2 Gano");
         }else if(p2>p1 && p2>p3){
             JOptionPane.showMessageDialog(this,
-                "Puntaje Jugador 1:" + p1 + 
+                "Puntaje Jugador 1:" + p1 +
                 "\nPuntaje Jugador 2:" + p2+
                 "\nPuntaje Jugador 3:" + p3+
                 "\n\nJugador 2 Gano");
         }else if(p1== p2 && p2 == p3){
             JOptionPane.showMessageDialog(this,
-                "Puntaje Jugador 1:" + p1 + 
+                "Puntaje Jugador 1:" + p1 +
                 "\nPuntaje Jugador 2:" + p2+
                 "\n\nEmpate");
         }
@@ -527,6 +627,19 @@ public class JuegoD3 extends javax.swing.JFrame {
         game.setVisible(true);
         dispose();
     }//GEN-LAST:event_jBexitActionPerformed
+
+    private void jBjugar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar4ActionPerformed
+                                                 
+        DadosGen3 juega1 = new DadosGen3();
+        juega1.setVisible(true);
+        turno++;
+        System.out.println("turnoNro: " + turno);
+        //jBjugar2.setEnabled(false);
+        //jBjugar1.setEnabled(true);
+        jBjugar1.setEnabled(true);
+        jBjugar4.setEnabled(false);
+       
+    }//GEN-LAST:event_jBjugar4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -545,20 +658,20 @@ public class JuegoD3 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JuegoD3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JuegoD4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JuegoD3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JuegoD4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JuegoD3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JuegoD4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JuegoD3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JuegoD4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JuegoD3().setVisible(true);
+                new JuegoD4().setVisible(true);
             }
         });
     }
@@ -568,8 +681,8 @@ public class JuegoD3 extends javax.swing.JFrame {
     private javax.swing.JButton jBjugar1;
     private javax.swing.JButton jBjugar2;
     private javax.swing.JButton jBjugar3;
+    private javax.swing.JButton jBjugar4;
     private javax.swing.JButton jBresultado;
-    private javax.swing.JComboBox<String> jComboBox1;
     public static javax.swing.JLabel jLabel1;
     public static javax.swing.JLabel jLabel2;
     public static javax.swing.JLabel jLabel3;
@@ -577,38 +690,51 @@ public class JuegoD3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    public static javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     public static javax.swing.JLabel jPuntaje1;
     public static javax.swing.JLabel jPuntaje11;
     public static javax.swing.JLabel jPuntaje111;
+    public static javax.swing.JLabel jPuntaje1111;
     public static javax.swing.JLabel jPuntaje2;
     public static javax.swing.JLabel jPuntaje22;
     public static javax.swing.JLabel jPuntaje222;
+    public static javax.swing.JLabel jPuntaje2222;
     public static javax.swing.JLabel jPuntaje3;
     public static javax.swing.JLabel jPuntaje33;
     public static javax.swing.JLabel jPuntaje333;
+    public static javax.swing.JLabel jPuntaje3333;
     public static javax.swing.JLabel jPuntaje4;
     public static javax.swing.JLabel jPuntaje44;
     public static javax.swing.JLabel jPuntaje444;
+    public static javax.swing.JLabel jPuntaje4444;
     public static javax.swing.JLabel jPuntaje5;
     public static javax.swing.JLabel jPuntaje55;
     public static javax.swing.JLabel jPuntaje555;
+    public static javax.swing.JLabel jPuntaje5555;
     public static javax.swing.JLabel jPuntaje6;
     public static javax.swing.JLabel jPuntaje66;
     public static javax.swing.JLabel jPuntaje666;
+    public static javax.swing.JLabel jPuntaje6666;
     public static javax.swing.JLabel jPuntajeES2;
     public static javax.swing.JLabel jPuntajeES3;
+    public static javax.swing.JLabel jPuntajeES4;
     public static javax.swing.JLabel jPuntajeEs;
     public static javax.swing.JLabel jPuntajeFull;
     public static javax.swing.JLabel jPuntajeFull2;
     public static javax.swing.JLabel jPuntajeFull3;
+    public static javax.swing.JLabel jPuntajeFull4;
     public static javax.swing.JLabel jPuntajeG1;
     public static javax.swing.JLabel jPuntajeG12;
     public static javax.swing.JLabel jPuntajeG13;
+    public static javax.swing.JLabel jPuntajeG14;
     public static javax.swing.JLabel jPuntajeG2;
     public static javax.swing.JLabel jPuntajeG22;
     public static javax.swing.JLabel jPuntajeG23;
+    public static javax.swing.JLabel jPuntajeG24;
     public static javax.swing.JLabel jPuntajePoker;
     public static javax.swing.JLabel jPuntajePoker2;
     public static javax.swing.JLabel jPuntajePoker3;
+    public static javax.swing.JLabel jPuntajePoker4;
     // End of variables declaration//GEN-END:variables
 }

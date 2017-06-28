@@ -9,12 +9,12 @@ package cachoahorasi;
  *
  * @author DELL
  */
-public class EditJvsJ extends javax.swing.JFrame {
+public class Editar3 extends javax.swing.JFrame {
 
     /**
-     * Creates new form EditJvsJ
+     * Creates new form Editar3
      */
-    public EditJvsJ() {
+    public Editar3() {
         initComponents();
         this.setLocationRelativeTo(null);
         
@@ -34,25 +34,32 @@ public class EditJvsJ extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
         jButtonGuardar = new javax.swing.JButton();
         jButtonSalir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabelNom = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(290, 390));
+        setPreferredSize(new java.awt.Dimension(280, 390));
         getContentPane().setLayout(null);
 
         jTextField1.setText("Jugador_1");
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(43, 93, 120, 30);
+        jTextField1.setBounds(40, 70, 120, 30);
 
-        jTextField2.setText("Jugador_2");
-        getContentPane().add(jTextField2);
-        jTextField2.setBounds(43, 175, 120, 30);
+        jTextField3.setText("Jugador_3");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField3);
+        jTextField3.setBounds(40, 220, 120, 30);
 
         jButtonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Guardar-50.png"))); // NOI18N
         jButtonGuardar.setText("Guardar");
@@ -66,7 +73,7 @@ public class EditJvsJ extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonGuardar);
-        jButtonGuardar.setBounds(60, 260, 80, 70);
+        jButtonGuardar.setBounds(50, 270, 80, 70);
 
         jButtonSalir.setText("Salir");
         jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -81,44 +88,64 @@ public class EditJvsJ extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Nombre Jugador 1:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(43, 60, 140, 14);
+        jLabel1.setBounds(40, 50, 140, 14);
 
         jLabel2.setFont(new java.awt.Font("Gill Sans Ultra Bold", 2, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("Nombre Jugador 2:");
+        jLabel2.setText("Nombre Jugador 3:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(43, 142, 140, 14);
+        jLabel2.setBounds(40, 200, 140, 14);
 
-        jLabel4.setFont(new java.awt.Font("Gill Sans Ultra Bold Condensed", 0, 14)); // NOI18N
+        jLabelNom.setFont(new java.awt.Font("Gill Sans Ultra Bold Condensed", 0, 14)); // NOI18N
+        jLabelNom.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelNom.setText("Ingrese Nombre de Jugadores");
+        getContentPane().add(jLabelNom);
+        jLabelNom.setBounds(20, 10, 190, 30);
+
+        jTextField2.setText("Jugador_2");
+        getContentPane().add(jTextField2);
+        jTextField2.setBounds(40, 140, 120, 30);
+
+        jLabel4.setFont(new java.awt.Font("Gill Sans Ultra Bold", 2, 11)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setText("Ingrese Nombre de Jugadores");
+        jLabel4.setText("Nombre Jugador 2:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 20, 260, 30);
+        jLabel4.setBounds(40, 120, 140, 14);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo-de-los-rectángulos-del-vidrio-verde-76077534.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 0, 240, 350);
+        jLabel3.setBounds(0, 0, 260, 320);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
-        
+
         String nombre;
         nombre = jTextField1.getText();
-        juega1vs1.jLabel1.setText(nombre);
-        
+        JuegoD3.jLabel1.setText(nombre);
+
         String nombre2;
         nombre2 = jTextField2.getText();
-        juega1vs1.jLabel2.setText(nombre2);
+        JuegoD3.jLabel2.setText(nombre2);
         dispose();
         
+        String nombre3;
+        nombre3 = jTextField3.getText();
+        JuegoD3.jLabel3.setText(nombre3);
+        dispose();
+
+
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 
     private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
         dispose();
     }//GEN-LAST:event_jButtonSalirActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,20 +164,20 @@ public class EditJvsJ extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EditJvsJ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Editar3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EditJvsJ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Editar3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EditJvsJ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Editar3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EditJvsJ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Editar3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EditJvsJ().setVisible(true);
+                new Editar3().setVisible(true);
             }
         });
     }
@@ -162,7 +189,9 @@ public class EditJvsJ extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabelNom;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }

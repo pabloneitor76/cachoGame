@@ -135,6 +135,11 @@ public class MainUser extends javax.swing.JFrame {
                 jButton3GMousePressed(evt);
             }
         });
+        jButton3G.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3GActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3G);
         jButton3G.setBounds(70, 200, 90, 80);
 
@@ -179,6 +184,11 @@ public class MainUser extends javax.swing.JFrame {
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButtonTGMousePressed(evt);
+            }
+        });
+        jButtonTG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonTGActionPerformed(evt);
             }
         });
         getContentPane().add(jButtonTG);
@@ -299,6 +309,22 @@ public class MainUser extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
         sonido.play();
     }//GEN-LAST:event_jButton1MousePressed
+    //juega 3 vs 3
+    private void jButton3GActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3GActionPerformed
+        JuegoD3 game3vs3 = new JuegoD3();
+        game3vs3.setVisible(true);
+        Editar3 editar3 = new Editar3();
+        editar3.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton3GActionPerformed
+
+    private void jButtonTGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTGActionPerformed
+        JuegoD4 game4vs4 = new JuegoD4();
+        game4vs4.setVisible(true);
+        Editar4 editar4 = new Editar4();
+        editar4.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButtonTGActionPerformed
 
     /**
      * @param args the command line arguments

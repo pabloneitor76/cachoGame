@@ -385,6 +385,7 @@ public class DadosGen extends javax.swing.JFrame {
                 voltea2++;
             }
         if(voltea2 == 1 || voltea2 == 2){
+            //
             jVoltearD.setEnabled(false);
             //jSegundoT.setEnabled(false);
             JOptionPane.showMessageDialog(this,"Presione terminar");
@@ -431,17 +432,52 @@ public class DadosGen extends javax.swing.JFrame {
                 jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
                 //voltea2++;
             }
+            jTerminarT.setEnabled(true);
         }else{
             JOptionPane.showMessageDialog(this,"Seleccione solo uno o dos dados a voltear");
             //jVoltearD.setEnabled(false);
+             //Dado_1
+            if(jCheckDado1.isSelected()){
+                imagenesResult objImag1 = new imagenesResult();
+                jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
+                
+            }
+            //Dado_2
+            if(jCheckDado2.isSelected()){
+                
+                imagenesResult objImag2 = new imagenesResult();
+                jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
+                
+            }
+            //Dado_3
+            if(jCheckDado3.isSelected()){
+                
+                imagenesResult objImag3 = new imagenesResult();
+                jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
+            }
+            //Dado_4
+            if(jCheckDado4.isSelected()){
+                
+                imagenesResult objImag4 = new imagenesResult();
+                jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
+                
+            }
+            //Dado_5
+            if(jCheckDado5.isSelected()){
+                
+                imagenesResult objImag5 = new imagenesResult();
+                jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
+            }
+            //
             jCheckDado1.setSelected(false);
             jCheckDado2.setSelected(false);
             jCheckDado3.setSelected(false);
             jCheckDado4.setSelected(false);
             jCheckDado5.setSelected(false);
+            voltea2 = 0;
         }
         
-        //jVoltearD.setEnabled(false);
+        
         
     }//GEN-LAST:event_jVoltearDActionPerformed
     //metodo de ordenamiento
@@ -616,7 +652,7 @@ public class DadosGen extends javax.swing.JFrame {
             }
             //grande
             int plus = 5;
-            if(jSegundoT.isEnabled()){
+            if(!jVoltearD.isEnabled()){
                 if(esGrande(dado)){
                     gr = 50 + plus;
                 }else{
@@ -645,19 +681,7 @@ public class DadosGen extends javax.swing.JFrame {
                     }
                 }
             }
-            /*if(esGrande(dado)){
-                gr = 50;
-            }else{
-                if(esEsca(dado)){
-                    es = 20;
-                }
-                if(esFull(dado)){
-                    full = 30;
-                }
-                if(esPok(dado)){
-                    pok = 40;
-                }
-            }*/
+            
             
         }
         
