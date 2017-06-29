@@ -5,6 +5,8 @@
  */
 package cachoahorasi;
 
+import java.applet.AudioClip;
+
 /**
  *
  * @author DELL
@@ -36,17 +38,21 @@ public class EditJvsJ extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jButtonGuardar = new javax.swing.JButton();
-        jButtonSalir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(290, 390));
+        setPreferredSize(new java.awt.Dimension(260, 390));
         getContentPane().setLayout(null);
 
         jTextField1.setText("Jugador_1");
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
         getContentPane().add(jTextField1);
         jTextField1.setBounds(43, 93, 120, 30);
 
@@ -60,22 +66,24 @@ public class EditJvsJ extends javax.swing.JFrame {
         jButtonGuardar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
         jButtonGuardar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Guardar Filled-50.png"))); // NOI18N
         jButtonGuardar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButtonGuardar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButtonGuardarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButtonGuardarMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButtonGuardarMousePressed(evt);
+            }
+        });
         jButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonGuardarActionPerformed(evt);
             }
         });
         getContentPane().add(jButtonGuardar);
-        jButtonGuardar.setBounds(60, 260, 80, 70);
-
-        jButtonSalir.setText("Salir");
-        jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonSalirActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonSalir);
-        jButtonSalir.setBounds(150, 300, 55, 25);
+        jButtonGuardar.setBounds(80, 250, 80, 70);
 
         jLabel1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 2, 11)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
@@ -116,9 +124,27 @@ public class EditJvsJ extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 
-    private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
-        dispose();
-    }//GEN-LAST:event_jButtonSalirActionPerformed
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        
+    }//GEN-LAST:event_jTextField1KeyPressed
+    //sonido botton guardar
+    private void jButtonGuardarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonGuardarMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButtonGuardarMouseEntered
+
+    private void jButtonGuardarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonGuardarMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButtonGuardarMouseExited
+
+    private void jButtonGuardarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonGuardarMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jButtonGuardarMousePressed
 
     /**
      * @param args the command line arguments
@@ -157,7 +183,6 @@ public class EditJvsJ extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonGuardar;
-    private javax.swing.JButton jButtonSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

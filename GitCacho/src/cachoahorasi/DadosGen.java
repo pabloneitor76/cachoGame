@@ -52,6 +52,10 @@ public class DadosGen extends javax.swing.JFrame {
        jTerminarT.setOpaque(false);
        jTerminarT.setContentAreaFilled(false);
        jTerminarT.setBorderPainted(false);
+       //........boton primer casa
+       jSalir.setOpaque(false);
+       jSalir.setContentAreaFilled(false);
+       jSalir.setBorderPainted(false);
         //
     }
 
@@ -85,12 +89,12 @@ public class DadosGen extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(610, 440));
         getContentPane().setLayout(null);
 
-        jPrimerT.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-1-50.png")); // NOI18N
+        jPrimerT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-1-50.png"))); // NOI18N
         jPrimerT.setText("Tiro 1");
-        jPrimerT.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Private 2-50.png")); // NOI18N
+        jPrimerT.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Private 2-50.png"))); // NOI18N
         jPrimerT.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPrimerT.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
-        jPrimerT.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-1 Filled-50.png")); // NOI18N
+        jPrimerT.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jPrimerT.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-1 Filled-50.png"))); // NOI18N
         jPrimerT.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jPrimerT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -111,12 +115,12 @@ public class DadosGen extends javax.swing.JFrame {
         getContentPane().add(jPrimerT);
         jPrimerT.setBounds(21, 47, 71, 67);
 
-        jSegundoT.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-2-50.png")); // NOI18N
+        jSegundoT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-2-50.png"))); // NOI18N
         jSegundoT.setText("Tiro 2");
-        jSegundoT.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Private 2-50.png")); // NOI18N
+        jSegundoT.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Private 2-50.png"))); // NOI18N
         jSegundoT.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jSegundoT.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
-        jSegundoT.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-2 Filled-50.png")); // NOI18N
+        jSegundoT.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jSegundoT.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-2 Filled-50.png"))); // NOI18N
         jSegundoT.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jSegundoT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -137,12 +141,12 @@ public class DadosGen extends javax.swing.JFrame {
         getContentPane().add(jSegundoT);
         jSegundoT.setBounds(21, 132, 71, 70);
 
-        jVoltearD.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Cambiar-50.png")); // NOI18N
+        jVoltearD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Cambiar-50.png"))); // NOI18N
         jVoltearD.setText("VoltearD");
-        jVoltearD.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Private 2-50.png")); // NOI18N
+        jVoltearD.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Private 2-50.png"))); // NOI18N
         jVoltearD.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jVoltearD.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
-        jVoltearD.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Cambiar Filled-50.png")); // NOI18N
+        jVoltearD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jVoltearD.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Cambiar Filled-50.png"))); // NOI18N
         jVoltearD.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jVoltearD.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -163,11 +167,12 @@ public class DadosGen extends javax.swing.JFrame {
         getContentPane().add(jVoltearD);
         jVoltearD.setBounds(21, 239, 82, 69);
 
-        jTerminarT.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Lista de verificación-50.png")); // NOI18N
+        jTerminarT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Lista de verificación-50.png"))); // NOI18N
         jTerminarT.setText("Puntaje");
-        jTerminarT.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
+        jTerminarT.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Private 2-50.png"))); // NOI18N
         jTerminarT.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jTerminarT.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Lista de verificación Filled-50.png")); // NOI18N
+        jTerminarT.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jTerminarT.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Lista de verificación Filled-50.png"))); // NOI18N
         jTerminarT.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jTerminarT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -188,14 +193,19 @@ public class DadosGen extends javax.swing.JFrame {
         getContentPane().add(jTerminarT);
         jTerminarT.setBounds(168, 310, 84, 79);
 
+        jSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Top Menu-50.png"))); // NOI18N
         jSalir.setText("Salir");
+        jSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jSalir.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jSalir.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Menú principal Filled-50.png"))); // NOI18N
+        jSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jSalirActionPerformed(evt);
             }
         });
         getContentPane().add(jSalir);
-        jSalir.setBounds(492, 341, 55, 25);
+        jSalir.setBounds(490, 310, 84, 70);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("0");
@@ -723,10 +733,10 @@ public class DadosGen extends javax.swing.JFrame {
                     }
                 }
             }
-        //esDormida
+        /*//esDormida
         if(dado[0]==dado[i+1]){
             JOptionPane.showMessageDialog(this,"DORMIDA");
-        }
+        }*/
         
         }
         

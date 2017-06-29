@@ -38,10 +38,10 @@ public class MainUser extends javax.swing.JFrame {
        jButton3G.setOpaque(false);
        jButton3G.setContentAreaFilled(false);
        jButton3G.setBorderPainted(false);
-       //........boton IA
+       /*//........boton IA
        jButtonIA.setOpaque(false);
        jButtonIA.setContentAreaFilled(false);
-       jButtonIA.setBorderPainted(false);
+       jButtonIA.setBorderPainted(false);*/
        //........boton TG
        jButtonTG.setOpaque(false);
        jButtonTG.setContentAreaFilled(false);
@@ -60,7 +60,6 @@ public class MainUser extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2G = new javax.swing.JButton();
         jButton3G = new javax.swing.JButton();
-        jButtonIA = new javax.swing.JButton();
         jButtonTG = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -91,7 +90,7 @@ public class MainUser extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(250, 320, 77, 70);
+        jButton1.setBounds(60, 290, 77, 70);
 
         jButton2G.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Grupo de usuarios hombre hombre-50.png"))); // NOI18N
         jButton2G.setText("1vs1");
@@ -116,7 +115,7 @@ public class MainUser extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2G);
-        jButton2G.setBounds(220, 80, 90, 80);
+        jButton2G.setBounds(70, 50, 90, 80);
 
         jButton3G.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Antecedentes conferencia seleccionada-50.png"))); // NOI18N
         jButton3G.setText("3game");
@@ -141,33 +140,7 @@ public class MainUser extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3G);
-        jButton3G.setBounds(70, 200, 90, 80);
-
-        jButtonIA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-En PC-50.png"))); // NOI18N
-        jButtonIA.setText("1vsPC");
-        jButtonIA.setToolTipText("");
-        jButtonIA.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonIA.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
-        jButtonIA.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-En PC Filled-50.png"))); // NOI18N
-        jButtonIA.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButtonIA.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButtonIAMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButtonIAMouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButtonIAMousePressed(evt);
-            }
-        });
-        jButtonIA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonIAActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonIA);
-        jButtonIA.setBounds(70, 80, 90, 80);
+        jButton3G.setBounds(140, 120, 90, 80);
 
         jButtonTG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Grupo de usuarios hombre hombre-50.png"))); // NOI18N
         jButtonTG.setText("free4All");
@@ -215,29 +188,8 @@ public class MainUser extends javax.swing.JFrame {
         volver.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
-    //boton IA
-    private void jButtonIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIAActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonIAActionPerformed
-    //sonido boton IA
-    private void jButtonIAMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonIAMouseEntered
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jButtonIAMouseEntered
 
-    private void jButtonIAMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonIAMouseExited
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jButtonIAMouseExited
-
-    private void jButtonIAMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonIAMousePressed
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jButtonIAMousePressed
-    //sonido boton 1vs1
+   //sonido boton 1vs1
     private void jButton2GMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2GMouseEntered
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
@@ -366,7 +318,6 @@ public class MainUser extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2G;
     private javax.swing.JButton jButton3G;
-    private javax.swing.JButton jButtonIA;
     private javax.swing.JButton jButtonTG;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables

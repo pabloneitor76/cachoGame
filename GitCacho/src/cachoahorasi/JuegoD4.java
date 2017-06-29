@@ -5,6 +5,7 @@
  */
 package cachoahorasi;
 
+import java.applet.AudioClip;
 import javax.swing.JOptionPane;
 
 /**
@@ -12,7 +13,7 @@ import javax.swing.JOptionPane;
  * @author DELL
  */
 public class JuegoD4 extends javax.swing.JFrame {
-    static int turnP;//controla par o impar en turnojugador
+    static int turnP = 0;//controla par o impar en turnojugador
     static int turnoS = 3;//controla el turno actual
     static int turno = 0;//turno actual inicio
     /**
@@ -166,6 +167,17 @@ public class JuegoD4 extends javax.swing.JFrame {
         jBjugar1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jBjugar1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-1 en círculo  Filled-50.png"))); // NOI18N
         jBjugar1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBjugar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBjugar1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBjugar1MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jBjugar1MousePressed(evt);
+            }
+        });
         jBjugar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBjugar1ActionPerformed(evt);
@@ -180,6 +192,17 @@ public class JuegoD4 extends javax.swing.JFrame {
         jBjugar2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jBjugar2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-2 en círculo  Filled-50.png"))); // NOI18N
         jBjugar2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBjugar2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBjugar2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBjugar2MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jBjugar2MousePressed(evt);
+            }
+        });
         jBjugar2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBjugar2ActionPerformed(evt);
@@ -194,6 +217,17 @@ public class JuegoD4 extends javax.swing.JFrame {
         jBjugar3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jBjugar3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-3 en círculo  Filled-50.png"))); // NOI18N
         jBjugar3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBjugar3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBjugar3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBjugar3MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jBjugar3MousePressed(evt);
+            }
+        });
         jBjugar3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBjugar3ActionPerformed(evt);
@@ -208,6 +242,17 @@ public class JuegoD4 extends javax.swing.JFrame {
         jBresultado.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
         jBresultado.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Tabla de posiciones Filled-50.png"))); // NOI18N
         jBresultado.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBresultado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBresultadoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBresultadoMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jBresultadoMousePressed(evt);
+            }
+        });
         jBresultado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBresultadoActionPerformed(evt);
@@ -222,6 +267,17 @@ public class JuegoD4 extends javax.swing.JFrame {
         jBexit.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
         jBexit.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Retroceso Filled-50.png"))); // NOI18N
         jBexit.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBexit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBexitMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBexitMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jBexitMousePressed(evt);
+            }
+        });
         jBexit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBexitActionPerformed(evt);
@@ -430,6 +486,17 @@ public class JuegoD4 extends javax.swing.JFrame {
         jBjugar4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jBjugar4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-4 en círculo  Filled-50.png"))); // NOI18N
         jBjugar4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jBjugar4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBjugar4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBjugar4MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jBjugar4MousePressed(evt);
+            }
+        });
         jBjugar4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBjugar4ActionPerformed(evt);
@@ -515,7 +582,7 @@ public class JuegoD4 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBjugar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar1ActionPerformed
-        DadosGen3 juega1 = new DadosGen3();
+        DadosGen4 juega1 = new DadosGen4();
         juega1.setVisible(true);
         turno++;
         System.out.println("turnoNro: " + turno);
@@ -526,7 +593,7 @@ public class JuegoD4 extends javax.swing.JFrame {
     }//GEN-LAST:event_jBjugar1ActionPerformed
 
     private void jBjugar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar2ActionPerformed
-        DadosGen3 juega1 = new DadosGen3();
+        DadosGen4 juega1 = new DadosGen4();
         juega1.setVisible(true);
         turno++;
         System.out.println("turnoNro: " + turno);
@@ -537,7 +604,7 @@ public class JuegoD4 extends javax.swing.JFrame {
     }//GEN-LAST:event_jBjugar2ActionPerformed
 
     private void jBjugar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar3ActionPerformed
-        DadosGen3 juega1 = new DadosGen3();
+        DadosGen4 juega1 = new DadosGen4();
         juega1.setVisible(true);
         turno++;
         System.out.println("turnoNro: " + turno);
@@ -551,6 +618,7 @@ public class JuegoD4 extends javax.swing.JFrame {
         int p1 = 0;
         int p2 = 0;
         int p3 = 0;
+        int p4 = 0;
 
         int num1 = Integer.parseInt( jPuntaje1.getText());
         int num2 = Integer.parseInt( jPuntaje2.getText());
@@ -587,34 +655,55 @@ public class JuegoD4 extends javax.swing.JFrame {
         int numEs3 = Integer.parseInt( jPuntajeES3.getText());
         int numFull3 = Integer.parseInt( jPuntajePoker3.getText());
         int numPok3 = Integer.parseInt( jPuntajePoker3.getText());
+        //
+        int num1111 = Integer.parseInt( jPuntaje111.getText());
+        int num2222 = Integer.parseInt( jPuntaje222.getText());
+        int num3333 = Integer.parseInt( jPuntaje333.getText());
+        int num4444 = Integer.parseInt( jPuntaje444.getText());
+        int num5555 = Integer.parseInt( jPuntaje555.getText());
+        int num6666 = Integer.parseInt( jPuntaje666.getText());
+        int numG14 = Integer.parseInt( jPuntajeG13.getText());
+        int numG24 = Integer.parseInt( jPuntajeG23.getText());
+        int numEs4 = Integer.parseInt( jPuntajeES3.getText());
+        int numFull4 = Integer.parseInt( jPuntajePoker3.getText());
+        int numPok4 = Integer.parseInt( jPuntajePoker3.getText());
+        //
 
         p1 = num1 + num2 + num3 + num4 + num5 + num6 + numG1 +numG2 + numEs + numFull + numPok;
         p2 = num11 + num22 + num33 + num44 + num55 + num66 + numG12 + numG22 + numEs2 + numFull2 + numPok2;
         p3 = num111 + num222 + num333 + num444 + num555 + num666 + numG13 + numG23 + numEs3 + numFull3 + numPok3;
+        p4 = num1111 + num2222 + num3333 + num4444 + num5555 + num6666 + numG14 + numG24 + numEs4 + numFull4 + numPok4;
 
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
+        System.out.println(p3);
 
-        if(p1>p2 && p1>p3){
+        if(p1>p2 && p1>p3 && p1>p4){
             JOptionPane.showMessageDialog(this,
                 "Puntaje Jugador 1:" + p1 +
                 "\nPuntaje Jugador 2:" + p2+
                 "\nPuntaje Jugador 3:" + p3+
                 "\n\nJugador 1 Gano");
-        }else if(p2>p1 && p2>p3){
+        }else if(p2>p1 && p2>p3 && p2>p4){
             JOptionPane.showMessageDialog(this,
                 "Puntaje Jugador 1:" + p1 +
                 "\nPuntaje Jugador 2:" + p2+
                 "\nPuntaje Jugador 3:" + p3+
                 "\n\nJugador 2 Gano");
-        }else if(p2>p1 && p2>p3){
+        }else if(p3>p1 && p3>p2 && p3>p4){
             JOptionPane.showMessageDialog(this,
                 "Puntaje Jugador 1:" + p1 +
                 "\nPuntaje Jugador 2:" + p2+
                 "\nPuntaje Jugador 3:" + p3+
                 "\n\nJugador 2 Gano");
-        }else if(p1== p2 && p2 == p3){
+        }else if(p4>p1 && p4>p2 && p4>p3){
+            JOptionPane.showMessageDialog(this,
+                "Puntaje Jugador 1:" + p1 +
+                "\nPuntaje Jugador 2:" + p2+
+                "\nPuntaje Jugador 3:" + p3+
+                "\n\nJugador 2 Gano");
+        }else if(p1== p2 && p2 == p3 && p2 == p4){
             JOptionPane.showMessageDialog(this,
                 "Puntaje Jugador 1:" + p1 +
                 "\nPuntaje Jugador 2:" + p2+
@@ -630,7 +719,7 @@ public class JuegoD4 extends javax.swing.JFrame {
 
     private void jBjugar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar4ActionPerformed
                                                  
-        DadosGen3 juega1 = new DadosGen3();
+        DadosGen4 juega1 = new DadosGen4();
         juega1.setVisible(true);
         turno++;
         System.out.println("turnoNro: " + turno);
@@ -640,6 +729,114 @@ public class JuegoD4 extends javax.swing.JFrame {
         jBjugar4.setEnabled(false);
        
     }//GEN-LAST:event_jBjugar4ActionPerformed
+    //sonido boton jugar1
+    private void jBjugar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar1MouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar1MouseEntered
+
+    private void jBjugar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar1MouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar1MouseExited
+
+    private void jBjugar1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar1MousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar1MousePressed
+    //sonido boton jugar2
+    private void jBjugar2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar2MouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar2MouseEntered
+
+    private void jBjugar2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar2MouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar2MouseExited
+
+    private void jBjugar2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar2MousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar2MousePressed
+    //sonido boton jugar3
+    private void jBjugar3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar3MouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar3MouseEntered
+
+    private void jBjugar3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar3MouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar3MouseExited
+
+    private void jBjugar3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar3MousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar3MousePressed
+    //sonido boton jugar4
+    private void jBjugar4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar4MouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar4MouseEntered
+
+    private void jBjugar4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar4MouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar4MouseExited
+
+    private void jBjugar4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBjugar4MousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBjugar4MousePressed
+    //sonido boton resultado
+    private void jBresultadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBresultadoMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBresultadoMouseEntered
+
+    private void jBresultadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBresultadoMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBresultadoMouseExited
+
+    private void jBresultadoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBresultadoMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBresultadoMousePressed
+    //sonido boton salir
+    private void jBexitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBexitMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBexitMouseEntered
+
+    private void jBexitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBexitMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBexitMouseExited
+
+    private void jBexitMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBexitMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jBexitMousePressed
 
     /**
      * @param args the command line arguments

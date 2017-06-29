@@ -76,9 +76,6 @@ public class inicio extends javax.swing.JFrame {
         jButtonJugar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Reproducir en círculo Filled-50.png"))); // NOI18N
         jButtonJugar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonJugar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButtonJugarMouseClicked(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButtonJugarMouseEntered(evt);
             }
@@ -202,9 +199,9 @@ public class inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonJugarActionPerformed
 
     private void jButtonCreditosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCreditosActionPerformed
-        /*Creditos credits = new Creditos();
+        Creditos credits = new Creditos();
         credits.setVisible(true);
-        dispose();*/
+        dispose();
     }//GEN-LAST:event_jButtonCreditosActionPerformed
 
     private void jButtonReglasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonReglasActionPerformed
@@ -217,10 +214,6 @@ public class inicio extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jButtonSalirActionPerformed
     //sonido boton jugar
-    private void jButtonJugarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonJugarMouseClicked
-        
-    }//GEN-LAST:event_jButtonJugarMouseClicked
-
     private void jButtonJugarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonJugarMouseEntered
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));

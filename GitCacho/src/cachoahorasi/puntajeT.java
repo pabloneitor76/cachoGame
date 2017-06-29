@@ -34,6 +34,10 @@ public class puntajeT extends javax.swing.JFrame {
         buttonGroup1.add(jRadioButtonPoker);
         buttonGroup1.add(jRadioButtonFull);
         buttonGroup1.add(jRadioButtonGrnd2);
+        //........boton guardar
+       jButtonSave.setOpaque(false);
+       jButtonSave.setContentAreaFilled(false);
+       jButtonSave.setBorderPainted(false);
        
     }
     
@@ -106,14 +110,17 @@ public class puntajeT extends javax.swing.JFrame {
         getContentPane().add(jRadioButtonGrnd1);
         jRadioButtonGrnd1.setBounds(39, 402, 110, 23);
 
-        jButtonSave.setText("Guardar");
+        jButtonSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Menú Xbox-64.png"))); // NOI18N
+        jButtonSave.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonSave.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Menú Xbox-48.png"))); // NOI18N
+        jButtonSave.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSaveActionPerformed(evt);
             }
         });
         getContentPane().add(jButtonSave);
-        jButtonSave.setBounds(105, 484, 74, 25);
+        jButtonSave.setBounds(240, 460, 60, 50);
 
         jRadioButtonEsca.setText("Puntaje Escalera:");
         getContentPane().add(jRadioButtonEsca);

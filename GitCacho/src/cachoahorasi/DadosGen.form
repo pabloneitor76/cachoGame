@@ -31,18 +31,18 @@
     <Component class="javax.swing.JButton" name="jPrimerT">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-1-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-1-50.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Tiro 1"/>
         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Private 2-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-Private 2-50.png"/>
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Spinner marco 3-26.png"/>
+          <Image iconType="3" name="/Icons/icons8-Spinner marco 3-26.png"/>
         </Property>
         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-1 Filled-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-1 Filled-50.png"/>
         </Property>
         <Property name="verticalTextPosition" type="int" value="3"/>
       </Properties>
@@ -61,18 +61,18 @@
     <Component class="javax.swing.JButton" name="jSegundoT">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-2-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-2-50.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Tiro 2"/>
         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Private 2-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-Private 2-50.png"/>
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Spinner marco 3-26.png"/>
+          <Image iconType="3" name="/Icons/icons8-Spinner marco 3-26.png"/>
         </Property>
         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-2 Filled-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-2 Filled-50.png"/>
         </Property>
         <Property name="verticalTextPosition" type="int" value="3"/>
       </Properties>
@@ -91,18 +91,18 @@
     <Component class="javax.swing.JButton" name="jVoltearD">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Cambiar-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-Cambiar-50.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VoltearD"/>
         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Private 2-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-Private 2-50.png"/>
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Spinner marco 3-26.png"/>
+          <Image iconType="3" name="/Icons/icons8-Spinner marco 3-26.png"/>
         </Property>
         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Cambiar Filled-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-Cambiar Filled-50.png"/>
         </Property>
         <Property name="verticalTextPosition" type="int" value="3"/>
       </Properties>
@@ -121,15 +121,18 @@
     <Component class="javax.swing.JButton" name="jTerminarT">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Lista de verificaci&#xf3;n-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-Lista de verificaci&#xf3;n-50.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Puntaje"/>
         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Spinner marco 3-26.png"/>
+          <Image iconType="3" name="/Icons/icons8-Private 2-50.png"/>
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/icons8-Spinner marco 3-26.png"/>
+        </Property>
         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DELL\Downloads\icons8-Lista de verificaci&#xf3;n Filled-50.png"/>
+          <Image iconType="3" name="/Icons/icons8-Lista de verificaci&#xf3;n Filled-50.png"/>
         </Property>
         <Property name="verticalTextPosition" type="int" value="3"/>
       </Properties>
@@ -147,14 +150,25 @@
     </Component>
     <Component class="javax.swing.JButton" name="jSalir">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/masImG/icons8-Top Menu-50.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Salir"/>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/icons8-Spinner marco 3-26.png"/>
+        </Property>
+        <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/masImG/icons8-Men&#xfa; principal Filled-50.png"/>
+        </Property>
+        <Property name="verticalTextPosition" type="int" value="3"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jSalirActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="492" y="341" width="-1" height="-1"/>
+          <AbsoluteConstraints x="490" y="310" width="-1" height="70"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -302,7 +316,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="600" height="-1"/>
+          <AbsoluteConstraints x="0" y="0" width="600" height="400"/>
         </Constraint>
       </Constraints>
     </Component>

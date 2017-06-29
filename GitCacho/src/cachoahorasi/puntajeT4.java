@@ -4,17 +4,19 @@
  * and open the template in the editor.
  */
 package cachoahorasi;
+
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author DELL
  */
-public class puntajeT3 extends javax.swing.JFrame {
+public class puntajeT4 extends javax.swing.JFrame {
 
     /**
-     * Creates new form puntajeT3
+     * Creates new form puntajeT4
      */
-    public puntajeT3() {
+    public puntajeT4() {
         initComponents();
         this.setLocationRelativeTo(null);
         buttonGroup1.add(jRadioButtonBala);
@@ -28,7 +30,6 @@ public class puntajeT3 extends javax.swing.JFrame {
         buttonGroup1.add(jRadioButtonPoker);
         buttonGroup1.add(jRadioButtonFull);
         buttonGroup1.add(jRadioButtonGrnd2);
-       
     }
 
     /**
@@ -67,12 +68,13 @@ public class puntajeT3 extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(310, 560));
+        setPreferredSize(new java.awt.Dimension(310, 540));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jLabel10.setText("jLabel10");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(155, 396, 40, 22);
+        jLabel10.setBounds(171, 396, 40, 22);
 
         jRadioButtonFull.setText("Puntaje Full:");
         getContentPane().add(jRadioButtonFull);
@@ -80,7 +82,7 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jRadioButtonGrnd2.setText("Puntaje Grande2:");
         getContentPane().add(jRadioButtonGrnd2);
-        jRadioButtonGrnd2.setBounds(39, 432, 108, 23);
+        jRadioButtonGrnd2.setBounds(39, 429, 108, 23);
 
         jRadioButtonBala.setText("Puntaje Balas:");
         getContentPane().add(jRadioButtonBala);
@@ -88,11 +90,11 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(140, 22, 53, 22);
+        jLabel1.setBounds(153, 22, 53, 22);
 
         jLabel11.setText("jLabel11");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(161, 432, 40, 23);
+        jLabel11.setBounds(192, 429, 40, 23);
 
         jRadioButtonTonto.setText("Puntaje Tontos:");
         getContentPane().add(jRadioButtonTonto);
@@ -100,7 +102,7 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(146, 63, 34, 22);
+        jLabel2.setBounds(165, 63, 34, 22);
 
         jRadioButtonTren.setText("Puntaje Trenes:");
         getContentPane().add(jRadioButtonTren);
@@ -108,7 +110,7 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(154, 104, 34, 23);
+        jLabel3.setBounds(167, 104, 34, 23);
 
         jRadioButtonCuadra.setText("Puntaje Cuadras:");
         getContentPane().add(jRadioButtonCuadra);
@@ -116,7 +118,7 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(154, 145, 34, 26);
+        jLabel4.setBounds(167, 145, 34, 26);
 
         jRadioButtonQuina.setText("Puntaje Quinas:");
         getContentPane().add(jRadioButtonQuina);
@@ -124,7 +126,7 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(147, 189, 34, 23);
+        jLabel5.setBounds(166, 189, 34, 23);
 
         jRadioButtonSena.setText("Puntaje Senas:");
         getContentPane().add(jRadioButtonSena);
@@ -132,7 +134,7 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(144, 230, 34, 23);
+        jLabel6.setBounds(160, 230, 34, 23);
 
         jRadioButtonGrnd1.setText("Puntaje Grande:");
         getContentPane().add(jRadioButtonGrnd1);
@@ -140,10 +142,11 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel7.setText("jLabel7");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(155, 275, 34, 23);
+        jLabel7.setBounds(171, 275, 34, 23);
 
         jButtonSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Menú Xbox-64.png"))); // NOI18N
         jButtonSave.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonSave.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Menú Xbox-48.png"))); // NOI18N
         jButtonSave.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,11 +154,11 @@ public class puntajeT3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonSave);
-        jButtonSave.setBounds(240, 460, 60, 50);
+        jButtonSave.setBounds(240, 440, 60, 50);
 
         jLabel8.setText("jLabel8");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(140, 320, 34, 23);
+        jLabel8.setBounds(156, 320, 34, 23);
 
         jRadioButtonEsca.setText("Puntaje Escalera:");
         getContentPane().add(jRadioButtonEsca);
@@ -163,7 +166,7 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel9.setText("jLabel9");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(129, 361, 34, 23);
+        jLabel9.setBounds(148, 361, 34, 23);
 
         jRadioButtonPoker.setText("Puntaje Poker:");
         getContentPane().add(jRadioButtonPoker);
@@ -172,617 +175,814 @@ public class puntajeT3 extends javax.swing.JFrame {
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/stena-.jpg"))); // NOI18N
         jLabel12.setText("jLabel12");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(0, 0, 300, 520);
+        jLabel12.setBounds(0, 0, 300, 500);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSaveActionPerformed
 
-        if(JuegoD3.turnP <= 33){
-            System.out.println("turnoPP:" + JuegoD3.turnP);
+        if(JuegoD4.turnP <= 44){
+            System.out.println("turnoPP:" + JuegoD4.turnP);
             if(jRadioButtonBala.isSelected()){     //..............................balas
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turnP+3){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje1.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje1.getText().isEmpty()){
 
                         System.out.println(jLabel1.getText());
 
                         String nombre1;
                         nombre1 = jLabel1.getText();
-                        JuegoD3.jPuntaje1.setText(nombre1);
+                        JuegoD4.jPuntaje1.setText(nombre1);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
 
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+2) {
+                }else if(JuegoD4.turnP == 1) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje11.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje11.getText().isEmpty()){
 
                         System.out.println(jLabel1.getText());
 
                         String nombre1;
                         nombre1 = jLabel1.getText();
-                        JuegoD3.jPuntaje11.setText(nombre1);
+                        JuegoD4.jPuntaje11.setText(nombre1);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
-                
+
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+2) {
+                }else if(JuegoD4.turnP == 2) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje111.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje111.getText().isEmpty()){
 
                         System.out.println(jLabel1.getText());
 
                         String nombre1;
                         nombre1 = jLabel1.getText();
-                        JuegoD3.jPuntaje111.setText(nombre1);
+                        JuegoD4.jPuntaje111.setText(nombre1);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
+                    //turno jugador 4
+                }else if(JuegoD4.turnP == 3) {
+                    //condicion si esta vacio -> anotar
+                    if(JuegoD4.jPuntaje1111.getText().isEmpty()){
+
+                        System.out.println(jLabel1.getText());
+
+                        String nombre1;
+                        nombre1 = jLabel1.getText();
+                        JuegoD4.jPuntaje1111.setText(nombre1);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
+                    }
+                //1
                 }
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
             if(jRadioButtonTonto.isSelected()){     //..............................tontos
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 /* JuegoD3.turnP == JuegoD3.turno+2*/){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje2.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje2.getText().isEmpty()){
                         System.out.println(jLabel2.getText());
 
                         String nombre2;
                         nombre2 = jLabel2.getText();
-                        JuegoD3.jPuntaje2.setText(nombre2);
+                        JuegoD4.jPuntaje2.setText(nombre2);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 /* JuegoD3.turnP == JuegoD3.turno+2*/) {
+                }else if(JuegoD4.turnP == 1) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje22.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje22.getText().isEmpty()){
 
                         System.out.println(jLabel2.getText());
 
                         String nombre2;
                         nombre2 = jLabel2.getText();
-                        JuegoD3.jPuntaje22.setText(nombre2);
+                        JuegoD4.jPuntaje22.setText(nombre2);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 /*|| JuegoD3.turnP == JuegoD3.turno+2*/) {
+                }else if(JuegoD4.turnP == 2) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje222.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje222.getText().isEmpty()){
 
                         System.out.println(jLabel2.getText());
 
                         String nombre2;
                         nombre2 = jLabel2.getText();
-                        JuegoD3.jPuntaje222.setText(nombre2);
+                        JuegoD4.jPuntaje222.setText(nombre2);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
+                    }
+                    //turno jugador 4
+                }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    //condicion si esta vacio -> anotar
+                    if(JuegoD4.jPuntaje2222.getText().isEmpty()){
+
+                        System.out.println(jLabel2.getText());
+
+                        String nombre2;
+                        nombre2 = jLabel2.getText();
+                        JuegoD4.jPuntaje2222.setText(nombre2);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
                     }
                 }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
             if(jRadioButtonTren.isSelected()){     //..............................trenes
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 /*|| JuegoD3.turnP == JuegoD3.turno+3*/){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje3.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje3.getText().isEmpty()){
                         System.out.println(jLabel3.getText());
 
                         String nombre3;
                         nombre3 = jLabel3.getText();
-                        JuegoD3.jPuntaje3.setText(nombre3);
+                        JuegoD4.jPuntaje3.setText(nombre3);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 /*|| JuegoD3.turnP == JuegoD3.turno+3*/) {
+                }else if(JuegoD4.turnP == 1) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje33.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje33.getText().isEmpty()){
                         System.out.println(jLabel3.getText());
 
                         String nombre3;
                         nombre3 = jLabel3.getText();
-                        JuegoD3.jPuntaje33.setText(nombre3);
+                        JuegoD4.jPuntaje33.setText(nombre3);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 /*|| JuegoD3.turnP == JuegoD3.turno+3*/) {
+                }else if(JuegoD4.turnP == 2) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje333.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje333.getText().isEmpty()){
                         System.out.println(jLabel3.getText());
 
                         String nombre3;
                         nombre3 = jLabel3.getText();
-                        JuegoD3.jPuntaje333.setText(nombre3);
+                        JuegoD4.jPuntaje333.setText(nombre3);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
-                    
+                    //turno jugador 4
                 }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    //condicion si esta vacio -> anotar
+                    if(JuegoD4.jPuntaje3333.getText().isEmpty()){
+                        System.out.println(jLabel3.getText());
+
+                        String nombre3;
+                        nombre3 = jLabel3.getText();
+                        JuegoD4.jPuntaje3333.setText(nombre3);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
+                    }
+
+                }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
             if(jRadioButtonCuadra.isSelected()){     //..............................cuadras
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje4.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje4.getText().isEmpty()){
                         System.out.println(jLabel4.getText());
 
                         String nombre4;
                         nombre4 = jLabel4.getText();
-                        JuegoD3.jPuntaje4.setText(nombre4);
+                        JuegoD4.jPuntaje4.setText(nombre4);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 1) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje44.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje44.getText().isEmpty()){
                         System.out.println(jLabel4.getText());
 
                         String nombre4;
                         nombre4 = jLabel4.getText();
-                        JuegoD3.jPuntaje44.setText(nombre4);
+                        JuegoD4.jPuntaje44.setText(nombre4);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 2) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje444.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje444.getText().isEmpty()){
                         System.out.println(jLabel4.getText());
 
                         String nombre4;
                         nombre4 = jLabel4.getText();
-                        JuegoD3.jPuntaje444.setText(nombre4);
+                        JuegoD4.jPuntaje444.setText(nombre4);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
+                    }
+                    //turno jugador 4
+                }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    //condicion si esta vacio -> anotar
+                    if(JuegoD4.jPuntaje4444.getText().isEmpty()){
+                        System.out.println(jLabel4.getText());
+
+                        String nombre4;
+                        nombre4 = jLabel4.getText();
+                        JuegoD4.jPuntaje4444.setText(nombre4);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
                     }
                 }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
             if(jRadioButtonQuina.isSelected()){     //..............................quinas
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje5.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje5.getText().isEmpty()){
                         System.out.println(jLabel5.getText());
 
                         String nombre5;
                         nombre5 = jLabel5.getText();
-                        JuegoD3.jPuntaje5.setText(nombre5);
+                        JuegoD4.jPuntaje5.setText(nombre5);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 1) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje55.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje55.getText().isEmpty()){
                         System.out.println(jLabel5.getText());
 
                         String nombre5;
                         nombre5 = jLabel5.getText();
-                        JuegoD3.jPuntaje55.setText(nombre5);
+                        JuegoD4.jPuntaje55.setText(nombre5);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 2) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje555.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje555.getText().isEmpty()){
                         System.out.println(jLabel5.getText());
 
                         String nombre5;
                         nombre5 = jLabel5.getText();
-                        JuegoD3.jPuntaje555.setText(nombre5);
+                        JuegoD4.jPuntaje555.setText(nombre5);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
+                    }
+                    //turno jugador 4
+                }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    //condicion si esta vacio -> anotar
+                    if(JuegoD4.jPuntaje5555.getText().isEmpty()){
+                        System.out.println(jLabel5.getText());
+
+                        String nombre5;
+                        nombre5 = jLabel5.getText();
+                        JuegoD4.jPuntaje5555.setText(nombre5);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
                     }
                 }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
             if(jRadioButtonSena.isSelected()){     //..............................senas
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje6.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje6.getText().isEmpty()){
                         System.out.println(jLabel6.getText());
 
                         String nombre6;
                         nombre6 = jLabel6.getText();
-                        JuegoD3.jPuntaje6.setText(nombre6);
+                        JuegoD4.jPuntaje6.setText(nombre6);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 1) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje66.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje66.getText().isEmpty()){
                         System.out.println(jLabel6.getText());
 
                         String nombre6;
                         nombre6 = jLabel6.getText();
-                        JuegoD3.jPuntaje66.setText(nombre6);
+                        JuegoD4.jPuntaje66.setText(nombre6);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 2) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntaje666.getText().isEmpty()){
+                    if(JuegoD4.jPuntaje666.getText().isEmpty()){
                         System.out.println(jLabel6.getText());
 
                         String nombre6;
                         nombre6 = jLabel6.getText();
-                        JuegoD3.jPuntaje666.setText(nombre6);
+                        JuegoD4.jPuntaje666.setText(nombre6);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
+                    }
+                    //turno jugador 4
+                }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    //condicion si esta vacio -> anotar
+                    if(JuegoD4.jPuntaje6666.getText().isEmpty()){
+                        System.out.println(jLabel6.getText());
+
+                        String nombre6;
+                        nombre6 = jLabel6.getText();
+                        JuegoD4.jPuntaje6666.setText(nombre6);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
                     }
                 }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
 
             if(jRadioButtonGrnd1.isSelected()){     //..............................grande1
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajeG1.getText().isEmpty()){
+                    if(JuegoD4.jPuntajeG1.getText().isEmpty()){
                         System.out.println(jLabel10.getText());
 
                         String nombre10;
                         nombre10 = jLabel10.getText();
-                        JuegoD3.jPuntajeG1.setText(nombre10);
+                        JuegoD4.jPuntajeG1.setText(nombre10);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 1) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajeG12.getText().isEmpty()){
+                    if(JuegoD4.jPuntajeG12.getText().isEmpty()){
                         System.out.println(jLabel10.getText());
 
                         String nombre10;
                         nombre10 = jLabel10.getText();
-                        JuegoD3.jPuntajeG12.setText(nombre10);
+                        JuegoD4.jPuntajeG12.setText(nombre10);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 2) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajeG13.getText().isEmpty()){
+                    if(JuegoD4.jPuntajeG13.getText().isEmpty()){
                         System.out.println(jLabel10.getText());
 
                         String nombre10;
                         nombre10 = jLabel10.getText();
-                        JuegoD3.jPuntajeG13.setText(nombre10);
+                        JuegoD4.jPuntajeG13.setText(nombre10);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
+                    }
+                    //turno jugador 4
+                }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    //condicion si esta vacio -> anotar
+                    if(JuegoD4.jPuntajeG14.getText().isEmpty()){
+                        System.out.println(jLabel10.getText());
+
+                        String nombre10;
+                        nombre10 = jLabel10.getText();
+                        JuegoD4.jPuntajeG14.setText(nombre10);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
                     }
                 }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
             //1
 
             if(jRadioButtonGrnd2.isSelected()){     //..............................grande2
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajeG2.getText().isEmpty()){
+                    if(JuegoD4.jPuntajeG2.getText().isEmpty()){
                         System.out.println(jLabel11.getText());
 
                         String nombre10;
                         nombre10 = jLabel11.getText();
-                        JuegoD3.jPuntajeG2.setText(nombre10);
+                        JuegoD4.jPuntajeG2.setText(nombre10);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
-                    if(JuegoD3.jPuntajeG22.getText().isEmpty()){
+                }else if(JuegoD4.turnP == 1) {
+                    if(JuegoD4.jPuntajeG22.getText().isEmpty()){
                         System.out.println(jLabel11.getText());
 
                         String nombre10;
                         nombre10 = jLabel11.getText();
-                        JuegoD3.jPuntajeG22.setText(nombre10);
+                        JuegoD4.jPuntajeG22.setText(nombre10);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
-                    if(JuegoD3.jPuntajeG23.getText().isEmpty()){
+                }else if(JuegoD4.turnP == 2) {
+                    if(JuegoD4.jPuntajeG23.getText().isEmpty()){
                         System.out.println(jLabel11.getText());
 
                         String nombre10;
                         nombre10 = jLabel11.getText();
-                        JuegoD3.jPuntajeG23.setText(nombre10);
+                        JuegoD4.jPuntajeG23.setText(nombre10);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
+                    }
+                    //turno jugador 4
+                }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    if(JuegoD4.jPuntajeG24.getText().isEmpty()){
+                        System.out.println(jLabel11.getText());
+
+                        String nombre10;
+                        nombre10 = jLabel11.getText();
+                        JuegoD4.jPuntajeG24.setText(nombre10);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
                     }
                 }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
 
             //2
             if(jRadioButtonEsca.isSelected()){     //...........................escalera
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajeEs.getText().isEmpty()){
+                    if(JuegoD4.jPuntajeEs.getText().isEmpty()){
                         System.out.println(jLabel7.getText());
 
                         String nombre7;
                         nombre7 = jLabel7.getText();
-                        JuegoD3.jPuntajeEs.setText(nombre7);
+                        JuegoD4.jPuntajeEs.setText(nombre7);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
-                    if(JuegoD3.jPuntajeES2.getText().isEmpty()){
+                }else if(JuegoD4.turnP == 1) {
+                    if(JuegoD4.jPuntajeES2.getText().isEmpty()){
                         System.out.println(jLabel7.getText());
 
                         String nombre7;
                         nombre7 = jLabel7.getText();
-                        JuegoD3.jPuntajeES2.setText(nombre7);
+                        JuegoD4.jPuntajeES2.setText(nombre7);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
-                    if(JuegoD3.jPuntajeES3.getText().isEmpty()){
+                }else if(JuegoD4.turnP == 2) {
+                    if(JuegoD4.jPuntajeES3.getText().isEmpty()){
                         System.out.println(jLabel7.getText());
 
                         String nombre7;
                         nombre7 = jLabel7.getText();
-                        JuegoD3.jPuntajeES3.setText(nombre7);
+                        JuegoD4.jPuntajeES3.setText(nombre7);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
+                    }
+                    //turno jugador 4
+                }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    if(JuegoD4.jPuntajeES4.getText().isEmpty()){
+                        System.out.println(jLabel7.getText());
+
+                        String nombre7;
+                        nombre7 = jLabel7.getText();
+                        JuegoD4.jPuntajeES4.setText(nombre7);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
                     }
                 }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
             if(jRadioButtonFull.isSelected()){        //........................full
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajeFull.getText().isEmpty()){
+                    if(JuegoD4.jPuntajeFull.getText().isEmpty()){
                         System.out.println(jLabel9.getText());
 
                         String nombre9;
                         nombre9 = jLabel9.getText();
-                        JuegoD3.jPuntajeFull.setText(nombre9);
+                        JuegoD4.jPuntajeFull.setText(nombre9);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 1) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajeFull2.getText().isEmpty()){
+                    if(JuegoD4.jPuntajeFull2.getText().isEmpty()){
                         System.out.println(jLabel9.getText());
 
                         String nombre9;
                         nombre9 = jLabel9.getText();
-                        JuegoD3.jPuntajeFull2.setText(nombre9);
+                        JuegoD4.jPuntajeFull2.setText(nombre9);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 2) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajeFull3.getText().isEmpty()){
+                    if(JuegoD4.jPuntajeFull3.getText().isEmpty()){
                         System.out.println(jLabel9.getText());
 
                         String nombre9;
                         nombre9 = jLabel9.getText();
-                        JuegoD3.jPuntajeFull3.setText(nombre9);
+                        JuegoD4.jPuntajeFull3.setText(nombre9);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
+                    //turno jugador 4
                 }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    //condicion si esta vacio -> anotar
+                    if(JuegoD4.jPuntajeFull4.getText().isEmpty()){
+                        System.out.println(jLabel9.getText());
+
+                        String nombre9;
+                        nombre9 = jLabel9.getText();
+                        JuegoD4.jPuntajeFull4.setText(nombre9);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
+                    }
+                    
+                }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
             if(jRadioButtonPoker.isSelected()){     //..........................poker
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD4.turnP == 0){
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajePoker.getText().isEmpty()){
+                    if(JuegoD4.jPuntajePoker.getText().isEmpty()){
                         System.out.println(jLabel8.getText());
 
                         String nombre8;
                         nombre8 = jLabel8.getText();
-                        JuegoD3.jPuntajePoker.setText(nombre8);
+                        JuegoD4.jPuntajePoker.setText(nombre8);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 1 ) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajePoker2.getText().isEmpty()){
+                    if(JuegoD4.jPuntajePoker2.getText().isEmpty()){
                         System.out.println(jLabel8.getText());
 
                         String nombre8;
                         nombre8 = jLabel8.getText();
-                        JuegoD3.jPuntajePoker2.setText(nombre8);
+                        JuegoD4.jPuntajePoker2.setText(nombre8);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD4.turnP == 2) {
                     //condicion si esta vacio -> anotar
-                    if(JuegoD3.jPuntajePoker3.getText().isEmpty()){
+                    if(JuegoD4.jPuntajePoker3.getText().isEmpty()){
                         System.out.println(jLabel8.getText());
 
                         String nombre8;
                         nombre8 = jLabel8.getText();
-                        JuegoD3.jPuntajePoker3.setText(nombre8);
+                        JuegoD4.jPuntajePoker3.setText(nombre8);
 
                         dispose();
                     }else{
                         JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
-                        JuegoD3.turnP--;
+                        JuegoD4.turnP--;
+                    }
+                    //turno jugador 4
+                }
+                //1
+                else if(JuegoD4.turnP == 3) {
+                    //condicion si esta vacio -> anotar
+                    if(JuegoD4.jPuntajePoker4.getText().isEmpty()){
+                        System.out.println(jLabel8.getText());
+
+                        String nombre8;
+                        nombre8 = jLabel8.getText();
+                        JuegoD4.jPuntajePoker4.setText(nombre8);
+
+                        dispose();
+                    }else{
+                        JOptionPane.showMessageDialog(this,"Puntaje ya establecido");
+                        JuegoD4.turnP--;
                     }
                 }
+                //2
                 //
-                if(JuegoD3.turnP == 2){
-                    JuegoD3.turnP = -1;
+                if(JuegoD4.turnP == 3){
+                    JuegoD4.turnP = -1;
                 }
-                JuegoD3.turnP++;
-                System.out.println("turnoP:" + JuegoD3.turnP);
+                JuegoD4.turnP++;
+                System.out.println("turnoP:" + JuegoD4.turnP);
             }
         }
     }//GEN-LAST:event_jButtonSaveActionPerformed
@@ -804,20 +1004,20 @@ public class puntajeT3 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(puntajeT3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(puntajeT4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(puntajeT3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(puntajeT4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(puntajeT3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(puntajeT4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(puntajeT3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(puntajeT4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new puntajeT3().setVisible(true);
+                new puntajeT4().setVisible(true);
             }
         });
     }

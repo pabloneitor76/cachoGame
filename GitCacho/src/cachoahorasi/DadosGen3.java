@@ -49,6 +49,10 @@ public class DadosGen3 extends javax.swing.JFrame {
        jTerminarT.setOpaque(false);
        jTerminarT.setContentAreaFilled(false);
        jTerminarT.setBorderPainted(false);
+       //........boton primer casa
+       jSalir.setOpaque(false);
+       jSalir.setContentAreaFilled(false);
+       jSalir.setBorderPainted(false);
         //
         
     }
@@ -77,14 +81,21 @@ public class DadosGen3 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(610, 440));
+        getContentPane().setLayout(null);
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("0");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(242, 268, 78, 15);
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("0");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(410, 268, 75, 15);
 
         jCheckDado1.setText("jCheckBox1");
         jCheckDado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-01.gif"))); // NOI18N
@@ -93,13 +104,23 @@ public class DadosGen3 extends javax.swing.JFrame {
                 jCheckDado1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jCheckDado1);
+        jCheckDado1.setBounds(174, 76, 77, 70);
 
+        jPrimerT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-1-50.png"))); // NOI18N
         jPrimerT.setText("PrimerT");
+        jPrimerT.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Private 2-50.png"))); // NOI18N
+        jPrimerT.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPrimerT.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jPrimerT.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-1 Filled-50.png"))); // NOI18N
+        jPrimerT.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jPrimerT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPrimerTActionPerformed(evt);
             }
         });
+        getContentPane().add(jPrimerT);
+        jPrimerT.setBounds(20, 50, 84, 70);
 
         jCheckDado2.setText("jCheckBox2");
         jCheckDado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-02.gif"))); // NOI18N
@@ -108,13 +129,23 @@ public class DadosGen3 extends javax.swing.JFrame {
                 jCheckDado2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jCheckDado2);
+        jCheckDado2.setBounds(336, 76, 73, 70);
 
+        jSegundoT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-2-50.png"))); // NOI18N
         jSegundoT.setText("SegundoT");
+        jSegundoT.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Private 2-50.png"))); // NOI18N
+        jSegundoT.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jSegundoT.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jSegundoT.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-2 Filled-50.png"))); // NOI18N
+        jSegundoT.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jSegundoT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jSegundoTActionPerformed(evt);
             }
         });
+        getContentPane().add(jSegundoT);
+        jSegundoT.setBounds(20, 140, 84, 70);
 
         jCheckDado3.setText("jCheckBox3");
         jCheckDado3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-03.gif"))); // NOI18N
@@ -123,13 +154,23 @@ public class DadosGen3 extends javax.swing.JFrame {
                 jCheckDado3ActionPerformed(evt);
             }
         });
+        getContentPane().add(jCheckDado3);
+        jCheckDado3.setBounds(471, 76, 74, 70);
 
+        jVoltearD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Cambiar-50.png"))); // NOI18N
         jVoltearD.setText("VoltearD");
+        jVoltearD.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Private 2-50.png"))); // NOI18N
+        jVoltearD.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jVoltearD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jVoltearD.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Cambiar Filled-50.png"))); // NOI18N
+        jVoltearD.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jVoltearD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jVoltearDActionPerformed(evt);
             }
         });
+        getContentPane().add(jVoltearD);
+        jVoltearD.setBounds(20, 230, 80, 70);
 
         jCheckDado4.setText("jCheckBox4");
         jCheckDado4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-04.gif"))); // NOI18N
@@ -138,13 +179,23 @@ public class DadosGen3 extends javax.swing.JFrame {
                 jCheckDado4ActionPerformed(evt);
             }
         });
+        getContentPane().add(jCheckDado4);
+        jCheckDado4.setBounds(242, 180, 78, 70);
 
+        jTerminarT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Lista de verificación-50.png"))); // NOI18N
         jTerminarT.setText("TerminarT");
+        jTerminarT.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Private 2-50.png"))); // NOI18N
+        jTerminarT.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jTerminarT.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jTerminarT.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Lista de verificación Filled-50.png"))); // NOI18N
+        jTerminarT.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jTerminarT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTerminarTActionPerformed(evt);
             }
         });
+        getContentPane().add(jTerminarT);
+        jTerminarT.setBounds(180, 300, 90, 80);
 
         jCheckDado5.setText("jCheckBox5");
         jCheckDado5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-05.gif"))); // NOI18N
@@ -153,101 +204,42 @@ public class DadosGen3 extends javax.swing.JFrame {
                 jCheckDado5ActionPerformed(evt);
             }
         });
+        getContentPane().add(jCheckDado5);
+        jCheckDado5.setBounds(410, 180, 75, 70);
 
+        jSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Top Menu-50.png"))); // NOI18N
         jSalir.setText("Salir");
+        jSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jSalir.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
+        jSalir.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Menú principal Filled-50.png"))); // NOI18N
+        jSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jSalirActionPerformed(evt);
             }
         });
+        getContentPane().add(jSalir);
+        jSalir.setBounds(490, 300, 84, 70);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("0");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(174, 147, 77, 15);
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("0");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(336, 147, 73, 15);
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("0");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(471, 147, 74, 15);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPrimerT)
-                                    .addComponent(jSegundoT))
-                                .addGap(70, 70, 70)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jCheckDado1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckDado2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(42, 42, 42)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jCheckDado3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jVoltearD)
-                                .addGap(145, 145, 145)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckDado4, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckDado5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(60, 60, 60))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jTerminarT)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jSalir)))
-                .addGap(55, 55, 55))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(64, 64, 64)
-                .addComponent(jPrimerT)
-                .addGap(28, 28, 28)
-                .addComponent(jSegundoT)
-                .addGap(26, 26, 26)
-                .addComponent(jVoltearD)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTerminarT)
-                    .addComponent(jSalir))
-                .addGap(33, 33, 33))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(76, 76, 76)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckDado1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckDado2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckDado3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckDado5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckDado4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4))
-                .addContainerGap(117, Short.MAX_VALUE))
-        );
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/fondo-2.jpg"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(0, 0, 600, 400);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -795,6 +787,7 @@ public class DadosGen3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JButton jPrimerT;
     private javax.swing.JButton jSalir;
     private javax.swing.JButton jSegundoT;

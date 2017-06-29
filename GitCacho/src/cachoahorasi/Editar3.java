@@ -36,7 +36,6 @@ public class Editar3 extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jButtonGuardar = new javax.swing.JButton();
-        jButtonSalir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabelNom = new javax.swing.JLabel();
@@ -73,16 +72,7 @@ public class Editar3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonGuardar);
-        jButtonGuardar.setBounds(50, 270, 80, 70);
-
-        jButtonSalir.setText("Salir");
-        jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonSalirActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonSalir);
-        jButtonSalir.setBounds(150, 300, 55, 25);
+        jButtonGuardar.setBounds(100, 270, 80, 70);
 
         jLabel1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 2, 11)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
@@ -112,10 +102,10 @@ public class Editar3 extends javax.swing.JFrame {
         getContentPane().add(jLabel4);
         jLabel4.setBounds(40, 120, 140, 14);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo-de-los-rectángulos-del-vidrio-verde-76077534.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/fondo-de-los-rectán.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 0, 260, 320);
+        jLabel3.setBounds(0, 0, 260, 350);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -138,10 +128,6 @@ public class Editar3 extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_jButtonGuardarActionPerformed
-
-    private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
-        dispose();
-    }//GEN-LAST:event_jButtonSalirActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
@@ -184,7 +170,6 @@ public class Editar3 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonGuardar;
-    private javax.swing.JButton jButtonSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
