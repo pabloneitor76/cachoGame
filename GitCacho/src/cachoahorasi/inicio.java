@@ -218,9 +218,7 @@ public class inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonSalirActionPerformed
     //sonido boton jugar
     private void jButtonJugarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonJugarMouseClicked
-        /*AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
-        sonido.play();*/
+        
     }//GEN-LAST:event_jButtonJugarMouseClicked
 
     private void jButtonJugarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonJugarMouseEntered

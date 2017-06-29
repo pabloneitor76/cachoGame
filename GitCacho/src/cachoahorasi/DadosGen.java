@@ -5,6 +5,7 @@
  */
 package cachoahorasi;
 
+import java.applet.AudioClip;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -91,6 +92,17 @@ public class DadosGen extends javax.swing.JFrame {
         jPrimerT.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
         jPrimerT.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-1 Filled-50.png")); // NOI18N
         jPrimerT.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPrimerT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPrimerTMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPrimerTMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jPrimerTMousePressed(evt);
+            }
+        });
         jPrimerT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPrimerTActionPerformed(evt);
@@ -106,6 +118,17 @@ public class DadosGen extends javax.swing.JFrame {
         jSegundoT.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
         jSegundoT.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-2 Filled-50.png")); // NOI18N
         jSegundoT.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jSegundoT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jSegundoTMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jSegundoTMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jSegundoTMousePressed(evt);
+            }
+        });
         jSegundoT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jSegundoTActionPerformed(evt);
@@ -121,6 +144,17 @@ public class DadosGen extends javax.swing.JFrame {
         jVoltearD.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Spinner marco 3-26.png")); // NOI18N
         jVoltearD.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Cambiar Filled-50.png")); // NOI18N
         jVoltearD.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jVoltearD.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jVoltearDMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jVoltearDMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jVoltearDMousePressed(evt);
+            }
+        });
         jVoltearD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jVoltearDActionPerformed(evt);
@@ -135,6 +169,17 @@ public class DadosGen extends javax.swing.JFrame {
         jTerminarT.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jTerminarT.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\icons8-Lista de verificación Filled-50.png")); // NOI18N
         jTerminarT.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jTerminarT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jTerminarTMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTerminarTMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jTerminarTMousePressed(evt);
+            }
+        });
         jTerminarT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTerminarTActionPerformed(evt);
@@ -529,6 +574,8 @@ public class DadosGen extends javax.swing.JFrame {
         
         return res;
     }
+    
+    //
     //esFull?
     private boolean esFull(int[] dado){
         boolean res = false;
@@ -676,9 +723,13 @@ public class DadosGen extends javax.swing.JFrame {
                     }
                 }
             }
-            
-            
+        //esDormida
+        if(dado[0]==dado[i+1]){
+            JOptionPane.showMessageDialog(this,"DORMIDA");
         }
+        
+        }
+        
         
         System.out.println("puntaje de balas: "+ b);
         System.out.println("puntaje de tontos: "+ t);
@@ -754,6 +805,78 @@ public class DadosGen extends javax.swing.JFrame {
             jCheckDado5.setIcon(objImag1.gifDado1(dado[4]));
         }
     }//GEN-LAST:event_jCheckDado5ActionPerformed
+    //sonido boton primerT
+    private void jPrimerTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPrimerTMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jPrimerTMouseEntered
+
+    private void jPrimerTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPrimerTMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jPrimerTMouseExited
+
+    private void jPrimerTMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPrimerTMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jPrimerTMousePressed
+    //sonido boton segundoT
+    private void jSegundoTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSegundoTMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jSegundoTMouseEntered
+
+    private void jSegundoTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSegundoTMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jSegundoTMouseExited
+
+    private void jSegundoTMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSegundoTMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jSegundoTMousePressed
+    //sonido boton voltearD
+    private void jVoltearDMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jVoltearDMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jVoltearDMouseEntered
+
+    private void jVoltearDMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jVoltearDMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jVoltearDMouseExited
+
+    private void jVoltearDMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jVoltearDMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jVoltearDMousePressed
+    //sonido boton TerminarT
+    private void jTerminarTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTerminarTMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jTerminarTMouseEntered
+
+    private void jTerminarTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTerminarTMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jTerminarTMouseExited
+
+    private void jTerminarTMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTerminarTMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jTerminarTMousePressed
     
     /**
      * @param args the command line arguments
