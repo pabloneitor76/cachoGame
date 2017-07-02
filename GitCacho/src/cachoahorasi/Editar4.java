@@ -122,6 +122,7 @@ public class Editar4 extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/fondo-de-los-rectán.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
+        jLabel3.setPreferredSize(new java.awt.Dimension(270, 440));
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 0, 260, 410);
 

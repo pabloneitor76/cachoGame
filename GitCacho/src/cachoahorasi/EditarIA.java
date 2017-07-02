@@ -96,7 +96,8 @@ public class EditarIA extends javax.swing.JFrame {
 
         String nombre;
         nombre = jTextField1.getText();
-        juega1vs1.jLabel1.setText(nombre);
+        juegoIA.jLabel1.setText(nombre);
+        dispose();
 
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 

@@ -129,7 +129,7 @@ public class JuegoD4 extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(610, 430));
+        setPreferredSize(new java.awt.Dimension(610, 440));
         getContentPane().setLayout(null);
 
         jLabel1.setText("Jugador_1");
@@ -147,19 +147,17 @@ public class JuegoD4 extends javax.swing.JFrame {
         jPuntaje1.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje1.setForeground(new java.awt.Color(255, 0, 0));
         getContentPane().add(jPuntaje1);
-        jPuntaje1.setBounds(50, 170, 40, 15);
+        jPuntaje1.setBounds(50, 160, 40, 20);
 
         jPuntajeEs.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeEs.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeEs.setText("0");
         getContentPane().add(jPuntajeEs);
-        jPuntajeEs.setBounds(80, 170, 40, 15);
+        jPuntajeEs.setBounds(80, 160, 40, 20);
 
         jPuntaje4.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje4.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje4.setText("0");
         getContentPane().add(jPuntaje4);
-        jPuntaje4.setBounds(110, 170, 40, 15);
+        jPuntaje4.setBounds(110, 160, 40, 20);
 
         jBjugar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-1 en círculo -50.png"))); // NOI18N
         jBjugar1.setText("Juega1");
@@ -293,45 +291,38 @@ public class JuegoD4 extends javax.swing.JFrame {
 
         jPuntajeFull.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeFull.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeFull.setText("0");
         getContentPane().add(jPuntajeFull);
-        jPuntajeFull.setBounds(80, 200, 40, 15);
+        jPuntajeFull.setBounds(80, 200, 40, 20);
 
         jPuntaje5.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje5.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje5.setText("0");
         getContentPane().add(jPuntaje5);
-        jPuntaje5.setBounds(110, 200, 40, 15);
+        jPuntaje5.setBounds(110, 200, 40, 20);
 
         jPuntaje3.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje3.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje3.setText("0");
         getContentPane().add(jPuntaje3);
-        jPuntaje3.setBounds(50, 230, 40, 15);
+        jPuntaje3.setBounds(50, 230, 40, 20);
 
         jPuntajePoker.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajePoker.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajePoker.setText("0");
         getContentPane().add(jPuntajePoker);
-        jPuntajePoker.setBounds(80, 230, 40, 15);
+        jPuntajePoker.setBounds(80, 230, 40, 20);
 
         jPuntaje6.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje6.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje6.setText("0");
         getContentPane().add(jPuntaje6);
-        jPuntaje6.setBounds(110, 230, 40, 15);
+        jPuntaje6.setBounds(110, 230, 40, 20);
 
         jPuntajeG1.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG1.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeG1.setText("0");
         getContentPane().add(jPuntajeG1);
-        jPuntajeG1.setBounds(50, 260, 40, 15);
+        jPuntajeG1.setBounds(50, 260, 40, 20);
 
         jPuntajeG2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG2.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeG2.setText("0");
         getContentPane().add(jPuntajeG2);
-        jPuntajeG2.setBounds(100, 260, 40, 15);
+        jPuntajeG2.setBounds(100, 260, 40, 20);
 
         jPuntaje11.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje11.setForeground(new java.awt.Color(255, 0, 0));
@@ -340,15 +331,13 @@ public class JuegoD4 extends javax.swing.JFrame {
 
         jPuntajeES2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeES2.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeES2.setText("0");
         getContentPane().add(jPuntajeES2);
-        jPuntajeES2.setBounds(220, 170, 40, 15);
+        jPuntajeES2.setBounds(220, 170, 40, 0);
 
         jPuntaje44.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje44.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje44.setText("0");
         getContentPane().add(jPuntaje44);
-        jPuntaje44.setBounds(250, 170, 40, 15);
+        jPuntaje44.setBounds(250, 170, 40, 0);
 
         jPuntaje22.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje22.setForeground(new java.awt.Color(255, 0, 0));
@@ -357,57 +346,48 @@ public class JuegoD4 extends javax.swing.JFrame {
 
         jPuntajeFull2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeFull2.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeFull2.setText("0");
         getContentPane().add(jPuntajeFull2);
-        jPuntajeFull2.setBounds(220, 200, 40, 15);
+        jPuntajeFull2.setBounds(220, 200, 40, 0);
 
         jPuntaje55.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje55.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje55.setText("0");
         getContentPane().add(jPuntaje55);
-        jPuntaje55.setBounds(250, 200, 40, 15);
+        jPuntaje55.setBounds(250, 200, 40, 0);
 
         jPuntaje33.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje33.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje33.setText("0");
         getContentPane().add(jPuntaje33);
-        jPuntaje33.setBounds(190, 230, 40, 15);
+        jPuntaje33.setBounds(190, 230, 40, 0);
 
         jPuntajePoker2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajePoker2.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajePoker2.setText("0");
         getContentPane().add(jPuntajePoker2);
-        jPuntajePoker2.setBounds(220, 230, 40, 15);
+        jPuntajePoker2.setBounds(220, 230, 40, 0);
 
         jPuntaje66.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje66.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje66.setText("0");
         getContentPane().add(jPuntaje66);
-        jPuntaje66.setBounds(250, 230, 40, 15);
+        jPuntaje66.setBounds(250, 230, 40, 0);
 
         jPuntajeG12.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG12.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeG12.setText("0");
         getContentPane().add(jPuntajeG12);
-        jPuntajeG12.setBounds(200, 260, 40, 15);
+        jPuntajeG12.setBounds(200, 260, 40, 0);
 
         jPuntajeG22.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG22.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeG22.setText("0");
         getContentPane().add(jPuntajeG22);
-        jPuntajeG22.setBounds(240, 260, 40, 15);
+        jPuntajeG22.setBounds(240, 260, 40, 0);
 
         jPuntajeES3.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeES3.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeES3.setText("0");
         getContentPane().add(jPuntajeES3);
-        jPuntajeES3.setBounds(360, 160, 40, 15);
+        jPuntajeES3.setBounds(360, 160, 40, 0);
 
         jPuntaje444.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje444.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje444.setText("0");
         getContentPane().add(jPuntaje444);
-        jPuntaje444.setBounds(390, 160, 40, 15);
+        jPuntaje444.setBounds(390, 160, 40, 0);
 
         jPuntaje111.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje111.setForeground(new java.awt.Color(255, 0, 0));
@@ -416,15 +396,13 @@ public class JuegoD4 extends javax.swing.JFrame {
 
         jPuntajeFull3.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeFull3.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeFull3.setText("0");
         getContentPane().add(jPuntajeFull3);
-        jPuntajeFull3.setBounds(360, 190, 40, 15);
+        jPuntajeFull3.setBounds(360, 190, 40, 0);
 
         jPuntaje555.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje555.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje555.setText("0");
         getContentPane().add(jPuntaje555);
-        jPuntaje555.setBounds(390, 190, 40, 15);
+        jPuntaje555.setBounds(390, 190, 40, 0);
 
         jPuntaje222.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje222.setForeground(new java.awt.Color(255, 0, 0));
@@ -433,33 +411,28 @@ public class JuegoD4 extends javax.swing.JFrame {
 
         jPuntaje333.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje333.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje333.setText("0");
         getContentPane().add(jPuntaje333);
-        jPuntaje333.setBounds(330, 230, 40, 15);
+        jPuntaje333.setBounds(330, 230, 40, 0);
 
         jPuntajePoker3.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajePoker3.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajePoker3.setText("0");
         getContentPane().add(jPuntajePoker3);
         jPuntajePoker3.setBounds(360, 230, 40, 14);
 
         jPuntaje666.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje666.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje666.setText("0");
         getContentPane().add(jPuntaje666);
         jPuntaje666.setBounds(390, 230, 40, 14);
 
         jPuntajeG13.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG13.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeG13.setText("0");
         getContentPane().add(jPuntajeG13);
-        jPuntajeG13.setBounds(340, 260, 40, 15);
+        jPuntajeG13.setBounds(340, 260, 40, 0);
 
         jPuntajeG23.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG23.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeG23.setText("0");
         getContentPane().add(jPuntajeG23);
-        jPuntajeG23.setBounds(380, 260, 40, 15);
+        jPuntajeG23.setBounds(380, 260, 40, 0);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/papel-arrugado_2947545as.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
@@ -507,15 +480,13 @@ public class JuegoD4 extends javax.swing.JFrame {
 
         jPuntajeES4.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeES4.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeES4.setText("0");
         getContentPane().add(jPuntajeES4);
-        jPuntajeES4.setBounds(500, 160, 40, 15);
+        jPuntajeES4.setBounds(500, 160, 40, 0);
 
         jPuntaje4444.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje4444.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje4444.setText("0");
         getContentPane().add(jPuntaje4444);
-        jPuntaje4444.setBounds(530, 160, 40, 15);
+        jPuntaje4444.setBounds(530, 160, 40, 0);
 
         jPuntaje1111.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje1111.setForeground(new java.awt.Color(255, 0, 0));
@@ -524,15 +495,13 @@ public class JuegoD4 extends javax.swing.JFrame {
 
         jPuntajeFull4.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeFull4.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeFull4.setText("0");
         getContentPane().add(jPuntajeFull4);
-        jPuntajeFull4.setBounds(500, 200, 40, 15);
+        jPuntajeFull4.setBounds(500, 200, 40, 0);
 
         jPuntaje5555.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje5555.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje5555.setText("0");
         getContentPane().add(jPuntaje5555);
-        jPuntaje5555.setBounds(530, 200, 40, 15);
+        jPuntaje5555.setBounds(530, 200, 40, 0);
 
         jPuntaje2222.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje2222.setForeground(new java.awt.Color(255, 0, 0));
@@ -541,33 +510,28 @@ public class JuegoD4 extends javax.swing.JFrame {
 
         jPuntaje3333.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje3333.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje3333.setText("0");
         getContentPane().add(jPuntaje3333);
-        jPuntaje3333.setBounds(470, 230, 40, 15);
+        jPuntaje3333.setBounds(470, 230, 40, 0);
 
         jPuntajePoker4.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajePoker4.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajePoker4.setText("0");
         getContentPane().add(jPuntajePoker4);
         jPuntajePoker4.setBounds(500, 230, 40, 14);
 
         jPuntaje6666.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje6666.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntaje6666.setText("0");
         getContentPane().add(jPuntaje6666);
         jPuntaje6666.setBounds(530, 230, 40, 14);
 
         jPuntajeG14.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG14.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeG14.setText("0");
         getContentPane().add(jPuntajeG14);
-        jPuntajeG14.setBounds(480, 260, 40, 15);
+        jPuntajeG14.setBounds(480, 260, 40, 0);
 
         jPuntajeG24.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG24.setForeground(new java.awt.Color(255, 0, 0));
-        jPuntajeG24.setText("0");
         getContentPane().add(jPuntajeG24);
-        jPuntajeG24.setBounds(510, 260, 40, 15);
+        jPuntajeG24.setBounds(510, 260, 40, 0);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/papel-arrugado_2947545as.jpg"))); // NOI18N
         jLabel9.setText("jLabel7");
