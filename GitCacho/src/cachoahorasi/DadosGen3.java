@@ -77,7 +77,6 @@ public class DadosGen3 extends javax.swing.JFrame {
         jCheckDado4 = new javax.swing.JCheckBox();
         jTerminarT = new javax.swing.JButton();
         jCheckDado5 = new javax.swing.JCheckBox();
-        jSalir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -206,20 +205,6 @@ public class DadosGen3 extends javax.swing.JFrame {
         });
         getContentPane().add(jCheckDado5);
         jCheckDado5.setBounds(410, 180, 75, 70);
-
-        jSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Top Menu-50.png"))); // NOI18N
-        jSalir.setText("Salir");
-        jSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jSalir.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
-        jSalir.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Menú principal Filled-50.png"))); // NOI18N
-        jSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jSalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jSalirActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jSalir);
-        jSalir.setBounds(490, 300, 84, 70);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("0");
@@ -737,10 +722,6 @@ public class DadosGen3 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jCheckDado5ActionPerformed
 
-    private void jSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSalirActionPerformed
-        dispose();
-    }//GEN-LAST:event_jSalirActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -789,7 +770,6 @@ public class DadosGen3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JButton jPrimerT;
-    private javax.swing.JButton jSalir;
     private javax.swing.JButton jSegundoT;
     private javax.swing.JButton jTerminarT;
     private javax.swing.JButton jVoltearD;

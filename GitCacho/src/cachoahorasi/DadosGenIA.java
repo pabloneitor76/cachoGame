@@ -6,25 +6,22 @@
 package cachoahorasi;
 
 import java.applet.AudioClip;
-import java.awt.Image;
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author pabloneitor
+ * @author DELL
  */
-public class DadosGen extends javax.swing.JFrame {
+public class DadosGenIA extends javax.swing.JFrame {
     private int obj;
     Cubilete objDado1 = new Cubilete();
     int [] dado = objDado1.cubileteLanza();
     int SiDadoT2 = 0;
     int voltea2 = 0;
-    
     /**
-     * Creates new form DadosGen
+     * Creates new form DadosGenIA
      */
-    public DadosGen() {
+    public DadosGenIA() {
         initComponents();
         this.setLocationRelativeTo(null);
         jSegundoT.setEnabled(false);
@@ -86,6 +83,7 @@ public class DadosGen extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(610, 440));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jPrimerT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-1-50.png"))); // NOI18N
@@ -269,13 +267,31 @@ public class DadosGen extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/fondo-2.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");
+        jLabel6.setPreferredSize(new java.awt.Dimension(610, 440));
         getContentPane().add(jLabel6);
         jLabel6.setBounds(0, 0, 600, 400);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-   //Primer Tiro       
+    private void jPrimerTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPrimerTMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jPrimerTMouseEntered
+
+    private void jPrimerTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPrimerTMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jPrimerTMouseExited
+
+    private void jPrimerTMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPrimerTMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jPrimerTMousePressed
+
     private void jPrimerTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPrimerTActionPerformed
         //dado1
         jLabel1.setText(""+dado[0]);
@@ -297,19 +313,37 @@ public class DadosGen extends javax.swing.JFrame {
         jLabel5.setText(""+dado[4]);
         imagenesResult objImag5 = new imagenesResult();
         jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
-        
+
         JOptionPane.showMessageDialog(this,"Seleccione Dados Para Segundo Tiro");
-        
+
         jPrimerT.setEnabled(false);
         jSegundoT.setEnabled(true);
         //jSegundoT.setEnabled(false);
     }//GEN-LAST:event_jPrimerTActionPerformed
-    //Segundo Tiro
+
+    private void jSegundoTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSegundoTMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jSegundoTMouseEntered
+
+    private void jSegundoTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSegundoTMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jSegundoTMouseExited
+
+    private void jSegundoTMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSegundoTMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jSegundoTMousePressed
+
     private void jSegundoTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSegundoTActionPerformed
-        
+
         //Dado_1
         if(jCheckDado1.isSelected()){
-            
+
             dado[0] = objDado1.lanzarDado();
             jLabel1.setText(""+dado[0]);
             imagenesResult objImag1 = new imagenesResult();
@@ -319,7 +353,7 @@ public class DadosGen extends javax.swing.JFrame {
         }
         //Dado_2
         if(jCheckDado2.isSelected()){
-            
+
             dado[1] = objDado1.lanzarDado();
             jLabel2.setText(""+dado[1]);
             imagenesResult objImag2 = new imagenesResult();
@@ -367,58 +401,76 @@ public class DadosGen extends javax.swing.JFrame {
         jCheckDado3.setSelected(false);
         jCheckDado4.setSelected(false);
         jCheckDado5.setSelected(false);
-        
+
         //JOptionPane.showMessageDialog(this,"Seleccione Dados A Voltear");
-        
+
         //jSegundoT.setEnabled(false);
         jTerminarT.setEnabled(false);
     }//GEN-LAST:event_jSegundoTActionPerformed
-    //Voltear Dado(s)
+
+    private void jVoltearDMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jVoltearDMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jVoltearDMouseEntered
+
+    private void jVoltearDMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jVoltearDMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jVoltearDMouseExited
+
+    private void jVoltearDMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jVoltearDMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jVoltearDMousePressed
+
     private void jVoltearDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jVoltearDActionPerformed
-       
-           //Dado_1
-            if(jCheckDado1.isSelected()){
-                /*dado[0] = objDado1.voltearDado(dado[0]);
-                jLabel1.setText(""+dado[0]);
-                imagenesResult objImag1 = new imagenesResult();
-                jCheckDado1.setIcon(objImag1.Imaen(dado[0]));*/
-                voltea2++;
-                
-            }
-            //Dado_2
-            if(jCheckDado2.isSelected()){
-                /*dado[1] = objDado1.voltearDado(dado[1]);
-                jLabel2.setText(""+dado[1]);
-                imagenesResult objImag2 = new imagenesResult();
-                jCheckDado2.setIcon(objImag2.Imaen(dado[1]));*/
-                voltea2++;
-                
-            }
-            //Dado_3
-            if(jCheckDado3.isSelected()){
-                /*dado[2] = objDado1.voltearDado(dado[2]);
-                jLabel3.setText(""+dado[2]);
-                imagenesResult objImag3 = new imagenesResult();
-                jCheckDado3.setIcon(objImag3.Imaen(dado[2]));*/
-                voltea2++;
-            }
-            //Dado_4
-            if(jCheckDado4.isSelected()){
-                /*dado[3] = objDado1.voltearDado(dado[3]);
-                jLabel4.setText(""+dado[3]);
-                imagenesResult objImag4 = new imagenesResult();
-                jCheckDado4.setIcon(objImag4.Imaen(dado[3]));*/
-                voltea2++;
-                
-            }
-            //Dado_5
-            if(jCheckDado5.isSelected()){
-                /*dado[4] = objDado1.voltearDado(dado[4]);
-                jLabel5.setText(""+dado[4]);
-                imagenesResult objImag5 = new imagenesResult();
-                jCheckDado5.setIcon(objImag5.Imaen(dado[4]));*/
-                voltea2++;
-            }
+
+        //Dado_1
+        if(jCheckDado1.isSelected()){
+            /*dado[0] = objDado1.voltearDado(dado[0]);
+            jLabel1.setText(""+dado[0]);
+            imagenesResult objImag1 = new imagenesResult();
+            jCheckDado1.setIcon(objImag1.Imaen(dado[0]));*/
+            voltea2++;
+
+        }
+        //Dado_2
+        if(jCheckDado2.isSelected()){
+            /*dado[1] = objDado1.voltearDado(dado[1]);
+            jLabel2.setText(""+dado[1]);
+            imagenesResult objImag2 = new imagenesResult();
+            jCheckDado2.setIcon(objImag2.Imaen(dado[1]));*/
+            voltea2++;
+
+        }
+        //Dado_3
+        if(jCheckDado3.isSelected()){
+            /*dado[2] = objDado1.voltearDado(dado[2]);
+            jLabel3.setText(""+dado[2]);
+            imagenesResult objImag3 = new imagenesResult();
+            jCheckDado3.setIcon(objImag3.Imaen(dado[2]));*/
+            voltea2++;
+        }
+        //Dado_4
+        if(jCheckDado4.isSelected()){
+            /*dado[3] = objDado1.voltearDado(dado[3]);
+            jLabel4.setText(""+dado[3]);
+            imagenesResult objImag4 = new imagenesResult();
+            jCheckDado4.setIcon(objImag4.Imaen(dado[3]));*/
+            voltea2++;
+
+        }
+        //Dado_5
+        if(jCheckDado5.isSelected()){
+            /*dado[4] = objDado1.voltearDado(dado[4]);
+            jLabel5.setText(""+dado[4]);
+            imagenesResult objImag5 = new imagenesResult();
+            jCheckDado5.setIcon(objImag5.Imaen(dado[4]));*/
+            voltea2++;
+        }
         if(voltea2 == 1 || voltea2 == 2){
             //
             jVoltearD.setEnabled(false);
@@ -431,7 +483,7 @@ public class DadosGen extends javax.swing.JFrame {
                 imagenesResult objImag1 = new imagenesResult();
                 jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
                 //voltea2++;
-                
+
             }
             //Dado_2
             if(jCheckDado2.isSelected()){
@@ -440,7 +492,7 @@ public class DadosGen extends javax.swing.JFrame {
                 imagenesResult objImag2 = new imagenesResult();
                 jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
                 //voltea2++;
-                
+
             }
             //Dado_3
             if(jCheckDado3.isSelected()){
@@ -457,7 +509,7 @@ public class DadosGen extends javax.swing.JFrame {
                 imagenesResult objImag4 = new imagenesResult();
                 jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
                 //voltea2++;
-                
+
             }
             //Dado_5
             if(jCheckDado5.isSelected()){
@@ -471,35 +523,35 @@ public class DadosGen extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(this,"Seleccione solo uno o dos dados a voltear");
             //jVoltearD.setEnabled(false);
-             //Dado_1
+            //Dado_1
             if(jCheckDado1.isSelected()){
                 imagenesResult objImag1 = new imagenesResult();
                 jCheckDado1.setIcon(objImag1.Imaen(dado[0]));
-                
+
             }
             //Dado_2
             if(jCheckDado2.isSelected()){
-                
+
                 imagenesResult objImag2 = new imagenesResult();
                 jCheckDado2.setIcon(objImag2.Imaen(dado[1]));
-                
+
             }
             //Dado_3
             if(jCheckDado3.isSelected()){
-                
+
                 imagenesResult objImag3 = new imagenesResult();
                 jCheckDado3.setIcon(objImag3.Imaen(dado[2]));
             }
             //Dado_4
             if(jCheckDado4.isSelected()){
-                
+
                 imagenesResult objImag4 = new imagenesResult();
                 jCheckDado4.setIcon(objImag4.Imaen(dado[3]));
-                
+
             }
             //Dado_5
             if(jCheckDado5.isSelected()){
-                
+
                 imagenesResult objImag5 = new imagenesResult();
                 jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
             }
@@ -511,10 +563,27 @@ public class DadosGen extends javax.swing.JFrame {
             jCheckDado5.setSelected(false);
             voltea2 = 0;
         }
-        
-        
-        
+
     }//GEN-LAST:event_jVoltearDActionPerformed
+
+    private void jTerminarTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTerminarTMouseEntered
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jTerminarTMouseEntered
+
+    private void jTerminarTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTerminarTMouseExited
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jTerminarTMouseExited
+
+    private void jTerminarTMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTerminarTMousePressed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
+        sonido.play();
+    }//GEN-LAST:event_jTerminarTMousePressed
+    //
     //metodo de ordenamiento
     private void ordenarDados(int[] dado){
         for(int i = 0; i < dado.length - 1; i++){
@@ -646,8 +715,9 @@ public class DadosGen extends javax.swing.JFrame {
     }
     //
     //Terminar Turno
+    //
     private void jTerminarTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTerminarTActionPerformed
-        int b = 0; 
+        int b = 0;
         int t = 0;
         int tr = 0;
         int c = 0;
@@ -663,33 +733,33 @@ public class DadosGen extends javax.swing.JFrame {
             //balas -> senas
             switch (dado[i]) {
                 case 1:
-                    //balas
-                    b = b + dado[i];
-                    break;
+                //balas
+                b = b + dado[i];
+                break;
                 case 2:
-                    //tontos
-                    t = t + dado[i];
-                    break;
+                //tontos
+                t = t + dado[i];
+                break;
                 case 3:
-                    //trenes
-                    tr = tr + dado[i];
-                    break;
+                //trenes
+                tr = tr + dado[i];
+                break;
                 case 4:
-                    //cuadras
-                    c = c + dado[i];
-                    break;
+                //cuadras
+                c = c + dado[i];
+                break;
                 case 5:
-                    //quinas
-                    q = q + dado[i];
-                    break;
+                //quinas
+                q = q + dado[i];
+                break;
                 case 6:
-                    //senas
-                    se = se + dado[i];
-                    break;   
+                //senas
+                se = se + dado[i];
+                break;
             }
             //grande
             int plus = 5;
-            if(!jVoltearD.isEnabled()&&jSegundoT.isEnabled()){
+            if(!jVoltearD.isEnabled()){
                 if(esGrande(dado)){
                     gr = 50 + plus;
                 }else{
@@ -718,14 +788,13 @@ public class DadosGen extends javax.swing.JFrame {
                     }
                 }
             }
-        /*//esDormida
-        if(dado[0]==dado[i+1]){
-            JOptionPane.showMessageDialog(this,"DORMIDA");
-        }*/
-        
+            /*//esDormida
+            if(dado[0]==dado[i+1]){
+                JOptionPane.showMessageDialog(this,"DORMIDA");
+            }*/
+
         }
-        
-        
+
         System.out.println("puntaje de balas: "+ b);
         System.out.println("puntaje de tontos: "+ t);
         System.out.println("puntaje de trenes: "+ tr);
@@ -737,22 +806,22 @@ public class DadosGen extends javax.swing.JFrame {
         System.out.println("puntaje de escalera: "+ es);
         System.out.println("puntaje de full: "+ full);
         System.out.println("puntaje de poker: "+ pok);
-        
-        puntajeT puntaje = new puntajeT();
+
+        puntajeIA puntaje = new puntajeIA();
         puntaje.setVisible(true);
-        puntajeT.jLabel1.setText(Integer.toString(b));
-        puntajeT.jLabel2.setText(Integer.toString(t));
-        puntajeT.jLabel3.setText(Integer.toString(tr));
-        puntajeT.jLabel4.setText(Integer.toString(c));
-        puntajeT.jLabel5.setText(Integer.toString(q));
-        puntajeT.jLabel6.setText(Integer.toString(se));
-        puntajeT.jLabel10.setText(Integer.toString(gr));
-        puntajeT.jLabel11.setText(Integer.toString(gr2));
-        puntajeT.jLabel7.setText(Integer.toString(es));
-        puntajeT.jLabel9.setText(Integer.toString(full));
-        puntajeT.jLabel8.setText(Integer.toString(pok));
+        puntajeIA.jLabel1.setText(Integer.toString(b));
+        puntajeIA.jLabel2.setText(Integer.toString(t));
+        puntajeIA.jLabel3.setText(Integer.toString(tr));
+        puntajeIA.jLabel4.setText(Integer.toString(c));
+        puntajeIA.jLabel5.setText(Integer.toString(q));
+        puntajeIA.jLabel6.setText(Integer.toString(se));
+        puntajeIA.jLabel10.setText(Integer.toString(gr));
+        puntajeIA.jLabel11.setText(Integer.toString(gr2));
+        puntajeIA.jLabel7.setText(Integer.toString(es));
+        puntajeIA.jLabel9.setText(Integer.toString(full));
+        puntajeIA.jLabel8.setText(Integer.toString(pok));
         dispose();
-        
+
     }//GEN-LAST:event_jTerminarTActionPerformed
 
     private void jCheckDado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado1ActionPerformed
@@ -760,9 +829,9 @@ public class DadosGen extends javax.swing.JFrame {
             //jSegundoT.setEnabled(true);
             imagenes1 objImag1 = new imagenes1();
             jCheckDado1.setIcon(objImag1.gifDado1(dado[0]));
-            
+
         }/*else{
-            
+
         }*/
     }//GEN-LAST:event_jCheckDado1ActionPerformed
 
@@ -796,79 +865,7 @@ public class DadosGen extends javax.swing.JFrame {
             jCheckDado5.setIcon(objImag1.gifDado1(dado[4]));
         }
     }//GEN-LAST:event_jCheckDado5ActionPerformed
-    //sonido boton primerT
-    private void jPrimerTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPrimerTMouseEntered
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jPrimerTMouseEntered
 
-    private void jPrimerTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPrimerTMouseExited
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jPrimerTMouseExited
-
-    private void jPrimerTMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPrimerTMousePressed
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jPrimerTMousePressed
-    //sonido boton segundoT
-    private void jSegundoTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSegundoTMouseEntered
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jSegundoTMouseEntered
-
-    private void jSegundoTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSegundoTMouseExited
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jSegundoTMouseExited
-
-    private void jSegundoTMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSegundoTMousePressed
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jSegundoTMousePressed
-    //sonido boton voltearD
-    private void jVoltearDMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jVoltearDMouseEntered
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jVoltearDMouseEntered
-
-    private void jVoltearDMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jVoltearDMouseExited
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jVoltearDMouseExited
-
-    private void jVoltearDMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jVoltearDMousePressed
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jVoltearDMousePressed
-    //sonido boton TerminarT
-    private void jTerminarTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTerminarTMouseEntered
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jTerminarTMouseEntered
-
-    private void jTerminarTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTerminarTMouseExited
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/selected.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jTerminarTMouseExited
-
-    private void jTerminarTMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTerminarTMousePressed
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/Sonido/clicked.wav"));
-        sonido.play();
-    }//GEN-LAST:event_jTerminarTMousePressed
-    
     /**
      * @param args the command line arguments
      */
@@ -886,20 +883,20 @@ public class DadosGen extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DadosGen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosGenIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DadosGen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosGenIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DadosGen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosGenIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DadosGen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosGenIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DadosGen().setVisible(true);
+                new DadosGenIA().setVisible(true);
             }
         });
     }

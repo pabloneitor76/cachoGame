@@ -19,6 +19,7 @@ public class juega1vs1 extends javax.swing.JFrame {
     static int turnP;//controla par o impar en turnojugador
     static int turnoS = 22;//controla el turno actual
     static int turno = 0;//turno actual inicio
+    
     /**
      * Creates new form juega1vs1
      */
@@ -353,6 +354,7 @@ public class juega1vs1 extends javax.swing.JFrame {
             System.out.println("turnoNro: " + turno);
             jBjugar1.setEnabled(false);
             jBjugar2.setEnabled(true);
+            System.out.print("banedera"+turno);
   
     }//GEN-LAST:event_jBjugar1ActionPerformed
 
@@ -422,7 +424,11 @@ public class juega1vs1 extends javax.swing.JFrame {
             System.out.println("turnoNro: " + turno);
             jBjugar2.setEnabled(false);
             jBjugar1.setEnabled(true);
-
+            System.out.print("banedera"+turno);
+            if(turno == 22 ){
+                jBjugar2.setEnabled(false);
+                jBjugar1.setEnabled(false);
+            }
     }//GEN-LAST:event_jBjugar2ActionPerformed
     
     private void jBexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBexitActionPerformed

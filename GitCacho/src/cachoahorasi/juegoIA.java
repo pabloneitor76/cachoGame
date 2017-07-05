@@ -7,6 +7,7 @@ package cachoahorasi;
 
 import static cachoahorasi.juega1vs1.jBjugar1;
 import static cachoahorasi.juega1vs1.jBjugar2;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
@@ -23,6 +24,10 @@ public class juegoIA extends javax.swing.JFrame {
     public juegoIA() {
         initComponents();
          this.setLocationRelativeTo(null);
+         //
+          
+
+         //
         
         /*
         ImageIcon fondo1 = new ImageIcon(getClass().getResource("Imagenes/cart.png"));
@@ -50,7 +55,8 @@ public class juegoIA extends javax.swing.JFrame {
         jBexit.setContentAreaFilled(false);
         jBexit.setBorderPainted(false);
     }
-
+      
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -66,10 +72,10 @@ public class juegoIA extends javax.swing.JFrame {
         jPuntaje3 = new javax.swing.JLabel();
         jPuntaje8 = new javax.swing.JLabel();
         jPuntaje6 = new javax.swing.JLabel();
-        jPuntaBal = new javax.swing.JLabel();
+        jPuntajeBal = new javax.swing.JLabel();
         jPuntaje10 = new javax.swing.JLabel();
         jPuntajeEs = new javax.swing.JLabel();
-        jPuntajeG22 = new javax.swing.JLabel();
+        jPuntaje11 = new javax.swing.JLabel();
         jPuntajeCua = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPuntajeTon = new javax.swing.JLabel();
@@ -95,6 +101,7 @@ public class juegoIA extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(610, 440));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jPuntaje2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
@@ -127,10 +134,10 @@ public class juegoIA extends javax.swing.JFrame {
         getContentPane().add(jPuntaje6);
         jPuntaje6.setBounds(480, 250, 40, 17);
 
-        jPuntaBal.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
-        jPuntaBal.setForeground(new java.awt.Color(204, 0, 0));
-        getContentPane().add(jPuntaBal);
-        jPuntaBal.setBounds(90, 180, 30, 14);
+        jPuntajeBal.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntajeBal.setForeground(new java.awt.Color(204, 0, 0));
+        getContentPane().add(jPuntajeBal);
+        jPuntajeBal.setBounds(90, 180, 30, 14);
 
         jPuntaje10.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje10.setForeground(new java.awt.Color(204, 0, 0));
@@ -142,10 +149,10 @@ public class juegoIA extends javax.swing.JFrame {
         getContentPane().add(jPuntajeEs);
         jPuntajeEs.setBounds(120, 180, 38, 14);
 
-        jPuntajeG22.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
-        jPuntajeG22.setForeground(new java.awt.Color(204, 0, 0));
-        getContentPane().add(jPuntajeG22);
-        jPuntajeG22.setBounds(460, 280, 40, 14);
+        jPuntaje11.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jPuntaje11.setForeground(new java.awt.Color(204, 0, 0));
+        getContentPane().add(jPuntaje11);
+        jPuntaje11.setBounds(460, 280, 40, 14);
 
         jPuntajeCua.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeCua.setForeground(new java.awt.Color(204, 0, 0));
@@ -291,6 +298,7 @@ public class juegoIA extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondoretro.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         jLabel3.setToolTipText("");
+        jLabel3.setPreferredSize(new java.awt.Dimension(610, 440));
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 0, 600, 400);
 
@@ -299,8 +307,9 @@ public class juegoIA extends javax.swing.JFrame {
 
     private void jBjugar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar2ActionPerformed
 
-        DadosGen juega1 = new DadosGen();
-        juega1.setVisible(true);
+        iaNormal juegaia = new iaNormal();
+        juegaia.ia();
+        //juega1.setVisible(true);
         turno++;
         System.out.println("turnoNro: " + turno);
         jBjugar2.setEnabled(false);
@@ -315,7 +324,7 @@ public class juegoIA extends javax.swing.JFrame {
 
     private void jBjugar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBjugar1ActionPerformed
 
-        DadosGen juega1 = new DadosGen();
+        DadosGenIA juega1 = new DadosGenIA();
         juega1.setVisible(true);
         turno++;
         System.out.println("turnoNro: " + turno);
@@ -329,7 +338,7 @@ public class juegoIA extends javax.swing.JFrame {
             int p1 = 0;
             int p2 = 0;
 
-            int num1 = Integer.parseInt( jPuntaBal.getText());
+            int num1 = Integer.parseInt( jPuntajeBal.getText());
             int num2 = Integer.parseInt( jPuntajeTon.getText());
             int num3 = Integer.parseInt( jPuntajeTre.getText());
             int num4 = Integer.parseInt( jPuntajeCua.getText());
@@ -348,7 +357,7 @@ public class juegoIA extends javax.swing.JFrame {
             int num55 = Integer.parseInt( jPuntaje5.getText());
             int num66 = Integer.parseInt( jPuntaje6.getText());
             int numG12 = Integer.parseInt( jPuntaje10.getText());
-            int numG22 = Integer.parseInt( jPuntajeG22.getText());
+            int numG22 = Integer.parseInt( jPuntaje11.getText());
             int numEs2 = Integer.parseInt( jPuntaje7.getText());
             int numFull2 = Integer.parseInt( jPuntaje8.getText());
             int numPok2 = Integer.parseInt( jPuntaje9.getText());
@@ -428,9 +437,9 @@ public class juegoIA extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    public static javax.swing.JLabel jPuntaBal;
     public static javax.swing.JLabel jPuntaje1;
     public static javax.swing.JLabel jPuntaje10;
+    public static javax.swing.JLabel jPuntaje11;
     public static javax.swing.JLabel jPuntaje2;
     public static javax.swing.JLabel jPuntaje3;
     public static javax.swing.JLabel jPuntaje4;
@@ -439,12 +448,12 @@ public class juegoIA extends javax.swing.JFrame {
     public static javax.swing.JLabel jPuntaje7;
     public static javax.swing.JLabel jPuntaje8;
     public static javax.swing.JLabel jPuntaje9;
+    public static javax.swing.JLabel jPuntajeBal;
     public static javax.swing.JLabel jPuntajeCua;
     public static javax.swing.JLabel jPuntajeEs;
     public static javax.swing.JLabel jPuntajeFull;
     public static javax.swing.JLabel jPuntajeG1;
     public static javax.swing.JLabel jPuntajeG2;
-    public static javax.swing.JLabel jPuntajeG22;
     public static javax.swing.JLabel jPuntajePoker;
     public static javax.swing.JLabel jPuntajeQui;
     public static javax.swing.JLabel jPuntajeSen;

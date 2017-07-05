@@ -70,7 +70,6 @@ public class DadosGen4 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jSalir = new javax.swing.JButton();
         jCheckDado5 = new javax.swing.JCheckBox();
         jTerminarT = new javax.swing.JButton();
         jCheckDado4 = new javax.swing.JCheckBox();
@@ -102,20 +101,6 @@ public class DadosGen4 extends javax.swing.JFrame {
         jLabel4.setText("0");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(242, 268, 78, 15);
-
-        jSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Top Menu-50.png"))); // NOI18N
-        jSalir.setText("Salir");
-        jSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jSalir.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-Spinner marco 3-26.png"))); // NOI18N
-        jSalir.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Menú principal Filled-50.png"))); // NOI18N
-        jSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jSalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jSalirActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jSalir);
-        jSalir.setBounds(490, 310, 84, 70);
 
         jCheckDado5.setText("jCheckBox5");
         jCheckDado5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados-05.gif"))); // NOI18N
@@ -244,10 +229,6 @@ public class DadosGen4 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSalirActionPerformed
-        dispose();
-    }//GEN-LAST:event_jSalirActionPerformed
 
     private void jCheckDado5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckDado5ActionPerformed
         if(jCheckDado5.isSelected()){
@@ -791,7 +772,6 @@ public class DadosGen4 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JButton jPrimerT;
-    private javax.swing.JButton jSalir;
     private javax.swing.JButton jSegundoT;
     private javax.swing.JButton jTerminarT;
     private javax.swing.JButton jVoltearD;
