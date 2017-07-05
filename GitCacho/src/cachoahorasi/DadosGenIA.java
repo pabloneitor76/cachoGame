@@ -23,6 +23,7 @@ public class DadosGenIA extends javax.swing.JFrame {
      */
     public DadosGenIA() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         jSegundoT.setEnabled(false);
         jVoltearD.setEnabled(false);

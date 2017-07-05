@@ -26,6 +26,7 @@ public class DadosGen extends javax.swing.JFrame {
      */
     public DadosGen() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         jSegundoT.setEnabled(false);
         jVoltearD.setEnabled(false);

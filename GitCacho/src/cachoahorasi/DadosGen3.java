@@ -23,6 +23,7 @@ public class DadosGen3 extends javax.swing.JFrame {
      */
     public DadosGen3() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         jSegundoT.setEnabled(false);
         jVoltearD.setEnabled(false);

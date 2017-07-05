@@ -20,6 +20,7 @@ public class MainUser extends javax.swing.JFrame {
      */
     public MainUser() {
         initComponents();
+        setTitle("CACHO-JUEGO");
        this.setLocationRelativeTo(null);
        /*ImageIcon fondo1 = new ImageIcon(getClass().getResource("/Pictures/fondo2.png"));
        ImageIcon fondo2 = new ImageIcon(fondo1.getImage().getScaledInstance(jLabel1.getWidth(),jLabel1.getHeight(), Image.SCALE_DEFAULT));

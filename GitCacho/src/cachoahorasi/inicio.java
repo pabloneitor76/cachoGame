@@ -21,6 +21,7 @@ public class inicio extends javax.swing.JFrame {
      */
     public inicio() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         // setIconImage(new ImageIcon(getClass().getResource("../Imagenes/Póker-de-dados.jpg")).getImage());
        this.setLocationRelativeTo(null);
 

@@ -25,6 +25,7 @@ public class juega1vs1 extends javax.swing.JFrame {
      */
     public juega1vs1() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         
         

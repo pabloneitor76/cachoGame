@@ -20,6 +20,7 @@ public class Reglas extends javax.swing.JFrame {
      */
     public Reglas() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         ImageIcon fondo1 = new ImageIcon(getClass().getResource("/Pictures/Reglas.png"));
        ImageIcon fondo2 = new ImageIcon(fondo1.getImage().getScaledInstance(jLabel2.getWidth(),jLabel2.getHeight(), Image.SCALE_DEFAULT));

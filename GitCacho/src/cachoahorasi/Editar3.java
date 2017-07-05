@@ -16,6 +16,7 @@ public class Editar3 extends javax.swing.JFrame {
      */
     public Editar3() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         
         //........boton jugar

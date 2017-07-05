@@ -18,6 +18,7 @@ public class EditJvsJ extends javax.swing.JFrame {
      */
     public EditJvsJ() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         
         //........boton jugar

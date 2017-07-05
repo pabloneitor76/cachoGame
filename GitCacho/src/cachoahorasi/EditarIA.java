@@ -16,6 +16,7 @@ public class EditarIA extends javax.swing.JFrame {
      */
     public EditarIA() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         
         //........boton jugar

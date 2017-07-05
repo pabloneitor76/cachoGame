@@ -23,6 +23,7 @@ public class JuegoD3 extends javax.swing.JFrame {
      */
     public JuegoD3() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         //
         /*ImageIcon fondo1 = new ImageIcon(getClass().getResource("/Pictures/fondo.png"));

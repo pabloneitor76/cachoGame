@@ -21,6 +21,7 @@ public class JuegoD4 extends javax.swing.JFrame {
      */
     public JuegoD4() {
         initComponents();
+        setTitle("CACHO-JUEGO");
          this.setLocationRelativeTo(null);
         //
         /*ImageIcon fondo1 = new ImageIcon(getClass().getResource("/Pictures/fondo.png"));

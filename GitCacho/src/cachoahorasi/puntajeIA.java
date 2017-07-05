@@ -19,6 +19,7 @@ public class puntajeIA extends javax.swing.JFrame {
      */
     public puntajeIA() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         buttonGroup1.add(jRadioButtonBala);
         buttonGroup1.add(jRadioButtonTonto);

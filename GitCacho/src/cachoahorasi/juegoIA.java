@@ -23,6 +23,7 @@ public class juegoIA extends javax.swing.JFrame {
      */
     public juegoIA() {
         initComponents();
+        setTitle("CACHO-JUEGO");
          this.setLocationRelativeTo(null);
          //
           

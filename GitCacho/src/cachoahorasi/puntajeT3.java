@@ -16,6 +16,7 @@ public class puntajeT3 extends javax.swing.JFrame {
      */
     public puntajeT3() {
         initComponents();
+        setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         buttonGroup1.add(jRadioButtonBala);
         buttonGroup1.add(jRadioButtonTonto);
