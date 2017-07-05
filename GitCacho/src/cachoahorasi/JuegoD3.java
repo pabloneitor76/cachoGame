@@ -7,6 +7,7 @@ package cachoahorasi;
 
 import static cachoahorasi.juega1vs1.jBjugar1;
 import static cachoahorasi.juega1vs1.jBjugar2;
+import static cachoahorasi.juega1vs1.jLabel1;
 import java.applet.AudioClip;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -530,36 +531,42 @@ public class JuegoD3 extends javax.swing.JFrame {
         p2 = num11 + num22 + num33 + num44 + num55 + num66 + numG12 + numG22 + numEs2 + numFull2 + numPok2;
         p3 = num111 + num222 + num333 + num444 + num555 + num666 + numG13 + numG23 + numEs3 + numFull3 + numPok3;
         
+        //
+        String jug1 = jLabel1.getText().toUpperCase();
+        String jug2 = jLabel2.getText().toUpperCase();
+        String jug3 = jLabel3.getText().toUpperCase();
+        //
+        
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
         
         if(p1>p2 && p1>p3){
             JOptionPane.showMessageDialog(this,
-                "Puntaje Jugador 1:" + p1 + 
-                "\nPuntaje Jugador 2:" + p2+
-                "\nPuntaje Jugador 3:" + p3+
-                "\n\nJugador 1 Gano");
+                "Puntaje " + jug1+ ": " + p1 + 
+                "\nPuntaje "+ jug2 + ": " + p2+
+                "\nPuntaje "+ jug3 + ": " + p3+
+                "\n\n "+ jug1 +" Gano");
         }
         if(p2>p1 && p2>p3){
             JOptionPane.showMessageDialog(this,
-                "Puntaje Jugador 1:" + p1 + 
-                "\nPuntaje Jugador 2:" + p2+
-                "\nPuntaje Jugador 3:" + p3+
-                "\n\nJugador 2 Gano");
+                "Puntaje " + jug1+ ": " + p1 + 
+                "\nPuntaje "+ jug2 + ": " + p2+
+                "\nPuntaje "+ jug3 + ": " + p3+
+                "\n\n "+ jug2 +" Gano");
         }
-        if(p2>p1 && p2>p3){
+        if(p3>p1 && p3>p2){
             JOptionPane.showMessageDialog(this,
-                "Puntaje Jugador 1:" + p1 + 
-                "\nPuntaje Jugador 2:" + p2+
-                "\nPuntaje Jugador 3:" + p3+
-                "\n\nJugador 2 Gano");
+               "Puntaje " + jug1+ ": " + p1 + 
+                "\nPuntaje "+ jug2 + ": " + p2+
+                "\nPuntaje "+ jug3 + ": " + p3+
+                "\n\n "+ jug3 +" Gano");
         }
         if(p1== p2 && p2 == p3){
             JOptionPane.showMessageDialog(this,
-                "Puntaje Jugador 1:" + p1 + 
-                "\nPuntaje Jugador 2:" + p2+
-                "\nPuntaje Jugador 3:" + p3+
+                "Puntaje " + jug1+ ": " + p1 + 
+                "\nPuntaje "+ jug2 + ": " + p2+
+                "\nPuntaje "+ jug3 + ": " + p3+
                 "\n\nEmpate");
         }
     }//GEN-LAST:event_jBresultadoActionPerformed

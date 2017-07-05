@@ -267,7 +267,7 @@ public class DadosGen3 extends javax.swing.JFrame {
         imagenesResult objImag5 = new imagenesResult();
         jCheckDado5.setIcon(objImag5.Imaen(dado[4]));
 
-        JOptionPane.showMessageDialog(this,"Seleccione Dados Para Segundo Tiro");
+        JOptionPane.showMessageDialog(this,"Seleccione Dados Para Segundo Tiro o presione Puntaje");
 
         jPrimerT.setEnabled(false);
         jSegundoT.setEnabled(true);
@@ -333,7 +333,7 @@ public class DadosGen3 extends javax.swing.JFrame {
             jSegundoT.setEnabled(false);
             JOptionPane.showMessageDialog(this,"Seleccione Dados A Voltear");
         }else{
-            JOptionPane.showMessageDialog(this,"Seleccione un dado o presione resultado");
+            JOptionPane.showMessageDialog(this,"Seleccione un dado ");
             //jVoltearD.setEnabled(false);
         }
         //
@@ -408,7 +408,7 @@ public class DadosGen3 extends javax.swing.JFrame {
             //
             jVoltearD.setEnabled(false);
             //jSegundoT.setEnabled(false);
-            JOptionPane.showMessageDialog(this,"Presione terminar");
+            JOptionPane.showMessageDialog(this,"Presione terminarT");
             //Dado_1
             if(jCheckDado1.isSelected()){
                 dado[0] = objDado1.voltearDado(dado[0]);

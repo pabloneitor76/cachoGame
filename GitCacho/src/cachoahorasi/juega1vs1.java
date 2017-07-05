@@ -18,7 +18,7 @@ public class juega1vs1 extends javax.swing.JFrame {
 
     static int turnP;//controla par o impar en turnojugador
     static int turnoS = 22;//controla el turno actual
-    static int turno = 0;//turno actual inicio
+    static int turno = 22;//turno actual inicio
     
     /**
      * Creates new form juega1vs1
@@ -111,56 +111,67 @@ public class juega1vs1 extends javax.swing.JFrame {
 
         jPuntaje1.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje1.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje1.setText("1");
         getContentPane().add(jPuntaje1);
         jPuntaje1.setBounds(80, 190, 30, 14);
 
         jPuntajeEs.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeEs.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeEs.setText("0");
         getContentPane().add(jPuntajeEs);
         jPuntajeEs.setBounds(110, 190, 38, 14);
 
         jPuntaje4.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje4.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje4.setText("0");
         getContentPane().add(jPuntaje4);
         jPuntaje4.setBounds(140, 190, 40, 14);
 
         jPuntaje2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje2.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje2.setText("0");
         getContentPane().add(jPuntaje2);
         jPuntaje2.setBounds(80, 220, 30, 15);
 
         jPuntajePoker.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajePoker.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajePoker.setText("0");
         getContentPane().add(jPuntajePoker);
         jPuntajePoker.setBounds(110, 250, 38, 15);
 
         jPuntaje5.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje5.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje5.setText("0");
         getContentPane().add(jPuntaje5);
         jPuntaje5.setBounds(140, 220, 40, 14);
 
         jPuntaje3.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje3.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje3.setText("0");
         getContentPane().add(jPuntaje3);
         jPuntaje3.setBounds(80, 250, 30, 16);
 
         jPuntajeFull.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeFull.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeFull.setText("0");
         getContentPane().add(jPuntajeFull);
         jPuntajeFull.setBounds(110, 220, 38, 16);
 
         jPuntaje6.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje6.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje6.setText("0");
         getContentPane().add(jPuntaje6);
         jPuntaje6.setBounds(140, 250, 40, 16);
 
         jPuntajeG1.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG1.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeG1.setText("0");
         getContentPane().add(jPuntajeG1);
         jPuntajeG1.setBounds(80, 280, 40, 14);
 
         jPuntajeG2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG2.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeG2.setText("0");
         getContentPane().add(jPuntajeG2);
         jPuntajeG2.setBounds(130, 280, 40, 14);
 
@@ -221,56 +232,67 @@ public class juega1vs1 extends javax.swing.JFrame {
 
         jPuntaje11.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje11.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje11.setText("2");
         getContentPane().add(jPuntaje11);
         jPuntaje11.setBounds(420, 190, 40, 15);
 
         jPuntajeES2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeES2.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeES2.setText("0");
         getContentPane().add(jPuntajeES2);
         jPuntajeES2.setBounds(450, 190, 40, 14);
 
         jPuntaje44.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje44.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje44.setText("0");
         getContentPane().add(jPuntaje44);
         jPuntaje44.setBounds(480, 190, 40, 15);
 
         jPuntaje22.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje22.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje22.setText("0");
         getContentPane().add(jPuntaje22);
         jPuntaje22.setBounds(420, 220, 40, 15);
 
         jPuntajePoker2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajePoker2.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajePoker2.setText("0");
         getContentPane().add(jPuntajePoker2);
         jPuntajePoker2.setBounds(450, 250, 40, 15);
 
         jPuntaje55.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje55.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje55.setText("0");
         getContentPane().add(jPuntaje55);
         jPuntaje55.setBounds(480, 220, 40, 15);
 
         jPuntaje33.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje33.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje33.setText("0");
         getContentPane().add(jPuntaje33);
         jPuntaje33.setBounds(420, 250, 40, 17);
 
         jPuntajeFull2.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeFull2.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeFull2.setText("0");
         getContentPane().add(jPuntajeFull2);
         jPuntajeFull2.setBounds(450, 220, 40, 17);
 
         jPuntaje66.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntaje66.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntaje66.setText("0");
         getContentPane().add(jPuntaje66);
         jPuntaje66.setBounds(480, 250, 40, 17);
 
         jPuntajeG12.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG12.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeG12.setText("0");
         getContentPane().add(jPuntajeG12);
         jPuntajeG12.setBounds(420, 280, 40, 14);
 
         jPuntajeG22.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jPuntajeG22.setForeground(new java.awt.Color(255, 0, 0));
+        jPuntajeG22.setText("0");
         getContentPane().add(jPuntajeG22);
         jPuntajeG22.setBounds(460, 280, 40, 14);
 
@@ -397,24 +419,27 @@ public class juega1vs1 extends javax.swing.JFrame {
 
             p1 = num1 + num2 + num3 + num4 + num5 + num6 + numG1 +numG2 + numEs + numFull + numPok;
             p2 = num11 + num22 + num33 + num44 + num55 + num66 + numG12 + numG22 + numEs2 + numFull2 + numPok2;
-
+            
+            String jug1 = jLabel1.getText().toUpperCase();
+            String jug2 = jLabel2.getText().toUpperCase();
             System.out.println(p1);
+            
             System.out.println(p2);
 
             if(p1>p2){
                 JOptionPane.showMessageDialog(this,
-                    "Puntaje Jugador 1:" + p1 + 
-                    "\nPuntaje Jugador 2:" + p2+
-                    "\n\nJugador 1 Gano");
+                    "Puntaje " + jug1+ ": " + p1 + 
+                    "\nPuntaje "+ jug2+ ": " + p2+
+                    "\n\n "+ jug1 +" Gano");
             }else if(p2>p1){
                 JOptionPane.showMessageDialog(this,
-                    "Puntaje Jugador 1:" + p1 + 
-                    "\nPuntaje Jugador 2:" + p2+
-                    "\n\nJugador 2 Gano");
+                    "Puntaje " + jug1+ ": " + p1 + 
+                    "\nPuntaje "+ jug2+ ": " + p2+
+                    "\n\n "+jug2+" Gano");
             }else if(p1== p2){
                 JOptionPane.showMessageDialog(this,
-                    "Puntaje Jugador 1:" + p1 + 
-                    "\nPuntaje Jugador 2:" + p2+
+                    "Puntaje " + jug1+ ": " + p1 + 
+                    "\nPuntaje "+ jug2+ ": " + p2+
                     "\n\nEmpate");
             }
         }else{
