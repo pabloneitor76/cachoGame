@@ -49,11 +49,11 @@ public class DadosGen3 extends javax.swing.JFrame {
        jTerminarT.setOpaque(false);
        jTerminarT.setContentAreaFilled(false);
        jTerminarT.setBorderPainted(false);
-       //........boton primer casa
+       /*........boton primer casa
        jSalir.setOpaque(false);
        jSalir.setContentAreaFilled(false);
        jSalir.setBorderPainted(false);
-        //
+        */
         
     }
 
