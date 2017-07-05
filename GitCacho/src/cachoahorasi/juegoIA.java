@@ -7,6 +7,7 @@ package cachoahorasi;
 
 import static cachoahorasi.juega1vs1.jBjugar1;
 import static cachoahorasi.juega1vs1.jBjugar2;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
@@ -24,6 +25,13 @@ public class juegoIA extends javax.swing.JFrame {
     public juegoIA() {
         initComponents();
         setTitle("CACHO-JUEGO");
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
          this.setLocationRelativeTo(null);
          //
           

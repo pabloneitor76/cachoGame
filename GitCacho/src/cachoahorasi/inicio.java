@@ -10,6 +10,7 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 
 
+
 /**
  *
  * @author DELL
@@ -22,6 +23,13 @@ public class inicio extends javax.swing.JFrame {
     public inicio() {
         initComponents();
         setTitle("CACHO-JUEGO");
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         // setIconImage(new ImageIcon(getClass().getResource("../Imagenes/Póker-de-dados.jpg")).getImage());
        this.setLocationRelativeTo(null);
 
@@ -331,4 +339,6 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
+
+    
 }

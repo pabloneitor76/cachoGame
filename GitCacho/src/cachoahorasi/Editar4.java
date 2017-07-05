@@ -5,6 +5,8 @@
  */
 package cachoahorasi;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author DELL
@@ -16,6 +18,13 @@ public class Editar4 extends javax.swing.JFrame {
      */
     public Editar4() {
         initComponents();
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         

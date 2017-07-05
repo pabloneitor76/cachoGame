@@ -6,6 +6,7 @@
 package cachoahorasi;
 
 import java.applet.AudioClip;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -18,6 +19,13 @@ public class EditJvsJ extends javax.swing.JFrame {
      */
     public EditJvsJ() {
         initComponents();
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         

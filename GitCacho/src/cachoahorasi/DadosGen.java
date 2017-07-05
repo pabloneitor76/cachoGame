@@ -26,6 +26,13 @@ public class DadosGen extends javax.swing.JFrame {
      */
     public DadosGen() {
         initComponents();
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         jSegundoT.setEnabled(false);

@@ -8,6 +8,7 @@ package cachoahorasi;
 import static cachoahorasi.juega1vs1.jBjugar1;
 import static cachoahorasi.juega1vs1.jBjugar2;
 import java.applet.AudioClip;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -23,6 +24,13 @@ public class JuegoD3 extends javax.swing.JFrame {
      */
     public JuegoD3() {
         initComponents();
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         //

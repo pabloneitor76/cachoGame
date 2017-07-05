@@ -6,6 +6,7 @@
 package cachoahorasi;
 
 import java.applet.AudioClip;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -23,6 +24,13 @@ public class DadosGenIA extends javax.swing.JFrame {
      */
     public DadosGenIA() {
         initComponents();
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         jSegundoT.setEnabled(false);

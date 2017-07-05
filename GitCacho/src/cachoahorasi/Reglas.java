@@ -20,6 +20,13 @@ public class Reglas extends javax.swing.JFrame {
      */
     public Reglas() {
         initComponents();
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         ImageIcon fondo1 = new ImageIcon(getClass().getResource("/Pictures/Reglas.png"));

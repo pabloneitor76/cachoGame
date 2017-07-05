@@ -10,6 +10,7 @@ import java.awt.Component;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import java.lang.*;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -22,6 +23,13 @@ public class puntajeT extends javax.swing.JFrame {
      */
     public puntajeT() {
         initComponents();
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         buttonGroup1.add(jRadioButtonBala);

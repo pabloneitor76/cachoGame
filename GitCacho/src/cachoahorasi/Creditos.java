@@ -6,6 +6,7 @@
 package cachoahorasi;
 
 import java.applet.AudioClip;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -18,6 +19,13 @@ public class Creditos extends javax.swing.JFrame {
      */
     public Creditos() {
         initComponents();
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
        /*ImageIcon fondo1 = new ImageIcon(getClass().getResource("/Pictures/fondo2.png"));

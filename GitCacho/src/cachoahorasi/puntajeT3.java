@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package cachoahorasi;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 /**
  *
@@ -16,6 +17,13 @@ public class puntajeT3 extends javax.swing.JFrame {
      */
     public puntajeT3() {
         initComponents();
+        //iconoDADO
+        try{
+            setIconImage(new ImageIcon(getClass().getResource("/masImG/Dice-32.png")).getImage());
+        }catch(Exception ex){
+        
+        }
+        //
         setTitle("CACHO-JUEGO");
         this.setLocationRelativeTo(null);
         buttonGroup1.add(jRadioButtonBala);
