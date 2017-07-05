@@ -28,7 +28,11 @@ public class puntajeT3 extends javax.swing.JFrame {
         buttonGroup1.add(jRadioButtonPoker);
         buttonGroup1.add(jRadioButtonFull);
         buttonGroup1.add(jRadioButtonGrnd2);
-       
+        //........boton primer guardar
+       jButtonSave.setOpaque(false);
+       jButtonSave.setContentAreaFilled(false);
+       jButtonSave.setBorderPainted(false);
+        //
     }
 
     /**
@@ -72,75 +76,75 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel10.setText("jLabel10");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(155, 396, 40, 22);
+        jLabel10.setBounds(190, 400, 40, 22);
 
         jRadioButtonFull.setText("Puntaje Full:");
         getContentPane().add(jRadioButtonFull);
-        jRadioButtonFull.setBounds(39, 361, 82, 23);
+        jRadioButtonFull.setBounds(39, 361, 100, 23);
 
         jRadioButtonGrnd2.setText("Puntaje Grande2:");
         getContentPane().add(jRadioButtonGrnd2);
-        jRadioButtonGrnd2.setBounds(39, 432, 108, 23);
+        jRadioButtonGrnd2.setBounds(39, 432, 120, 23);
 
         jRadioButtonBala.setText("Puntaje Balas:");
         getContentPane().add(jRadioButtonBala);
-        jRadioButtonBala.setBounds(39, 22, 93, 23);
+        jRadioButtonBala.setBounds(39, 22, 100, 23);
 
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(140, 22, 53, 22);
+        jLabel1.setBounds(170, 20, 53, 22);
 
         jLabel11.setText("jLabel11");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(161, 432, 40, 23);
+        jLabel11.setBounds(190, 430, 40, 23);
 
         jRadioButtonTonto.setText("Puntaje Tontos:");
         getContentPane().add(jRadioButtonTonto);
-        jRadioButtonTonto.setBounds(39, 63, 99, 23);
+        jRadioButtonTonto.setBounds(39, 63, 110, 23);
 
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(146, 63, 34, 22);
+        jLabel2.setBounds(170, 60, 34, 22);
 
         jRadioButtonTren.setText("Puntaje Trenes:");
         getContentPane().add(jRadioButtonTren);
-        jRadioButtonTren.setBounds(39, 104, 100, 23);
+        jRadioButtonTren.setBounds(39, 104, 110, 23);
 
         jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(154, 104, 34, 23);
+        jLabel3.setBounds(180, 100, 34, 23);
 
         jRadioButtonCuadra.setText("Puntaje Cuadras:");
         getContentPane().add(jRadioButtonCuadra);
-        jRadioButtonCuadra.setBounds(39, 147, 107, 23);
+        jRadioButtonCuadra.setBounds(39, 147, 120, 23);
 
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(154, 145, 34, 26);
+        jLabel4.setBounds(180, 150, 34, 26);
 
         jRadioButtonQuina.setText("Puntaje Quinas:");
         getContentPane().add(jRadioButtonQuina);
-        jRadioButtonQuina.setBounds(39, 189, 100, 23);
+        jRadioButtonQuina.setBounds(39, 189, 110, 23);
 
         jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(147, 189, 34, 23);
+        jLabel5.setBounds(180, 190, 34, 23);
 
         jRadioButtonSena.setText("Puntaje Senas:");
         getContentPane().add(jRadioButtonSena);
-        jRadioButtonSena.setBounds(39, 230, 97, 23);
+        jRadioButtonSena.setBounds(39, 230, 110, 23);
 
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(144, 230, 34, 23);
+        jLabel6.setBounds(170, 230, 34, 23);
 
         jRadioButtonGrnd1.setText("Puntaje Grande:");
         getContentPane().add(jRadioButtonGrnd1);
-        jRadioButtonGrnd1.setBounds(39, 396, 102, 23);
+        jRadioButtonGrnd1.setBounds(39, 396, 120, 23);
 
         jLabel7.setText("jLabel7");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(155, 275, 34, 23);
+        jLabel7.setBounds(190, 270, 34, 23);
 
         jButtonSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/masImG/icons8-Menú Xbox-64.png"))); // NOI18N
         jButtonSave.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -155,19 +159,19 @@ public class puntajeT3 extends javax.swing.JFrame {
 
         jLabel8.setText("jLabel8");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(140, 320, 34, 23);
+        jLabel8.setBounds(180, 320, 34, 23);
 
         jRadioButtonEsca.setText("Puntaje Escalera:");
         getContentPane().add(jRadioButtonEsca);
-        jRadioButtonEsca.setBounds(39, 275, 108, 23);
+        jRadioButtonEsca.setBounds(39, 275, 120, 23);
 
         jLabel9.setText("jLabel9");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(129, 361, 34, 23);
+        jLabel9.setBounds(170, 360, 34, 23);
 
         jRadioButtonPoker.setText("Puntaje Poker:");
         getContentPane().add(jRadioButtonPoker);
-        jRadioButtonPoker.setBounds(39, 320, 93, 23);
+        jRadioButtonPoker.setBounds(39, 320, 110, 23);
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/stena-.jpg"))); // NOI18N
         jLabel12.setText("jLabel12");
@@ -183,7 +187,7 @@ public class puntajeT3 extends javax.swing.JFrame {
             System.out.println("turnoPP:" + JuegoD3.turnP);
             if(jRadioButtonBala.isSelected()){     //..............................balas
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turnP+3){
+                if(JuegoD3.turnP == 0){
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje1.getText().isEmpty()){
 
@@ -200,7 +204,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                     }
 
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+2) {
+                }else if(JuegoD3.turnP == 1) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje11.getText().isEmpty()){
 
@@ -217,7 +221,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                     }
                 
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+2) {
+                }else if(JuegoD3.turnP == 2) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje111.getText().isEmpty()){
 
@@ -353,7 +357,7 @@ public class puntajeT3 extends javax.swing.JFrame {
             }
             if(jRadioButtonCuadra.isSelected()){     //..............................cuadras
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD3.turnP == 0 ){
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje4.getText().isEmpty()){
                         System.out.println(jLabel4.getText());
@@ -368,7 +372,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 1) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje44.getText().isEmpty()){
                         System.out.println(jLabel4.getText());
@@ -383,7 +387,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 2) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje444.getText().isEmpty()){
                         System.out.println(jLabel4.getText());
@@ -407,7 +411,7 @@ public class puntajeT3 extends javax.swing.JFrame {
             }
             if(jRadioButtonQuina.isSelected()){     //..............................quinas
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD3.turnP == 0){
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje5.getText().isEmpty()){
                         System.out.println(jLabel5.getText());
@@ -422,7 +426,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 1) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje55.getText().isEmpty()){
                         System.out.println(jLabel5.getText());
@@ -437,7 +441,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 2) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje555.getText().isEmpty()){
                         System.out.println(jLabel5.getText());
@@ -461,7 +465,7 @@ public class puntajeT3 extends javax.swing.JFrame {
             }
             if(jRadioButtonSena.isSelected()){     //..............................senas
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD3.turnP == 0){
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje6.getText().isEmpty()){
                         System.out.println(jLabel6.getText());
@@ -476,7 +480,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 1) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje66.getText().isEmpty()){
                         System.out.println(jLabel6.getText());
@@ -491,7 +495,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 2) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntaje666.getText().isEmpty()){
                         System.out.println(jLabel6.getText());
@@ -516,7 +520,7 @@ public class puntajeT3 extends javax.swing.JFrame {
 
             if(jRadioButtonGrnd1.isSelected()){     //..............................grande1
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD3.turnP == 0){
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajeG1.getText().isEmpty()){
                         System.out.println(jLabel10.getText());
@@ -531,7 +535,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 1) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajeG12.getText().isEmpty()){
                         System.out.println(jLabel10.getText());
@@ -546,7 +550,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 2) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajeG13.getText().isEmpty()){
                         System.out.println(jLabel10.getText());
@@ -572,7 +576,7 @@ public class puntajeT3 extends javax.swing.JFrame {
 
             if(jRadioButtonGrnd2.isSelected()){     //..............................grande2
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD3.turnP == 0){
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajeG2.getText().isEmpty()){
                         System.out.println(jLabel11.getText());
@@ -587,7 +591,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 1) {
                     if(JuegoD3.jPuntajeG22.getText().isEmpty()){
                         System.out.println(jLabel11.getText());
 
@@ -601,7 +605,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 2) {
                     if(JuegoD3.jPuntajeG23.getText().isEmpty()){
                         System.out.println(jLabel11.getText());
 
@@ -626,7 +630,7 @@ public class puntajeT3 extends javax.swing.JFrame {
             //2
             if(jRadioButtonEsca.isSelected()){     //...........................escalera
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD3.turnP == 0){
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajeEs.getText().isEmpty()){
                         System.out.println(jLabel7.getText());
@@ -641,7 +645,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 1 ) {
                     if(JuegoD3.jPuntajeES2.getText().isEmpty()){
                         System.out.println(jLabel7.getText());
 
@@ -655,7 +659,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 2 ) {
                     if(JuegoD3.jPuntajeES3.getText().isEmpty()){
                         System.out.println(jLabel7.getText());
 
@@ -678,7 +682,7 @@ public class puntajeT3 extends javax.swing.JFrame {
             }
             if(jRadioButtonFull.isSelected()){        //........................full
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD3.turnP == 0){
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajeFull.getText().isEmpty()){
                         System.out.println(jLabel9.getText());
@@ -693,7 +697,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 1) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajeFull2.getText().isEmpty()){
                         System.out.println(jLabel9.getText());
@@ -708,7 +712,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 2 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 2) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajeFull3.getText().isEmpty()){
                         System.out.println(jLabel9.getText());
@@ -732,7 +736,7 @@ public class puntajeT3 extends javax.swing.JFrame {
             }
             if(jRadioButtonPoker.isSelected()){     //..........................poker
                 //turno jugador 1
-                if(JuegoD3.turnP == 0 || JuegoD3.turnP == JuegoD3.turno+3){
+                if(JuegoD3.turnP == 0 ){
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajePoker.getText().isEmpty()){
                         System.out.println(jLabel8.getText());
@@ -747,7 +751,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 2
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 1) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajePoker2.getText().isEmpty()){
                         System.out.println(jLabel8.getText());
@@ -762,7 +766,7 @@ public class puntajeT3 extends javax.swing.JFrame {
                         JuegoD3.turnP--;
                     }
                     //turno jugador 3
-                }else if(JuegoD3.turnP == 1 || JuegoD3.turnP == JuegoD3.turno+3) {
+                }else if(JuegoD3.turnP == 2) {
                     //condicion si esta vacio -> anotar
                     if(JuegoD3.jPuntajePoker3.getText().isEmpty()){
                         System.out.println(jLabel8.getText());

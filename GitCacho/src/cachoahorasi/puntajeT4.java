@@ -5,6 +5,7 @@
  */
 package cachoahorasi;
 
+import static cachoahorasi.puntajeT3.jButtonSave;
 import javax.swing.JOptionPane;
 
 /**
@@ -30,6 +31,11 @@ public class puntajeT4 extends javax.swing.JFrame {
         buttonGroup1.add(jRadioButtonPoker);
         buttonGroup1.add(jRadioButtonFull);
         buttonGroup1.add(jRadioButtonGrnd2);
+        //........boton primer guardar
+       jButtonSave.setOpaque(false);
+       jButtonSave.setContentAreaFilled(false);
+       jButtonSave.setBorderPainted(false);
+        //
     }
 
     /**
